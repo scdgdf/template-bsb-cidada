@@ -1,19 +1,37 @@
 // main: estilo.less
+#video-depoimentos{
+  position: relative;
+}
+.modulo-video{
+  margin-bottom: 30px;
+}
+
+.modulo-depoimento{
+  .carousel-indicators{
+    position: absolute;
+    bottom: -40px;
+    >li {
+
+      border: 1px solid @attention;
+      &.active{
+        background-color: @attention;
+      }
+    }
+  }
+}
 .dep-item{
   text-align: center;
 
   img{
     height: 80px;
     width: 80px;
+    border: 2px solid @white;
+    margin-bottom: 20px;
   }
 }
-
-.imagem_depoimento{
-  margin-bottom: 20px;
-}
-.box-depoimento
-{
-    border: 2px solid @success;
+.dep-box{
+    border: 1px solid @gray;
+    background-color: @white;
     border-radius: 10px;
     color: @faded-black;
     display: table-cell;
@@ -25,9 +43,9 @@
     text-align: center;
     vertical-align: middle;
 }
-.nome_usuario_depoimento
+.dep-nome
 {
-    color: @success;
+    color: @attention;
     font-family: Montserrat Light;
     font-size: 17px;
     font-weight: bold;
