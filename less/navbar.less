@@ -1,0 +1,154 @@
+// main: estilo.less
+
+.nav-voluntariado
+{
+    background-color: @white;
+    border-color: @white;
+    border-radius: 0;
+    margin-bottom: 0;
+    min-height: 80px;
+    width: 100%;
+}
+
+#menu-institucional{
+    background: @black;
+    border-radius: 0px;
+    min-height: 30px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+    a{
+      color: @gray !important;
+      padding-top: 4px;
+      padding-left: 15px;
+      padding-right: 30px;
+      padding-bottom: 0px;
+
+      &:hover{
+        background-color: transparent !important;
+        color: @white !important;
+      }
+    }
+}
+.navbar-header{
+  width: 100%;
+  display: block;
+}
+.navbar-brand{
+  height: auto;
+  padding: 5px 15px;
+  margin-left: 10px;
+}
+
+h1{
+  &.page-title{
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: @success;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
+.navbar-default{
+  .navbar-nav{
+    &.menu{
+      >li{
+        font-family: "Montserrat";
+        font-size: 15px;
+        color: @deep-black;
+        >a{
+          color: @deep-black;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &.menu-botoes{
+      margin-top: -44px;
+    }
+  }
+}
+
+
+.header-button{
+  padding-top: 6px;
+  margin-left: 5px;
+}
+
+.bg_validar_certificado{
+    width: 100%;
+    text-align: center;
+    height: 38px;
+    border-radius: 10px;
+    border: solid 2px @attention;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    color: @attention !important;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.bg_validar_certificado:hover{
+    border: solid 2px @deep-attention;
+    color: @deep-attention !important;
+}
+
+.bg_faca_login
+{
+    width: 100%;
+    text-align: center;
+    height: 38px;
+    border-radius: 10px;
+    border: solid 2px @success;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    color: @success !important;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.bg_faca_login:hover
+{
+    border: solid 2px @deep-success;
+    color: @deep-success !important;
+}
+
+.bg_cadastre-se
+{
+    width: 100%;
+    text-align: center;
+    height: 38px;
+    border-radius: 10px;
+    background-color: @success !important;
+    padding-top: 9px !important;
+    padding-bottom: 8px !important;
+    color: @white !important;
+    font-weight: bold;
+}
+.bg_cadastre-se:hover
+{
+    background-color: @deep-success !important;
+    color: @white !important;
+
+}
+
+//single-page-menu
+.sp-menu{
+  padding: 8px 15px;
+  margin-bottom: 0px;
+  list-style: none;
+  background-color: @info;
+  font-family: "Montserrat Bold", sans-serif;
+  border-bottom: 4px solid @deep-info;
+
+  li{
+    display: inline-block;
+    &:first-child{
+      margin-left: 15px;
+    }
+
+    a{
+      margin: 0px 15px;
+      color: @white;
+    }
+  }
+}

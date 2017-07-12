@@ -1,0 +1,221 @@
+// main: estilo.less
+.modulo{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+// Módulos de duas cores de fundo
+.modulo-dc-pr{
+    background: @white;
+    background: linear-gradient(@primary 50%, @white 50%);
+}
+.modulo-dc-su{
+    background: @white;
+    background: linear-gradient(@success 50%, @white 50%);
+}
+.modulo-dc-in{
+    background: @white;
+    background: linear-gradient(@info 50%, @white 50%);
+}
+.modulo-dc-av{
+    background: @white;
+    background: linear-gradient(@warning 50%, @white 50%);
+}
+.modulo-dc-at{
+    background: @white;
+    background: linear-gradient(@attention 50%, @white 50%);
+}
+.modulo-dc-pe{
+    background: @white;
+    background: linear-gradient(@danger 50%, @white 50%);
+}
+.modulo-titulo{
+  font-family: "Titillium Web";
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.nav{
+  &.nav-tabs{
+    border: 0;
+    >li{
+      a{
+        border: 0;
+        font-family: "Montserrat", sans-serif;
+        color: @white;
+        &:focus,
+        &:hover{
+          border: 0;
+          color: @white;
+          background: none;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      &.active{
+        a{
+          background-color: rgba(0, 0, 0, 0.2);
+          font-size: 16px;
+          border: 0;
+          &:focus,
+          &:hover{
+            border: 0;
+            color: @white;
+          }
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-content{
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 1px;
+    margin-bottom: 15px;
+
+    .tab-pane{
+      height: 92px;
+      .modulo-pesquisa{
+        margin-top: 10px;
+        label{
+          color: @white;
+        }
+      }
+      .modulo-selecao{
+        margin-top: 35px;
+        margin-bottom: 20px;
+      }
+    }
+}
+.btn-plus{
+  font-family: "OpenSans Bold", sans-serif;
+  color: @deep-black;
+  text-transform: uppercase;
+  font-size: 16px;
+
+  &:focus,
+  &:hover{
+    color: @deep-black;
+    cursor: pointer;
+  }
+}
+.btn-plus-icon{
+  font-size:21px;
+  color: @white;
+  background-color: @deep-black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 17px;
+  text-align: center;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  background-image: url("../images/btn-plus-default.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.btn-plus-icon-su{
+    background-color: @success;
+    background-image: url("../images/btn-plus-success.svg");
+  }
+  &.btn-plus-icon-su{
+    background-color: @info;
+    background-image: url("../images/btn-plus-info.svg");
+  }
+  &.btn-plus-icon-su{
+    background-color: @attention;
+    background-image: url("../images/btn-plus-attention.svg");
+  }
+  &.btn-plus-icon-su{
+    background-color: @warning;
+    background-image: url("../images/btn-plus-warning.svg");
+  }
+  &.btn-plus-icon-su{
+    background-color: @primary;
+    background-image: url("../images/btn-plus-primary.svg");
+  }
+  &.btn-plus-icon-su{
+    background-color: @danger;
+    background-image: url("../images/btn-plus-danger.svg");
+  }
+}
+.modulo-item{
+  background-color: magenta;
+  border-radius: 4px;
+  border: 1px solid @gray;
+
+  >.image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+  }
+}
+.thumbnail{
+  height: 540px;
+
+  img{
+    height: 200px;
+    width: 340px;
+  }
+}
+.caption{
+  h5{
+    text-transform: uppercase;
+  }
+}
+.altura_caption
+{
+    height: 340px;
+}
+
+.titulo_do_projeto
+{
+    color: @faded-black;
+    font-family: Montserrat Light;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.oportunidades,
+.meta-doacoes{
+  color: @success;
+  font-family: Montserrat;
+}
+.botao_candidatar-se
+{
+    background-color: @success;
+    border-radius: 0px 0px 4px 4px;
+    padding: 13px;
+    width: 85%;
+    position: absolute;
+    bottom: 30px;
+
+}
+.botao_candidatar-se:hover
+{
+    background-color: @deep-success;
+}
+.botao_todos_projetos
+{
+    background-color: @info;
+    border: 1px solid @info;
+    border-radius: 10px;
+    font-family: Montserrat Light;
+    font-weight: bold;
+    padding: 13px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.botao_todos_projetos:hover
+{
+    background-color: @deep-info;
+    border: 1px solid @info;
+}

@@ -1,0 +1,102 @@
+// out: ../css/estilo.css, sourcemap: true, compress: true
+
+@font-face{
+    font-family: "Montserrat Light";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Titillium Web";
+    src: url("../fonts/TitilliumWeb-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "OpenSans Bold";
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@import "variables.less";
+@import "navbar.less";
+@import "slider.less"; //preencher
+@import "links-externos.less";
+@import "modulo-cadastro.less";
+@import "numeros-voluntarios.less"; //preencher
+@import "projetos.less";
+@import "videos-depoimentos.less";
+@import "cards.less";
+
+body{
+  background: @white;
+  padding-bottom: 40px;
+}
+
+.btn-su{
+  color: @white;
+  background-color: @success;
+  border-color: @success;
+
+  &:hover{
+    color: @white;
+    background-color: @deep-success;
+  }
+}
+.btn-pr{
+  color: @white;
+  background-color: @primary;
+  border-color: @primary;
+
+  &:hover{
+    color: @white;
+    background-color: @deep-primary;
+  }
+}
+.btn-in{
+  color: @white;
+  background-color: @info;
+  border-color: @info;
+
+  &:hover{
+    color: @white;
+    background-color: @deep-info;
+  }
+}
+.btn-av{
+  color: @white;
+  background-color: @warning;
+  border-color: @warning;
+
+  &:hover{
+    color: @white;
+    background-color: @deep-warning;
+  }
+}
+.btn-at{
+  color: @white;
+  background-color: @attention;
+  border-color: @attention;
+
+  &:hover{
+    color: @white;
+    background-color: @deep-attention;
+  }
+}
+.btn-pe{
+  color: @white;
+  background-color: @danger;
+  border-color: @danger;
+
+  &:hover{
+    color: @white;
+    background-color: @deep-danger;
+  }
+}

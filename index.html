@@ -1,0 +1,1661 @@
+
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head">
+  <link type="text/css" rel="stylesheet" href="main/javax.faces.resource/theme.css.html?ln=primefaces-aristo" />
+  <script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';}</script>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/estilo.css" rel="stylesheet" />
+    <title>Portal do Voluntariado</title>
+    <link href="css/odometer.css" rel="stylesheet" />
+  </head>
+  <body id="body" elementName="body">
+    <!-- INÍCIO DO MÓDULO HEADER -->
+    <nav class="navbar navbar-default nav-voluntariado">
+        <div id="menu-institucional" class="navbar">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="http://www.transparencia.df.gov.br/Pages/inicio.aspx" target="_blank">
+                                Transparência
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ouvidoria.df.gov.br/" target="_blank">
+                                Ouvidoria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.brasilia.df.gov.br/index.php/2015/10/26/explicacao">
+                                Acesso à Informação
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.dodf.df.gov.br/" target="_blank">
+                                Diário Oficial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.df.gov.br/agencia-brasilia.html" target="_blank">
+                                Agência Brasília
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.df.gov.br" target="_blank">
+                                Portal do Governo de Brasília
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+        <div id="menu-principal">
+            <div class="container">
+                <div class="navbar-header">
+                    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navegacao" data-toggle="collapse" type="button">
+                        <span class="sr-only">Navegação</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/index.html" class="navbar-brand">
+                        <img alt="Brasília Cidadã" src="images/logo-voluntariado.png"/>
+                    </a>
+                    <h1 class="page-title">Portal do Voluntariado</h1>
+                </div>
+                <div class="collapse navbar-collapse row" id="navegacao">
+                    <ul class="nav navbar-nav menu">
+                        <li>
+                          <a href="/listagem_entidades.html">
+                                Parceiras
+                          </a>
+                        </li>
+                        <li>
+                            <a href="https://www.flickr.com/photos/brasiliacidada" target="_blank">
+                                Fotos
+                            </a>
+                        </li>
+                        <li><a href="/sobre.html">
+                                Sobre
+                            </a>
+                        </li>
+                        <li><a href="/duvidas.html">
+                                Perguntas e Respostas
+                            </a>
+                        </li>
+                        <li><a href="/legislacao.html">
+                                Legislação
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu-botoes">
+                      <li class="header-button">
+                        <a href="/validar_certificado.html" class="bg_validar_certificado menu_bg">
+                              Validar Certificado
+                        </a>
+                      </li>
+                      <li class="header-button">
+                        <a href="/login.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" class="bg_faca_login menu_bg">
+                              Faça Login
+                          </a>
+                      </li>
+                      <li class="header-button">
+                          <a class="bg_cadastre-se" data-target="#cadastro" data-toggle="modal" href="#">
+                              Cadastre-se
+                          </a>
+                          <div aria-labelledby="cadastrar" class="modal fade" id="cadastro" role="dialog" tabindex="-1">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                              <span aria-hidden="true">
+                                                  ×
+                                              </span>
+                                          </button>
+                                          <h4 class="modal-title" id="cadastrar">
+                                              Selecione o tipo do cadastro:
+                                          </h4>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="col-md-12">
+                                              <div class="col-md-6">
+                                                <button type="button" onclick="window.location.href='/adicionar_voluntario.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;" value="" class="btn btn-success bg_seja_voluntario">
+                                                      Voluntário(a)
+                                                  </button>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <button type="button" onclick="window.location.href='/adicionar_organizacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;" value="" class="btn btn-primary bg_cadastro_orgao">
+                                                      Órgão/Entidade
+                                                  </button>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12"></div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                              Fechar
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <ul class="sp-menu">
+        <div class="container">
+          <li><a href="#acoeseprojetos">Projetos e Ações</a></li>
+          <li><a href="#campanhasdedoacoes">Campanhas e Doações</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="#brasiliacidada">Brasília Cidadã</a></li>
+        </div>
+    </ul>
+    <!-- FIM DO MÓDULO HEADER -->
+
+    <!-- INÍCIO DO MÓDULO SLIDER -->
+    <div id="carrossel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carrossel" data-slide-to="0" class="active"></li>
+            <li data-target="#carrossel" data-slide-to="1"></li>
+            <li data-target="#carrossel" data-slide-to="2"></li>
+            <li data-target="#carrossel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <a jsf:disabled="false">
+                    <img alt="Seja um Voluntário" class="img-responsive" src="images/banner-bday.png" />
+                </a>
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <div class="item"><a href="/adicionar_voluntario.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">
+                    <img alt="Seja um Voluntário" class="img-responsive" src="images/banner_1_st.png" /></a>
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <div class="item"><a href="/adicionar_voluntario.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">
+                    <img alt="Seja um Voluntário" class="img-responsive" src="images/banner_2_st.png" /></a>
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <div class="item"><a href="/adicionar_voluntario.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">
+                    <img alt="Seja um Voluntário" class="img-responsive" src="images/banner_3_st.png" /></a>
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO MÓDULO SLIDER -->
+
+    <!-- INÍCIO DO MÓDULO LINKS EXTERNOS -->
+    <div id="links-externos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Participação Cidadã</h2>
+            <p class="hero"> Projetos que envolvem a sua participação cidadã ajudando a comunidade, opinando sobre projetos e sugerindo na gestão pública.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="box box-at">
+              <div class="icon center-block">
+
+              </div>
+              <h4>Financiamento</h4>
+              <p>Proin odio justo, varius sed ligula id, tritique tincidunt justo. Integer nibh felis, rutrum vitae justo et, volupat efficitur arcu.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box box-in">
+              <div class="icon center-block">
+
+              </div>
+              <h4>Conselhos</h4>
+              <p>Proin odio justo, varius sed ligula id, tritique tincidunt justo. Integer nibh felis, rutrum vitae justo et, volupat efficitur arcu.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box box-av">
+              <div class="icon center-block">
+
+              </div>
+              <h4>Eventos</h4>
+              <p>Proin odio justo, varius sed ligula id, tritique tincidunt justo. Integer nibh felis, rutrum vitae justo et, volupat efficitur arcu.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box box-su">
+              <div class="icon center-block">
+
+              </div>
+              <h4>Ouvidoria</h4>
+              <p>Proin odio justo, varius sed ligula id, tritique tincidunt justo. Integer nibh felis, rutrum vitae justo et, volupat efficitur arcu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="banner-bsb-cidada"></div>
+    </div>
+    <!-- FIM DO MÓDULO LINKS EXTERNOS -->
+
+    <!-- INÍCIO DO MÓDULO CADASTRO -->
+    <div class="container modulo-cadastro">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+          <button value="" type="button" class="btn btn-su btn-full" onclick="window.location.href='/adicionar_voluntario.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;">
+            Seja Voluntário (a)
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button value="" type="button" class="btn btn-pr btn-full" onclick="window.location.href='/adicionar_organizacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;">
+            Cadastre o órgão ou entidade
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO CADASTRO -->
+
+    <!-- INÍCIO DO MÓDULO NÚMEROS -->
+    <div id="numeros-voluntariados">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                  <img atl="Voluntários incritos" src="images/inscritos.png"/>
+                  <span class="valor">10.275</span>
+                  <span class="titulo">Voluntários</span>
+              </div>
+              <div class="col-md-3">
+                <img alt="Projetos e ações" src="images/projetos.png"/>
+                <span class="valor">191</span>
+                <span class="titulo">Projetos e Ações</span>
+              </div>
+              <div class="col-md-3">
+                <img alt="Campanhas e Doações" src="images/beneficiadas.png"/>
+                <span class="valor">15</span>
+                <span class="titulo">Campanhas e Doações</span>
+              </div>
+              <div class="col-md-3">
+                <img alt="Oportunidades de voluntariado" src="images/oportunidades.png"/>
+                <span class="valor">111.675</span>
+                <span class="titulo" data-toggle="tooltip" data-placement="bottom" title="O cálculo é feito de acordo com a quantidade de vagas disponíveis do projeto, preenchidas pelos órgãos/entidades em seus respectivos projetos.">
+                  Oportunidades
+                </span>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="horas_de_trabalho_voluntario">
+      <form id="j_idt71" name="j_idt71" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="j_idt71" value="j_idt71" />
+        <input name="j_idt72" value="374190" id="horas" type="hidden" />
+        <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="rKh6/54XxicHX1hVhHibvBuZoQUDciXP9pCNlJAQzQ3eR3vnnFR+glIv/Hho43VVM61Kr+nrwGApYrOtYk6QV/xEgCjhFG72WqblLMuivU2A/mWGa59yQmXNiXNqeGxG7TqJj3hED1jKfWNBQ9HI5zJ6eJjrFzH+zzfT6AAgiuUdmNeWCPEufeCfST+QAucRks3vvRoa5yrJ9jUAcCbS/heYYQ1Zj0NMqXBgZh9pAm5MMZBGKhgghAk3KqM7u4ykfBPNGoTrsCmIMAgTYlOd2nE2hWXDJFpiQmDgTo98k1q0Xx5Lq+vP7nTloP9ne2OqJpWs9uCgdKwuC1Akje6OxsTFLUf1hquosmpnY+wq7sZ8mTPYayWguKMhxdmbgOzGqECv7g0PFT7KA9y2eH0kAWDGLbejvkOfrdknK3KKz+/cmmNA/v4skDTdKpt1LEDW9H6rpEmtRi71PZ7XPAP6zfaEXDraKWdl9jlzLg5OBYfIgFe3OrVb9J30xzIVAhtaeFc+k3PAokj84OoeNZoFtgDavQr3X6Ycy9hdvarL9AJtQC4gQrD/a6NyUgmwPYmj61/tFbl1S86fh2J3u3Z4IfFI3hsyGWFTTZ4jQuYh1miLrYd7Q0ktmoLgb+OQt3XDCmWsDGMxOcznrU4oJZqPFxK5rsmq0D3CYB/O1XjsWivMcFlRG7jsFYtGD1HDneXL7dn1ona5dcqDtKf0wqARaDH3NBR1pZy7YmIWcFXUI5DU4FlvD2pmKuRBI53NJTiHs6V2oPdVD5fc+7kRAbbhtAaB5Uocd1oa+XJlyU2cqKhnmXbTA8kPx7ET8qKIgzQRZZ9YBYP8C5PU4niyk8FltgsFeSJ8cZIDVtPL4sQ/K5fcuO5lh0Pg2Y510+QV7unsopRUhGf0jJWt1qTHjNS2SyV+VqdOMOq3ra9NhSFjk6IEOM0WS0hcGX9+hPl2enPYnAunAFeRqyaMhX9LHBpSADVRL+SkfOqR1NgcUbxW3smmLCT0ChgUifprNaLgNk8Njbi77xgXBDlhL0t58q3J4TR0YIsmOtW4lf0Nz1eYDBVfVTPogFLOow2whzjKD8rN6k0dKcjDGduE+h5HsXuJ6G+ufFwOQQZKc/DN+IRgkBUFNBMIlttjhSKhJdiEayh1" autocomplete="off" />
+      </form>
+      <p class="valor inverse bigger" id="contador" >0</p>
+      <br/>
+      <span class="titulo inverse" data-toggle="tooltip" data-placement="bottom" title="O cálculo é feito de acordo com a quantidade de dias e períodos preenchidos pelos voluntários, em que 1 período de 1 dia equivale a 6 horas.">
+          Horas de trabalho cadastradas
+      </span>
+    </div>
+    <!-- FIM DO MÓDULO NÚMEROS -->
+
+    <!-- INÍCIO DO MÓDULO PROJETOS -->
+    <a name="acoeseprojetos"></a>
+    <div id="projetos-acoes" class="modulo modulo-dc-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="modulo-titulo">Projetos e Ações</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form id="j_idt74" name="j_idt74" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+              <input type="hidden" name="j_idt74" value="j_idt74" />
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active" role="presentation">
+                      <a id="j_idt76" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_projetos noHasProjetos btnProjeto');return false" data-toggle="tab" aria-controls="pesquisaTodos" href="#pesquisaTodos">
+                            Todos os Projetos/Ações
+                        </a>
+                    </li>
+                    <li role="presentation">
+                      <a id="j_idt79" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_projetos noHasProjetos btnProjeto');return false" data-toggle="tab" role="tab" aria-controls="pesquisaGoverno" href="#pesquisaGoverno">
+                            Projetos/Ações do Governo
+                        </a>
+                    </li>
+                    <li role="presentation">
+                      <a id="j_idt82" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_projetos noHasProjetos btnProjeto');return false" data-toggle="tab" aria-controls="pesquisaEntidades" href="#pesquisaEntidades">
+                            Projetos/Ações das Entidades
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content tab_content_pesquisar_vagas">
+                    <div class="tab-pane active" id="pesquisaTodos" role="tabpanel">
+                      <div class="col-md-3 modulo-pesquisa">
+                        <form id="j_idt121" name="j_idt121" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+                          <input type="hidden" name="j_idt121" value="j_idt121" />
+                          <div class="form-group">
+                            <label>Pesquisar Projeto e Ação:</label>
+                            <div class="input-group">
+                              <input class="form-control" name="titulo" maxlength="100" type="text" title="Título do projeto" required="true" placeholder="Pesquisar por Título" id="titulo_projeto"/>
+                              <div class="input-group-btn">
+                                <button id="j_idt124" class="btn btn-in" type="submit" name="j_idt124" value="" onclick="mojarra.ab(this,event,'action','estado titulo','listagem_projetos noHasProjetos');return false">
+                                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="BVcSUGAuZO8pUoMh9fQvH3DSwR+Dd13Ri5hRvzmTWtN5sdPEQ/47VDVUYJ2UDr0ODLIfkpHJbRANVbWGL8Ro0t3iyEhxi97Aj+DylCgOA2pKp+ZxifpUoL+l6nj6X2/U+v2IpHX+bns9y8JsnZVkLPy/5ccDz7WWdxXmEyIsm7DcE+ge/4NGqA9NbWZD4TkEQK78HjmEmW1NZQVzZwOeXEb4u8mlsMrRjN1zacQBgKfq7Kaz7PmNkwJKjYhTpnhZA+n2f2zpaeKtcd87hzgNmDbvQ+tLXJ/iFPTV8X7WfszIwgOwdWPtKorVKT6eyO4sk889TMyOh8mYusXvO8LZ+zse6SM+0di8FQ4m4zbGiDRYqi1gknw1L6rNPaKzjlWPxEMAO65j7gDI8GVJUVcRTberc1+f4qsprrBGOuQ4/EYjE8fB/iie/x8jAh/3uikGDyRu3nE6NpV8Ex44NRr4FUqIq9L9GE6tDGDOiVrSa9cVJeJclcElhivXVGgD5yBptt3YqD7s5/Pk+7UpGWps8QJNIB31D0YuMzi5AOIc3Lpaqz/O7KCLjC9unn+q+Gj43dNBDzW7skER2MNjGiom5c0oaDJRyRCSy2e1eMiEvOm3LyuP3Dn3n6Z7R2vFVcJvctcOtGD75kXb2rSKpqth5uMHpSfbSgqvC+ly7Dp9h4hMfI5ePo4O93CcgDX9TmJGPlGRsCys9JOttuz4XTdqJlQAbbrFBwqPv7RSwNgA4x+xWXUI1bHP6H6TWkGRgBjY3YILK68ddg9mJaYrAQJ9kcmnPE2HLF5tKzQlsEeMSP7rAfhduZjbZJKekPcvMYSAM/TFaT83JKpcM36wP98DfDQjKJsXNCBxkLgds2PJoQL44seDRz8GAZlu/BGbfwrDNG+5eykSls9agIVQ+uX/8KwCh88Y3AivvNfkYy6MsWtEUVEDNQnRG6DarSxI40ubQF8/qeeG1lEVRYIvAIkxHZ8kc/uo7+9ArzuB/qRYxs6lIBB/sTIGAGEgp5dhjuh5tFXm7NXb0gamfIM3arS9KOtnZ1H4X4xli9LhbyOS70ZcO9B+sFq4a/OTsC6tDiaAmgiWS10zFv19YaMa9Ip7L9ziy/YsKQbrrFdHHkq4Y+dV5YRAyYhxca+H8W2Nzm/Z" autocomplete="off" />
+                        </form>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt85" name="j_idt85" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todos os eixos</option>
+                          <option value="1">Acessibilidade</option>
+                          <option value="60098">Artesanato</option>
+                          <option value="2">Assistência Social</option>
+                          <option value="60100">Cidadania</option>
+                          <option value="3">Ciência e Tecnologia</option>
+                          <option value="3807">Comunicação Social</option>
+                          <option value="4">Cultura</option>
+                          <option value="5">Defesa Social e Jurídica</option>
+                          <option value="3803">Desenvolvimento Rural</option>
+                          <option value="3808">Desenvolvimento Social</option>
+                          <option value="3804">Desenvolvimento Sustentável</option>
+                          <option value="6">Direitos Humanos</option>
+                          <option value="3802">Economia Solidária</option>
+                          <option value="7">Educação</option>
+                          <option value="18294">Elaboração de Projetos</option>
+                          <option value="3801">Empreendedorismo</option>
+                          <option value="8">Esporte</option>
+                          <option value="5514">Gestão da Informação</option>
+                          <option value="9">Igualdade Racial</option>
+                          <option value="3805">Justiça e Cidadania</option>
+                          <option value="11">Meio Ambiente</option>
+                          <option value="18293">Memória e Patrimônio</option>
+                          <option value="12">Mobilidade</option>
+                          <option value="3806">Planejamento e gestão</option>
+                          <option value="13">Recreação</option>
+                          <option value="10">Recreação e Lazer</option>
+                          <option value="14">Saúde</option>
+                          <option value="3809">Segurança Alimentar e Nutricional</option>
+                          <option value="60099">Socioeducativo</option>
+                          <option value="18295">Tecnologias</option>
+                          <option value="8892">Turismo</option>
+                          <option value="2739">Urbanismo e Arquitetura</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt89" name="j_idt89" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todos os públicos</option>
+                          <option value="18292">Associações e Cooperativas</option>
+                          <option value="3811">Catadores de materiais recicláveis</option>
+                          <option value="21">Comunidade</option>
+                          <option value="15">Criança e Adolescente</option>
+                          <option value="16">Dependentes Químicos</option>
+                          <option value="17">Idosos</option>
+                          <option value="3810">Juventude</option>
+                          <option value="22">Mulheres</option>
+                          <option value="18">Pessoas com Câncer</option>
+                          <option value="19">Pessoas com Deficiência</option>
+                          <option value="20">Pessoas com Doenças Raras</option>
+                          <option value="15205">Proteção Animal</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt93" name="j_idt93" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                          <option value="AGUAS_CLARAS">Águas Claras</option>
+                          <option value="ASA_NORTE">Asa Norte</option>
+                          <option value="ASA_SUL">Asa Sul</option>
+                          <option value="BRAZLANDIA">Brazlândia</option>
+                          <option value="CANDANGOLANDIA">Candangolândia</option>
+                          <option value="CEILANDIA">Ceilândia</option>
+                          <option value="CRUZEIRO">Cruzeiro</option>
+                          <option value="FERCAL">Fercal</option>
+                          <option value="GAMA">Gama</option>
+                          <option value="GUARA">Guará</option>
+                          <option value="ITAPOA">Itapoã</option>
+                          <option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                          <option value="LAGOA_SUL">Lago Sul</option>
+                          <option value="LAGO_NORTE">Lago Norte</option>
+                          <option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                          <option value="OCTOGONAL">Octogonal</option>
+                          <option value="PARANOA">Paranoá</option>
+                          <option value="PARK_WAY">Park Way</option>
+                          <option value="PLANALTINA">Planaltina</option>
+                          <option value="RECANTO_EMAS">Recanto das Emas</option>
+                          <option value="RIACHO_FUNDO">Riacho Fundo</option>
+                          <option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                          <option value="SAMAMBAIA">Samambaia</option>
+                          <option value="SANTA_MARIA">Santa Maria</option>
+                          <option value="SAO_SEBASTIAO">São Sebastião</option>
+                          <option value="SIA">Setor de Indústria e Abastecimento</option>
+                          <option value="SOBRADINHO">Sobradinho</option>
+                          <option value="SOBRADINHO_II">Sobradinho II</option>
+                          <option value="SUDOESTE">Sudoeste</option>
+                          <option value="TAGUATINGA">Taguatinga</option>
+                          <option value="VARJAO">Varjão</option>
+                          <option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pesquisaGoverno" role="tabpanel">
+                      <div class="col-md-3 modulo-pesquisa">
+                        <form id="j_idt121" name="j_idt121" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+                          <input type="hidden" name="j_idt121" value="j_idt121" />
+                          <div class="form-group">
+                            <label>Pesquisar Projeto e Ação:</label>
+                            <div class="input-group">
+                              <input class="form-control" name="titulo" maxlength="100" type="text" title="Título do projeto" required="true" placeholder="Pesquisar por Título" id="titulo_projeto"/>
+                              <div class="input-group-btn">
+                                <button id="j_idt124" class="btn btn-in" type="submit" name="j_idt124" value="" onclick="mojarra.ab(this,event,'action','estado titulo','listagem_projetos noHasProjetos');return false">
+                                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="BVcSUGAuZO8pUoMh9fQvH3DSwR+Dd13Ri5hRvzmTWtN5sdPEQ/47VDVUYJ2UDr0ODLIfkpHJbRANVbWGL8Ro0t3iyEhxi97Aj+DylCgOA2pKp+ZxifpUoL+l6nj6X2/U+v2IpHX+bns9y8JsnZVkLPy/5ccDz7WWdxXmEyIsm7DcE+ge/4NGqA9NbWZD4TkEQK78HjmEmW1NZQVzZwOeXEb4u8mlsMrRjN1zacQBgKfq7Kaz7PmNkwJKjYhTpnhZA+n2f2zpaeKtcd87hzgNmDbvQ+tLXJ/iFPTV8X7WfszIwgOwdWPtKorVKT6eyO4sk889TMyOh8mYusXvO8LZ+zse6SM+0di8FQ4m4zbGiDRYqi1gknw1L6rNPaKzjlWPxEMAO65j7gDI8GVJUVcRTberc1+f4qsprrBGOuQ4/EYjE8fB/iie/x8jAh/3uikGDyRu3nE6NpV8Ex44NRr4FUqIq9L9GE6tDGDOiVrSa9cVJeJclcElhivXVGgD5yBptt3YqD7s5/Pk+7UpGWps8QJNIB31D0YuMzi5AOIc3Lpaqz/O7KCLjC9unn+q+Gj43dNBDzW7skER2MNjGiom5c0oaDJRyRCSy2e1eMiEvOm3LyuP3Dn3n6Z7R2vFVcJvctcOtGD75kXb2rSKpqth5uMHpSfbSgqvC+ly7Dp9h4hMfI5ePo4O93CcgDX9TmJGPlGRsCys9JOttuz4XTdqJlQAbbrFBwqPv7RSwNgA4x+xWXUI1bHP6H6TWkGRgBjY3YILK68ddg9mJaYrAQJ9kcmnPE2HLF5tKzQlsEeMSP7rAfhduZjbZJKekPcvMYSAM/TFaT83JKpcM36wP98DfDQjKJsXNCBxkLgds2PJoQL44seDRz8GAZlu/BGbfwrDNG+5eykSls9agIVQ+uX/8KwCh88Y3AivvNfkYy6MsWtEUVEDNQnRG6DarSxI40ubQF8/qeeG1lEVRYIvAIkxHZ8kc/uo7+9ArzuB/qRYxs6lIBB/sTIGAGEgp5dhjuh5tFXm7NXb0gamfIM3arS9KOtnZ1H4X4xli9LhbyOS70ZcO9B+sFq4a/OTsC6tDiaAmgiWS10zFv19YaMa9Ip7L9ziy/YsKQbrrFdHHkq4Y+dV5YRAyYhxca+H8W2Nzm/Z" autocomplete="off" />
+                        </form>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt97" name="j_idt97" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todos os eixos</option>
+                          <option value="1">Acessibilidade</option>
+                          <option value="60098">Artesanato</option>
+                          <option value="2">Assistência Social</option>
+                          <option value="60100">Cidadania</option>
+                          <option value="3">Ciência e Tecnologia</option>
+                          <option value="3807">Comunicação Social</option>
+                          <option value="4">Cultura</option>
+                          <option value="5">Defesa Social e Jurídica</option>
+                          <option value="3803">Desenvolvimento Rural</option>
+                          <option value="3808">Desenvolvimento Social</option>
+                          <option value="3804">Desenvolvimento Sustentável</option>
+                          <option value="6">Direitos Humanos</option>
+                          <option value="3802">Economia Solidária</option>
+                          <option value="7">Educação</option>
+                          <option value="18294">Elaboração de Projetos</option>
+                          <option value="3801">Empreendedorismo</option>
+                          <option value="8">Esporte</option>
+                          <option value="5514">Gestão da Informação</option>
+                          <option value="9">Igualdade Racial</option>
+                          <option value="3805">Justiça e Cidadania</option>
+                          <option value="11">Meio Ambiente</option>
+                          <option value="18293">Memória e Patrimônio</option>
+                          <option value="12">Mobilidade</option>
+                          <option value="3806">Planejamento e gestão</option>
+                          <option value="13">Recreação</option>
+                          <option value="10">Recreação e Lazer</option>
+                          <option value="14">Saúde</option>
+                          <option value="3809">Segurança Alimentar e Nutricional</option>
+                          <option value="60099">Socioeducativo</option>
+                          <option value="18295">Tecnologias</option>
+                          <option value="8892">Turismo</option>
+                          <option value="2739">Urbanismo e Arquitetura</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt101" name="j_idt101" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todos os públicos</option>
+                          <option value="18292">Associações e Cooperativas</option>
+                          <option value="3811">Catadores de materiais recicláveis</option>
+                          <option value="21">Comunidade</option>
+                          <option value="15">Criança e Adolescente</option>
+                          <option value="16">Dependentes Químicos</option>
+                          <option value="17">Idosos</option>
+                          <option value="3810">Juventude</option>
+                          <option value="22">Mulheres</option>
+                          <option value="18">Pessoas com Câncer</option>
+                          <option value="19">Pessoas com Deficiência</option>
+                          <option value="20">Pessoas com Doenças Raras</option>
+                          <option value="15205">Proteção Animal</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt105" name="j_idt105" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                          <option value="AGUAS_CLARAS">Águas Claras</option>
+                          <option value="ASA_NORTE">Asa Norte</option>
+                          <option value="ASA_SUL">Asa Sul</option>
+                          <option value="BRAZLANDIA">Brazlândia</option>
+                          <option value="CANDANGOLANDIA">Candangolândia</option>
+                          <option value="CEILANDIA">Ceilândia</option>
+                          <option value="CRUZEIRO">Cruzeiro</option>
+                          <option value="FERCAL">Fercal</option>
+                          <option value="GAMA">Gama</option>
+                          <option value="GUARA">Guará</option>
+                          <option value="ITAPOA">Itapoã</option>
+                          <option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                          <option value="LAGOA_SUL">Lago Sul</option>
+                          <option value="LAGO_NORTE">Lago Norte</option>
+                          <option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                          <option value="OCTOGONAL">Octogonal</option>
+                          <option value="PARANOA">Paranoá</option>
+                          <option value="PARK_WAY">Park Way</option>
+                          <option value="PLANALTINA">Planaltina</option>
+                          <option value="RECANTO_EMAS">Recanto das Emas</option>
+                          <option value="RIACHO_FUNDO">Riacho Fundo</option>
+                          <option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                          <option value="SAMAMBAIA">Samambaia</option>
+                          <option value="SANTA_MARIA">Santa Maria</option>
+                          <option value="SAO_SEBASTIAO">São Sebastião</option>
+                          <option value="SIA">Setor de Indústria e Abastecimento</option>
+                          <option value="SOBRADINHO">Sobradinho</option>
+                          <option value="SOBRADINHO_II">Sobradinho II</option>
+                          <option value="SUDOESTE">Sudoeste</option>
+                          <option value="TAGUATINGA">Taguatinga</option>
+                          <option value="VARJAO">Varjão</option>
+                          <option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pesquisaEntidades" role="tabpanel">
+                      <div class="col-md-3 modulo-pesquisa">
+                        <form id="j_idt121" name="j_idt121" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+                          <input type="hidden" name="j_idt121" value="j_idt121" />
+                          <div class="form-group">
+                            <label>Pesquisar Projeto e Ação:</label>
+                            <div class="input-group">
+                              <input class="form-control" name="titulo" maxlength="100" type="text" title="Título do projeto" required="true" placeholder="Pesquisar por Título" id="titulo_projeto"/>
+                              <div class="input-group-btn">
+                                <button id="j_idt124" class="btn btn-in" type="submit" name="j_idt124" value="" onclick="mojarra.ab(this,event,'action','estado titulo','listagem_projetos noHasProjetos');return false">
+                                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="BVcSUGAuZO8pUoMh9fQvH3DSwR+Dd13Ri5hRvzmTWtN5sdPEQ/47VDVUYJ2UDr0ODLIfkpHJbRANVbWGL8Ro0t3iyEhxi97Aj+DylCgOA2pKp+ZxifpUoL+l6nj6X2/U+v2IpHX+bns9y8JsnZVkLPy/5ccDz7WWdxXmEyIsm7DcE+ge/4NGqA9NbWZD4TkEQK78HjmEmW1NZQVzZwOeXEb4u8mlsMrRjN1zacQBgKfq7Kaz7PmNkwJKjYhTpnhZA+n2f2zpaeKtcd87hzgNmDbvQ+tLXJ/iFPTV8X7WfszIwgOwdWPtKorVKT6eyO4sk889TMyOh8mYusXvO8LZ+zse6SM+0di8FQ4m4zbGiDRYqi1gknw1L6rNPaKzjlWPxEMAO65j7gDI8GVJUVcRTberc1+f4qsprrBGOuQ4/EYjE8fB/iie/x8jAh/3uikGDyRu3nE6NpV8Ex44NRr4FUqIq9L9GE6tDGDOiVrSa9cVJeJclcElhivXVGgD5yBptt3YqD7s5/Pk+7UpGWps8QJNIB31D0YuMzi5AOIc3Lpaqz/O7KCLjC9unn+q+Gj43dNBDzW7skER2MNjGiom5c0oaDJRyRCSy2e1eMiEvOm3LyuP3Dn3n6Z7R2vFVcJvctcOtGD75kXb2rSKpqth5uMHpSfbSgqvC+ly7Dp9h4hMfI5ePo4O93CcgDX9TmJGPlGRsCys9JOttuz4XTdqJlQAbbrFBwqPv7RSwNgA4x+xWXUI1bHP6H6TWkGRgBjY3YILK68ddg9mJaYrAQJ9kcmnPE2HLF5tKzQlsEeMSP7rAfhduZjbZJKekPcvMYSAM/TFaT83JKpcM36wP98DfDQjKJsXNCBxkLgds2PJoQL44seDRz8GAZlu/BGbfwrDNG+5eykSls9agIVQ+uX/8KwCh88Y3AivvNfkYy6MsWtEUVEDNQnRG6DarSxI40ubQF8/qeeG1lEVRYIvAIkxHZ8kc/uo7+9ArzuB/qRYxs6lIBB/sTIGAGEgp5dhjuh5tFXm7NXb0gamfIM3arS9KOtnZ1H4X4xli9LhbyOS70ZcO9B+sFq4a/OTsC6tDiaAmgiWS10zFv19YaMa9Ip7L9ziy/YsKQbrrFdHHkq4Y+dV5YRAyYhxca+H8W2Nzm/Z" autocomplete="off" />
+                        </form>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt109" name="j_idt109" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todos os eixos</option>
+                          <option value="1">Acessibilidade</option>
+                          <option value="60098">Artesanato</option>
+                          <option value="2">Assistência Social</option>
+                          <option value="60100">Cidadania</option>
+                          <option value="3">Ciência e Tecnologia</option>
+                          <option value="3807">Comunicação Social</option>
+                          <option value="4">Cultura</option>
+                          <option value="5">Defesa Social e Jurídica</option>
+                          <option value="3803">Desenvolvimento Rural</option>
+                          <option value="3808">Desenvolvimento Social</option>
+                          <option value="3804">Desenvolvimento Sustentável</option>
+                          <option value="6">Direitos Humanos</option>
+                          <option value="3802">Economia Solidária</option>
+                          <option value="7">Educação</option>
+                          <option value="18294">Elaboração de Projetos</option>
+                          <option value="3801">Empreendedorismo</option>
+                          <option value="8">Esporte</option>
+                          <option value="5514">Gestão da Informação</option>
+                          <option value="9">Igualdade Racial</option>
+                          <option value="3805">Justiça e Cidadania</option>
+                          <option value="11">Meio Ambiente</option>
+                          <option value="18293">Memória e Patrimônio</option>
+                          <option value="12">Mobilidade</option>
+                          <option value="3806">Planejamento e gestão</option>
+                          <option value="13">Recreação</option>
+                          <option value="10">Recreação e Lazer</option>
+                          <option value="14">Saúde</option>
+                          <option value="3809">Segurança Alimentar e Nutricional</option>
+                          <option value="60099">Socioeducativo</option>
+                          <option value="18295">Tecnologias</option>
+                          <option value="8892">Turismo</option>
+                          <option value="2739">Urbanismo e Arquitetura</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt113" name="j_idt113" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todos os públicos</option>
+                          <option value="18292">Associações e Cooperativas</option>
+                          <option value="3811">Catadores de materiais recicláveis</option>
+                          <option value="21">Comunidade</option>
+                          <option value="15">Criança e Adolescente</option>
+                          <option value="16">Dependentes Químicos</option>
+                          <option value="17">Idosos</option>
+                          <option value="3810">Juventude</option>
+                          <option value="22">Mulheres</option>
+                          <option value="18">Pessoas com Câncer</option>
+                          <option value="19">Pessoas com Deficiência</option>
+                          <option value="20">Pessoas com Doenças Raras</option>
+                          <option value="15205">Proteção Animal</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt117" name="j_idt117" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_projetos noHasProjetos')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                          <option value="AGUAS_CLARAS">Águas Claras</option>
+                          <option value="ASA_NORTE">Asa Norte</option>
+                          <option value="ASA_SUL">Asa Sul</option>
+                          <option value="BRAZLANDIA">Brazlândia</option>
+                          <option value="CANDANGOLANDIA">Candangolândia</option>
+                          <option value="CEILANDIA">Ceilândia</option>
+                          <option value="CRUZEIRO">Cruzeiro</option>
+                          <option value="FERCAL">Fercal</option>
+                          <option value="GAMA">Gama</option>
+                          <option value="GUARA">Guará</option>
+                          <option value="ITAPOA">Itapoã</option>
+                          <option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                          <option value="LAGOA_SUL">Lago Sul</option>
+                          <option value="LAGO_NORTE">Lago Norte</option>
+                          <option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                          <option value="OCTOGONAL">Octogonal</option>
+                          <option value="PARANOA">Paranoá</option>
+                          <option value="PARK_WAY">Park Way</option>
+                          <option value="PLANALTINA">Planaltina</option>
+                          <option value="RECANTO_EMAS">Recanto das Emas</option>
+                          <option value="RIACHO_FUNDO">Riacho Fundo</option>
+                          <option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                          <option value="SAMAMBAIA">Samambaia</option>
+                          <option value="SANTA_MARIA">Santa Maria</option>
+                          <option value="SAO_SEBASTIAO">São Sebastião</option>
+                          <option value="SIA">Setor de Indústria e Abastecimento</option>
+                          <option value="SOBRADINHO">Sobradinho</option>
+                          <option value="SOBRADINHO_II">Sobradinho II</option>
+                          <option value="SUDOESTE">Sudoeste</option>
+                          <option value="TAGUATINGA">Taguatinga</option>
+                          <option value="VARJAO">Varjão</option>
+                          <option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+                <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="k5Ijm1E1zi72lTDb0nQ1blMvOWEz7D1XGlEXz9wFAfYGiWVIvFX5YQ8Wc43qdrhllMmyV7Pw8I6CXw9Gow7BKF7oQHncb6L17ZKKBp9KKZv2/71b5PQPMltxlK4H0qDzc3m3i0NlmD42xcAlq+Q94wsKIVBKEGz+vr2/baWPRpsOE9qZaUfIINC2V6/fgSX62YHBQNK/CLD7X/YddWftz2JCIALJPZWcOm2rJPDA55Ti0CK9x0bYUOzuDkNhDa1HJeVCvRMHzMpno3VQSa/gJLS38p8V8En/lMh8VaF24cONjcxtr4ynlnaHoddiKrhis0pC3++6sqrIGGBoeByuWPGd/HCtLDJ7QI83qn44f3LjwNqn4lnhRZmjikHNYqU3cSS0kV04lGuSTDJS2r5rrjAIdoAHeCXVRa+7D24lGgPOSGn2jBdNgreRUuylZeadG1VD1gEdHRZa1IIDXeLMS0jU3mf2yuSTp+X0fcSYIdZt8aXZgPalKA/rPD7pnYV1hGmcJ9zJeYf3+H7WO4VzQHv35h0yWL/1rHINbbNCdAIBAa2KYpsBFZiNsM1g3JFYQD198t0czSyfBLw92WIytAKj2Rx+CPeDQV3RgDiKJT8ckVUBwY935BBKJfgnLsD9WYRVH6FXdgWdUWWb7NC993SQILhqC7ED+t9FaJjN3BSPG5Tfm+NOLiuldEP9duLwTQ28zdg07lIpbV/ZigafbU8g02RlfkWEetcfTeT3Yi9QdvLB9mRI+horRPKJFMHXyKhHe3Z6RWZzKIoqJ2w5TVAkikHclQ/RyQEKSUMcd4frAFySIz6SULKeJc+fd+iAj+hyhyC+clbt7uiFeISlgFi86aqhTBP9hMDfh4OlyIoZhagc2rwGexwBtJTbGxCCrqRhua42RZjMcx54aEAvamc9gfqWIuuPX5a+ha7W46z4AT0yyGrd2dYnhX3gq3hTXfqrCjj7cka4gzdiVP8qk4vD3oqkn4QbzN78lWrACAtuwlHdtk0Ic29//LFqxrHfYwcQwNLiXj7QEBptxr15Mm2Rd7aSPlZgdbSQ2y94hOFEiuBE1GQOyBmnoDw1PPx4q12ZRQVxW9Uw4XAXVz/AEQfqKSt0CkEOxAh3HLSNPTEmB7SReqelBIP03ZQDQSJ+" autocomplete="off" />
+            </form>
+          </div>
+        </div>
+        <!-- ATENÇÃO: As duas divs a seguir se enconttravam dentro de uma div pai de id="projetos" -->
+        <div id="noHasProjetos"></div>
+        <div id="listagem_projetos" class="row">
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <div class="image" alt="Pet amigo" style="background-image: url('sisvol-projetos/3118001895401937213.jpg')"></div>
+              <h4 class="titulo">Pet amigo</h4>
+              <span class="responsavel">
+                Asssociação Privada
+              </span>
+              <span class="descricao">
+                A Associação Pet Amigo surgiu do Projeto Pet Amigo da Associação de Voluntários do Hospital de Apoio de Brasília (AVHAP), iniciado em agosto de 2016. ...
+              </span>
+              <span class="oportunidades">
+                Oportunidades: 20
+              </span>
+              <a class="detalhes" data-target="#detalharProjetoModal0" data-toggle="modal" href="#">
+                  Detalhes do Projeto
+              </a>
+              <!-- MODAL DETALHAR PROJETO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharProjetoModal0" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes do Projeto</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                      <div class="form-group">
+                                          <img alt="Pet amigo" class="img-responsive center-block" src="sisvol-projetos/3118001895401937213.jpg"/>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="titulo">Título do Projeto:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static" id="titulo">Pet amigo</p>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                          <div class="col-sm-10">
+                                              <p align="justify" class="form-control-static">A Associação Pet Amigo surgiu do Projeto Pet Amigo da Associação de Voluntários do Hospital de Apoio de Brasília (AVHAP), iniciado em agosto de 2016. Para expandir e abarcar novas instituições, alguns voluntários desse projeto se uniram e fundaram, em 4 de março de 2017, a organização não governamental Pet Amigo. Nossa finalidade é realizar Atividade Assistida por Animais, atuando junto a instituições públicas e privadas como escolas, asilos, hospitais etc. Ao promover a interação entre seres humanos e animais, nosso objetivo é proporcionar benefícios terapêuticos para a saúde física, emocional e mental. Sem qualquer fim religioso ou político-partidário, a Pet Amigo leva um tratamento mais humano às instituições ou pessoas interessadas, contando com o apoio de voluntários com ou sem cães. Para quem tem interesse em participar como voluntário com cão, há diversas oportunidades de visitas com seu pet. Aos interessados em ajudar sem cão, sua presença é sempre bem-vinda seja para uma boa conversa com os assistidos, seja para auxiliar nos procedimentos durante a visita ou tarefas administrativas nos demais dias.
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div class="form-group">
+                                              <label class="control-label col-sm-2" for="entidade">
+                                                  Razão Social:
+                                              </label>
+                                              <div class="col-sm-10">
+                                                  <p class="form-control-static" id="entidade">
+                                                      Asssociação Privada
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static">SHN QD 01 AE A Bloco D Edificio Fusion Work &amp; Live Flat 204, CEP 70701-040</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="modal-footer">
+                              <a href="projetos/pet-amigo">
+                                  <button class="btn btn-success" role="button">
+                                      Saiba Mais
+                                  </button>
+                              </a>
+                              <button class="btn btn-default" data-dismiss="modal" type="button">
+                                  Fechar
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <a href="projetos/pet-amigo">
+                <button class="btn btn-su btn-full" role="button">
+                  Candidatar-se
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="thumbnail">
+                  <div class="caption altura_caption">
+                      <a href="projetos/projeto-educar-para-ser-educado-virtudes-e-valores">
+                          <img alt="Projeto Educar para ser Educado Virtudes e Valores" src="sisvol-projetos/7631437013435087018.jpg"/>
+                          <p class="titulo_do_projeto">
+                              Projeto Educar para ser Educado Virtudes...
+                          </p>
+                      </a>
+                      <h5>
+                          Associação
+                      </h5>
+                      <p>
+                          Trata-se de Projeto na área de educação dividindo em 6 módulos que são: família, virtudes e valores, saúde, educação, violência  e mídias sociais
+                      </p>
+                      <p class="oportunidades">
+                          Oportunidades:<span>30</span>
+                      </p>
+                      <p>
+                          <a class="abreModalDetalhaProjeto" data-target="#detalharProjetoModal1" data-toggle="modal" href="#">
+                              Detalhes do Projeto
+                          </a>
+                      </p>
+                      <!-- MODAL DETALHAR PROJETO -->
+                      <div aria-labelledby="detalhar" class="modal fade" id="detalharProjetoModal1" role="dialog" tabindex="-1">
+                          <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                      </button>
+                                      <h4 class="modal-title" id="myModalLabel">Detalhes do Projeto</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="form-horizontal">
+                                              <div class="form-group">
+                                                  <img alt="Projeto Educar para ser Educado Virtudes e Valores" class="img-responsive center-block" src="sisvol-projetos/7631437013435087018.jpg"/>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="titulo">Título do Projeto:</label>
+                                                  <div class="col-sm-10">
+                                                      <p class="form-control-static" id="titulo">Projeto Educar para ser Educado Virtudes e Valores</p>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                                  <div class="col-sm-10">
+                                                      <p align="justify" class="form-control-static">Trata-se de Projeto na área de educação dividindo em 6 módulos que são: família, virtudes e valores, saúde, educação, violência  e mídias sociais</p>
+                                                  </div>
+                                              </div>
+                                              <div>
+                                                  <div class="form-group">
+                                                      <label class="control-label col-sm-2" for="entidade">
+                                                          Razão Social:
+                                                      </label>
+                                                      <div class="col-sm-10">
+                                                          <p class="form-control-static" id="entidade">
+                                                              Associação
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                                  <div class="col-sm-10">
+                                                      <p class="form-control-static">SEPS  705/905 Bloco A lojas 39 40 41</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <a href="projetos/projeto-educar-para-ser-educado-virtudes-e-valores">
+                                          <button class="btn btn-success" role="button">
+                                              Saiba Mais
+                                          </button>
+                                      </a>
+                                      <button class="btn btn-default" data-dismiss="modal" type="button">
+                                          Fechar
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a href="projetos/projeto-educar-para-ser-educado-virtudes-e-valores">
+                          <button class="btn btn-success botao_candidatar-se" role="button">
+                            <span>
+                                Candidatar-se
+                            </span>
+                          </button>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="thumbnail">
+                  <div class="caption altura_caption">
+                      <a href="projetos/mobilidade,-ambiencia,-acessibilidade-e-ampliacoes-no-hrt">
+                          <img alt="Mobilidade, ambiência, acessibilidade e ampliações no HRT" src="sisvol-projetos/9216980619158395801.jpg"/>
+                          <p class="titulo_do_projeto">
+                              Mobilidade, ambiência, acessibilidade e ...
+                          </p>
+                      </a>
+                      <h5>
+                          Secretaria de Estado de Saúde do Distrito Federal
+                      </h5>
+                      <p>
+                          O Hospital Regional de Taguatinga convida Arquitetos, Engenheiros e Profissionais de áreas afins, para desenvolver projetos de modernização do Hospita...
+                      </p>
+                      <p class="oportunidades">
+                          Oportunidades:<span>3</span>
+                      </p>
+                      <p>
+                          <a class="abreModalDetalhaProjeto" data-target="#detalharProjetoModal2" data-toggle="modal" href="#">
+                              Detalhes do Projeto
+                          </a>
+                      </p>
+                      <!-- MODAL DETALHAR PROJETO -->
+                      <div aria-labelledby="detalhar" class="modal fade" id="detalharProjetoModal2" role="dialog" tabindex="-1">
+                          <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                      </button>
+                                      <h4 class="modal-title" id="myModalLabel">Detalhes do Projeto</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="form-horizontal">
+                                              <div class="form-group">
+                                                  <img alt="Mobilidade, ambiência, acessibilidade e ampliações no HRT" class="img-responsive center-block" src="sisvol-projetos/9216980619158395801.jpg"/>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="titulo">Título do Projeto:</label>
+                                                  <div class="col-sm-10">
+                                                      <p class="form-control-static" id="titulo">Mobilidade, ambiência, acessibilidade e ampliações no HRT</p>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                                  <div class="col-sm-10">
+                                                      <p align="justify" class="form-control-static">O Hospital Regional de Taguatinga convida Arquitetos, Engenheiros e Profissionais de áreas afins, para desenvolver projetos de modernização do Hospital;  melhorando acessibilidade para os pacientes e usuários, promovendo mobilidade e acesso seguro, adequação de espaços para segurança biológica e   modernização de antigos espaços com um melhor aproveitamento. ESTUDANTES  poderão atuar junto ao projeto em atividades de apoio na qualidade de voluntários sociais.</p>
+                                                  </div>
+                                              </div>
+                                              <div>
+                                                  <div class="form-group">
+                                                      <label class="control-label col-sm-2" for="orgao">
+                                                          Órgão Proponente:
+                                                      </label>
+                                                      <div class="col-sm-10">
+                                                          <p class="form-control-static">
+                                                              Secretaria de Estado de Saúde do Distrito Federal
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                      <label class="control-label col-sm-2" for="unidade">
+                                                          Unidade:
+                                                      </label>
+                                                      <div class="col-sm-10">
+                                                          <p class="form-control-static" id="unidade">
+                                                              Hospital Regional de Taguatinga
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                                  <div class="col-sm-10">
+                                                      <p class="form-control-static">Área Especial nº 24 -Setor C Norte - 5º Andar - Auditório/HRT</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <a href="projetos/mobilidade,-ambiencia,-acessibilidade-e-ampliacoes-no-hrt">
+                                          <button class="btn btn-success" role="button">
+                                              Saiba Mais
+                                          </button>
+                                      </a>
+                                      <button class="btn btn-default" data-dismiss="modal" type="button">
+                                          Fechar
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a href="projetos/mobilidade,-ambiencia,-acessibilidade-e-ampliacoes-no-hrt">
+                          <button class="btn btn-success botao_candidatar-se" role="button">
+                            <span>Candidatar-se</span>
+                          </button>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form id="j_idt144" name="j_idt144" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+              <input type="hidden" name="j_idt144" value="j_idt144" />
+              <div id="btnProjeto">
+                <a class="btn-plus" value="" type="button" onclick="window.location.href='/listagem_projetos.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?natureza=ALL'; return false;">
+                  <span class="btn-plus-icon"></span>
+                  Exibir Todos os Projetos e Ações
+                </a>
+              </div>
+              <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3" value="W34aliA2Pg+PkBjABxsY3qHDlvZDrt0uAzZ9M9yctSjvdTZQRC4jwqRNqyQU/NSayWnCqHAFm/41DGq8JQ9ttQzNUT/3h1NmVdVoeWKzQ6ouOPlG4KaJ7/r6NYeKNp5wtZuhjhEiB9sSpueXYPvRBJbAfOHfso/UlY77vUpgHr+hPQL8NqOChQXNmPaqJMnozXouT9lYNzKMnmAYYbEMcdAzlfYTXWYe7BiHRu43V19siZuI7hhzteCDQoGgEUBI6cLEp4cai6FxFIsaHLGLy6Tp7uz+sopF5CU5UGAyefUPjgb2RmtQr7MnLxfC+SIDzbKx6nZtT//3wS4O4NTgrnujUNgAMY4aNAXogXrq+WobnhnpdeXaulc2zr1AiiyMhj/bErm9TdmlhmdbhnDjdXom2wC4nQk8AE77CYKJ6OROsxff51KfkECZ4yQrCuNEKM0eY6SdwQsj/OrGBs4SOkQBQHr1UqplEF3jxpuR7RP+Xi0Y847C9Ev93Bl3LvGHHOfP0jB02yk/3KNeijii4MX5Ze+FBTs36lrNaMqqlMuomlBsPVmCO7Yvw5SK7yLLaToqEjMBFzzrr6kOJ++0pk6q1Wrp+f644Pyav/OkAD4WFsoSpc6Zra0IalLCfuopg9kUSK8rNvraGBPgCu4WIOxmezSUIVFMtF1tnxjTHAXZaLvfzgCp5wyxDf9UyTpDoU27GxVWGzhsY9yyur4FzPwaCWgYAzrDcoLwmg/Ait2fbK8mRq379VR4jtdkkvy1F7GLFi3MkSlvtqM+gvO6mbM34YduJ6fTacqRO+sXqix2p52YSiMx4XVI/0lKkFFZokOHWRnO+GE0630ASKteZMkUfKbVp9miYZFpkS0LzaCYj8NIhcBwH+dvDEaKH3Q5RN2KYQGgoRY4XJ3VK6+Tfd3cdG8ucadvVYoJp7FHlrqluwihRm58tGJMHqIBqGJFnbBv7bK7h0G2AaQDbfKN59OfUa1wzbjKi1WK9mwgKzZ7Pl9NH+naYlxoOOhb9kUhB2Zu76ktSCo5ZxwXKrvbzipYof+9e2GY2gaO9IiLWtp01X3/XMH94pC/nrkPewTzL6OoZ9EIkqQeUeh2ek4oDa89U5A1+7K75fl8Q8YAd8JW+ULylt8bDj65hlw2vLyG" autocomplete="off" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO PROJETOS -->
+
+    <!-- INÍCIO DO MÓDULO CAMPANHAS E DOAÇÕES -->
+    <div class="modulo modulo-dc-pr">
+        <a name="campanhasdedoacoes"></a>
+        <div class="col-md-12">
+            <h3 class="titulo_depoimentos">Campanhas e Doações</h3>
+            <form id="j_idt149" name="j_idt149" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+              <input type="hidden" name="j_idt149" value="j_idt149" />
+              <ul class="nav nav-tabs nav-justified" role="tablist">
+                  <li class="active" role="presentation">
+                    <a id="j_idt151" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_doacoes noHasDoacoes btnDoacao');return false" data-toggle="tab" aria-controls="pesquisaTodosDoacao" href="#pesquisaTodosDoacao">
+                        Todas as Campanhas e Doações
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a id="j_idt154" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_doacoes noHasDoacoes btnDoacao');return false" data-toggle="tab" role="tab" aria-controls="pesquisaGovernoDoacao" href="#pesquisaGovernoDoacao">
+                        Campanhas e Doações do Governo
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a id="j_idt157" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_doacoes noHasDoacoes btnDoacao');return false" data-toggle="tab" aria-controls="pesquisaEntidadesDoacao" href="#pesquisaEntidadesDoacao">
+                        Campanhas e Doações das Entidades
+                    </a>
+                  </li>
+              </ul>
+              <div class="tab-content tab_content_pesquisar_vagas">
+                  <div class="tab-pane active" id="pesquisaTodosDoacao" role="tabpanel">
+                      <div class="col-md-4 col-md-offset-4">
+                        <select id="j_idt160" name="j_idt160" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_doacoes noHasDoacoes')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                        	<option value="AGUAS_CLARAS">Águas Claras</option>
+                        	<option value="ASA_NORTE">Asa Norte</option>
+                        	<option value="ASA_SUL">Asa Sul</option>
+                        	<option value="BRAZLANDIA">Brazlândia</option>
+                        	<option value="CANDANGOLANDIA">Candangolândia</option>
+                        	<option value="CEILANDIA">Ceilândia</option>
+                        	<option value="CRUZEIRO">Cruzeiro</option>
+                        	<option value="FERCAL">Fercal</option>
+                        	<option value="GAMA">Gama</option>
+                        	<option value="GUARA">Guará</option>
+                        	<option value="ITAPOA">Itapoã</option>
+                        	<option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                        	<option value="LAGOA_SUL">Lago Sul</option>
+                        	<option value="LAGO_NORTE">Lago Norte</option>
+                        	<option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                        	<option value="OCTOGONAL">Octogonal</option>
+                        	<option value="PARANOA">Paranoá</option>
+                        	<option value="PARK_WAY">Park Way</option>
+                        	<option value="PLANALTINA">Planaltina</option>
+                        	<option value="RECANTO_EMAS">Recanto das Emas</option>
+                        	<option value="RIACHO_FUNDO">Riacho Fundo</option>
+                        	<option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                        	<option value="SAMAMBAIA">Samambaia</option>
+                        	<option value="SANTA_MARIA">Santa Maria</option>
+                        	<option value="SAO_SEBASTIAO">São Sebastião</option>
+                        	<option value="SIA">Setor de Indústria e Abastecimento</option>
+                        	<option value="SOBRADINHO">Sobradinho</option>
+                        	<option value="SOBRADINHO_II">Sobradinho II</option>
+                        	<option value="SUDOESTE">Sudoeste</option>
+                        	<option value="TAGUATINGA">Taguatinga</option>
+                        	<option value="VARJAO">Varjão</option>
+                        	<option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="pesquisaGovernoDoacao" role="tabpanel">
+                      <div class="col-md-4 col-md-offset-4">
+                        <select id="j_idt164" name="j_idt164" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_doacoes noHasDoacoes')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                        	<option value="AGUAS_CLARAS">Águas Claras</option>
+                        	<option value="ASA_NORTE">Asa Norte</option>
+                        	<option value="ASA_SUL">Asa Sul</option>
+                        	<option value="BRAZLANDIA">Brazlândia</option>
+                        	<option value="CANDANGOLANDIA">Candangolândia</option>
+                        	<option value="CEILANDIA">Ceilândia</option>
+                        	<option value="CRUZEIRO">Cruzeiro</option>
+                        	<option value="FERCAL">Fercal</option>
+                        	<option value="GAMA">Gama</option>
+                        	<option value="GUARA">Guará</option>
+                        	<option value="ITAPOA">Itapoã</option>
+                        	<option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                        	<option value="LAGOA_SUL">Lago Sul</option>
+                        	<option value="LAGO_NORTE">Lago Norte</option>
+                        	<option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                        	<option value="OCTOGONAL">Octogonal</option>
+                        	<option value="PARANOA">Paranoá</option>
+                        	<option value="PARK_WAY">Park Way</option>
+                        	<option value="PLANALTINA">Planaltina</option>
+                        	<option value="RECANTO_EMAS">Recanto das Emas</option>
+                        	<option value="RIACHO_FUNDO">Riacho Fundo</option>
+                        	<option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                        	<option value="SAMAMBAIA">Samambaia</option>
+                        	<option value="SANTA_MARIA">Santa Maria</option>
+                        	<option value="SAO_SEBASTIAO">São Sebastião</option>
+                        	<option value="SIA">Setor de Indústria e Abastecimento</option>
+                        	<option value="SOBRADINHO">Sobradinho</option>
+                        	<option value="SOBRADINHO_II">Sobradinho II</option>
+                        	<option value="SUDOESTE">Sudoeste</option>
+                        	<option value="TAGUATINGA">Taguatinga</option>
+                        	<option value="VARJAO">Varjão</option>
+                        	<option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="pesquisaEntidadesDoacao" role="tabpanel">
+                      <div class="col-md-4 col-md-offset-4">
+                        <select id="j_idt168" name="j_idt168" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_doacoes noHasDoacoes')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                        	<option value="AGUAS_CLARAS">Águas Claras</option>
+                        	<option value="ASA_NORTE">Asa Norte</option>
+                        	<option value="ASA_SUL">Asa Sul</option>
+                        	<option value="BRAZLANDIA">Brazlândia</option>
+                        	<option value="CANDANGOLANDIA">Candangolândia</option>
+                        	<option value="CEILANDIA">Ceilândia</option>
+                        	<option value="CRUZEIRO">Cruzeiro</option>
+                        	<option value="FERCAL">Fercal</option>
+                        	<option value="GAMA">Gama</option>
+                        	<option value="GUARA">Guará</option>
+                        	<option value="ITAPOA">Itapoã</option>
+                        	<option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                        	<option value="LAGOA_SUL">Lago Sul</option>
+                        	<option value="LAGO_NORTE">Lago Norte</option>
+                        	<option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                        	<option value="OCTOGONAL">Octogonal</option>
+                        	<option value="PARANOA">Paranoá</option>
+                        	<option value="PARK_WAY">Park Way</option>
+                        	<option value="PLANALTINA">Planaltina</option>
+                        	<option value="RECANTO_EMAS">Recanto das Emas</option>
+                        	<option value="RIACHO_FUNDO">Riacho Fundo</option>
+                        	<option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                        	<option value="SAMAMBAIA">Samambaia</option>
+                        	<option value="SANTA_MARIA">Santa Maria</option>
+                        	<option value="SAO_SEBASTIAO">São Sebastião</option>
+                        	<option value="SIA">Setor de Indústria e Abastecimento</option>
+                        	<option value="SOBRADINHO">Sobradinho</option>
+                        	<option value="SOBRADINHO_II">Sobradinho II</option>
+                        	<option value="SUDOESTE">Sudoeste</option>
+                        	<option value="TAGUATINGA">Taguatinga</option>
+                        	<option value="VARJAO">Varjão</option>
+                        	<option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                  </div>
+              </div>
+              <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:4" value="juShHScVj+RvjGil54Y2jVHD3nY3MQWMpAAcrITSo3/0N64b9HPwBOUMhdGaUawJ1Bi+mATYWKE6H7qV2/akxKfFnPbg43Na23/kIAMDcFMvxgkWQXodFRqw3jCPxPjuReqrxWQwRoAp0J14aDP+VbRSgtv3OydmYifr0jhQuqqOmBfw9e6akhahdk9EKKM97b4+Yw116JTQfkEw6oyM4O18A4iMQqMlOvrIUUMO4n1bvUIOOg/m3lDU6u20JnhJM9+e0jiH2ZmvURmsJxiFIlxdae85G0bgjY+kzd6/1L+5DasBvPRBxS6D7GqV6ih4wTdT5L2T1i6U7Vq9ylstIOXVYyAu/J7Y5urA/hCX12SylexZMywt9QSCZvC2d/F2h/fCt/5JFK87uIRIIMWpOIuBHYhMhjYws2g7fXx1TqiBXerk/pVuR+dM5gT0FwyMknf54EGY49RktGEaTjmKlApEn4KJnldQ/ZlFvapKBqcpS5umR7Heuhbs6VGjo/eeXbNuTueRFLBLOccdQ1kJWYmpXjs8MxYOTNJmA5YZfXotbYgl8AomEYVcR3m9Qv7Ie+My6Gw0yMuvgwhy4b1AgzHYD2Q778hxHKvI53zaoaM/W70FR0LGilQJclWBTlvjbr+k77yp6jG1qGRR2xJL4uuaPbQQDavam+PZt2ah2dPzaTvBZwUXttbhc8t0Hh4rCvTNlO2C5bK/rD1R8RZZV+XgKSElpt6GLY//RO+duR4Y32Xz3mmbw0nF1y8VXX8sf6yheEqox3AV2M4LMJU+roNQZHZNUh+SQArjAlO2mntlvxftdZw5bDqTMdvPa+UrA+B5V6ufd6+3Frj3B412vJrq48jKYJS+y/DD5ufDw0/gNvdyAf73pcvqxBiyWius52RdZ0QstMM3DexAeiZeD/sM7FQDUzicwhOI3yQ0/GvZvEDat9TQdM2bSavbHa80oXDW+YWao5D4iJfDAaRh6+9whN+eaaMtg0GNlG0JBOThgAIi7AsDR5Uswr4/X4447SwMByQJ/LxgIP5egB09vqgHCIVzOCtrBbSTg6khtSusWzdc2NwNCu2eRK16/YnuCc8dosGXLdoYd+LGiPTB2kgX/QBywb9vBMileJo9n7gPbLnreJcL7Jr3ZsOYkmY8" autocomplete="off" />
+            </form>
+        </div>
+        <div id="doacoes" class="col-md-12">
+          <form id="j_idt173" name="j_idt173" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded" class="form-inline">
+            <input type="hidden" name="j_idt173" value="j_idt173" />
+            <div class="form-group">
+              <label>Título da Campanha:</label>
+              <input name="titulo_campanha" maxlength="100" type="text" title="Título da Campanha" required="true" placeholder="Pesquisar por Título" id="titulo_campanha" class="form-control" />
+            </div>
+            <button id="j_idt176" type="submit" name="j_idt176" value="" onclick="mojarra.ab(this,event,'action','titulo_campanha','listagem_doacoes noHasDoacoes');return false" class="btn btn-primary">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Pesquisar
+            </button>
+            <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:5" value="/ZGS3cUV7YG9b6FJG1zP2fpIyr8PWlj+AxRVQVIrDa8EUpuOyJQ8AVFxIyYlupc7l+18mEOa/susN6UYh8TzCQSLSGAVtU9Hwf1OIxFzLoH5E9WShROkeaZl3FsDlZ7Dcg6mUjcCQhhx83ENfv5Pf4kG+UksnAaru5XkA+IF4ovBi4cV1PZlVtGbfpiW7Z4CaWDVMUlwBn11dc1D2C8TAvwUiIUXa4UbmGFQXO/fWzok3L2Te9YGmmvmzwB6FwWLYDeKsZshWIVUTcQzLWGwI3KwWlDXWrvDkvsv2LLwltgY3gCXYusx5DNPcApw8XlaMQFxNzJOMKQnh/RC1T3NclMDGEYwPvdUpr/WVacDFDrbQe+EBYEkFNwG7vsweDVPGR5/ccfWzJ0yH+QLpYxYwgp4/IY6gmMI8KQAP9FeZVeje4XmHxCqJ/Mk07UuBrhTsmGrRMQ05BS8CQiRCzOFcvnt5ir3qVXWTpL/oxtGO5y9szK0XRRi1d5m46iIjUnYfEV9VrkAK/zby/BS/3pnVWD27U00VJHOguXTdk9+chgcjkOYb/7U9NURR5rWYRCCsvDsr7xvqB1kN/HhqsV6hKzonwUUxNYBkX73bTc6pXQ7Zfu+YSHSKfj5BkRPPQ1PTxxqQfsAkwWLIWygukY4v7EY7ceeFNzKim3vcRMzKJMpJoaERJPUPIMfMbf/tweBBrBEHQW/GgHEm8fizx3Z7uHyI+waCFjoe0zlNo8cXIXZZwSWjaKhF2vvkb2gciX/qOitvoo9fEqyVBmeWHIFFM0hdT6e0OG4ODmXtYk5VOHNYDQ414xxgTBljccF/WYhlxQBJcj881zWMEzGY8/LLf1cE9xGff8xJ0Rd5JruPriafJk0I+a8E5LPStMV3M04pDI0jL9tW6TYymFjpFOt++EesRfjNwcNkOUvsSYY6IZEd0lSardLB76Y4cxj4ruf9ufA/HXspgSC/ZQfqz6Xw4g34qk56yuzocnBhmCpD1nlSDaUYcdJpIru6KtaR+dcxFfJIv6n33BXG8Ux20EFKl03+FIZVhH2UYmogD6xhUrF5dWrbP5JANa3OzxA47uujrwHBPdVB5heLeGVorKuojP/n7SCvwDRUpoU5hZ1YB8cq5CM5cgn691OlEf6b4Kq" autocomplete="off" />
+          </form>
+          <div id="noHasDoacoes"></div>
+          <div id="listagem_doacoes" class="row">
+            <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption altura_caption">
+                              <a href="/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413">
+                                <img alt="Bazar Julino 2017" src="sisvol-doacoes/4824633059331085176.jpg"/>
+                                <p class="titulo_do_projeto">
+                                    Bazar Julino 2017
+                                </p>
+                              </a>
+                              <h5>
+                                  ASSOCIAÇÃO PROTETORA DOS ANIMAIS DO DISTRITO FEDER...
+                              </h5>
+                              <p>
+                                  Sabe aquele objeto que você não usa mais, fica ocupando lugar na sua casa, e pode servir para alguém?   Que tal doá-lo para a ProAnima e, de quebra,  ...
+                              </p>
+                              <p class="meta-doacoes">
+                                  Meta de doações:
+                                  <span>200</span>
+                              </p>
+                              <p>
+                                  <a class="abreModalDetalhaProjeto" data-target="#detalharDoacaoModal0" data-toggle="modal" href="#">
+                                      Detalhes da Doação
+                                  </a>
+                              </p>
+                              <!-- MODAL DETALHAR DOACAO -->
+                              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal0" role="dialog" tabindex="-1">
+                                  <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                              </button>
+                                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                            <div class="form-horizontal">
+                                                <div class="form-group">
+                                                    <img alt="Bazar Julino 2017" class="img-responsive center-block" src="sisvol-doacoes/4824633059331085176.jpg"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                                    <div class="col-sm-10">
+                                                        <p class="form-control-static" id="titulo">Bazar Julino 2017</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                                    <div class="col-sm-10">
+                                                        <p align="justify" class="form-control-static">Sabe aquele objeto que você não usa mais, fica ocupando lugar na sua casa, e pode servir para alguém?   Que tal doá-lo para a ProAnima e, de quebra,  ajudar um animal?   Não tem nada para doar? Não tem problema!   Dê uma chegadinha no Bazar, compre alguma coisa ... lá teremos também comidinhas sem crueldade animal  para vender e comer no local:  venha!!! ONDE:  SCLN 116, Bloco I, Edifício Cedro, Subsolo, Loja 47 (a rua que fica em frente ao Setor Hospitalar Norte) Como nosso trabalho é todo voluntário, são poucas as horas em que tem plantão em nossa sede.  As doações podem ser deixadas na portaria, endereçada à ProAnima.  No prédio a portaria funciona 24 horas!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-2" for="entidade">
+                                                            Razão Social:
+                                                        </label>
+                                                        <div class="col-sm-10">
+                                                            <p class="form-control-static" id="entidade">
+                                                                ASSOCIAÇÃO PROTETORA DOS ANIMAIS DO DISTRITO FEDERAL - PROANIMA
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                                    <div class="col-sm-10">
+                                                        <p class="form-control-static">SCLN 116 - Bloco I (Edifício Cedro), loja 47, subsolo  CEP 70773-590</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413'; return false;" value="" role="button" class="btn btn-success">
+                                              Saiba Mais
+                                            </button>
+                                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                                              Fechar
+                                            </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413'; return false;" value="" role="button" class="btn btn-success botao_candidatar-se">
+                                <span>
+                                  Doações Encerradas
+                                </span>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+            <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption altura_caption">
+                              <a href="/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101">
+                                <img alt="CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES" src="sisvol-doacoes/363120679329983910.jpg"/>
+                                <p class="titulo_do_projeto">
+                                    CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS IN...
+                                </p>
+                              </a>
+                              <h5 style="text-transform: uppercase">
+                                  ASSOCIAÇÃO SANTOS INOCENTES
+                              </h5>
+                              <p>
+                                  A Associação Santos Inocentes é uma associação civil sem fins lucrativos e totalmente mantida por doações, promove assistência social e psicológica a ...
+                              </p>
+                              <p class="meta-doacoes">
+                                  Meta de doações:<span>100</span>
+                              </p>
+                              <p>
+                                  <a class="abreModalDetalhaProjeto" data-target="#detalharDoacaoModal1" data-toggle="modal" href="#">
+                                      Detalhes da Doação
+                                  </a>
+                              </p>
+                              <!-- MODAL DETALHAR DOACAO -->
+                              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal1" role="dialog" tabindex="-1">
+                                  <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                              </button>
+                                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                            <div class="form-horizontal">
+                                                      <div class="form-group">
+                                                          <img alt="CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES" class="img-responsive center-block" src="sisvol-doacoes/363120679329983910.jpg"/>
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                                          <div class="col-sm-10">
+                                                              <p class="form-control-static" id="titulo">CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES</p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                                          <div class="col-sm-10">
+                                                              <p align="justify" class="form-control-static">A Associação Santos Inocentes é uma associação civil sem fins lucrativos e totalmente mantida por doações, promove assistência social e psicológica a gestantes que estejam pensando em cometer a terrível realidade do aborto. O trabalho tem fundamento na conscientização do valor da vida humana desde a sua concepção que denominamos “Resgate de Inocentes” e consiste em atender no espaço local ou ir ao encontro dessas gestantes ou famílias que estejam pensando em realizar o aborto por diversos motivos, bem como agressões físicas, psicológicas, questões financeiras, traumas afetivos, depressão, entre outros. Existente há 12 anos, os trabalhos se realizavam por uma equipe de missionários no Distrito Federal e Entorno porta em porta, ruas e feiras livres. Hoje com o espaço Casa de Acolhimento STª Gianna Beretta Molla, que tem capacidade em acolher 10 gestantes em situação de risco e vulnerabilidade social, até o período de cinco meses após o parto. As mães quando completam o período de desligamento continuam sendo amparadas com cesta básica, leite e fralda, além da vaga na creche que já é garantida a partir do seu acolhimento, caso passam a residir nas mediações da Associação. O espaço creche Casa São José, hoje amparando 50 crianças nas faixas etárias de 05 meses a 03 anos de idade, de segunda a sexta-feira nos horários de 07:00h às 17:00h, nasceu em razão dos ”RESGATES”, filhos (as) dessas gestantes, quando na desistência do aborto pensam em doar seus bebês para adoção por não encontrar solução, ou espaço para ampará-los e que a melhor pessoa a cuidar de seu filho é a própria mãe e dentro de seu próprio lar. A realização do projeto vai muito mais além, ou seja, toda gestante que não necessariamente passa pela a casa de acolhimento e dependendo da sua necessidade, recebe os mesmos benefícios e no que se fizer necessário. Ainda são beneficiadas com enxoval, gestantes carentes da comunidade e famílias que mediante realização de cadastro recebem visita técnica da (o) Assistente Social para averiguação da real situação. Posteriormente, se houver criança e se necessário ela é  inserida na creche, uma vez que este trabalho não se limita ao que conhecemos como “resgate”.
+                                                              </p>
+                                                          </div>
+                                                      </div>
+                                                      <div>
+                                                          <div class="form-group">
+                                                              <label class="control-label col-sm-2" for="entidade">
+                                                                  Razão Social:
+                                                              </label>
+                                                              <div class="col-sm-10">
+                                                                  <p class="form-control-static" id="entidade">
+                                                                      ASSOCIAÇÃO SANTOS INOCENTES
+                                                                  </p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                                          <div class="col-sm-10">
+                                                              <p class="form-control-static">Qr 425 CONJUNTO 05 CASA 15 - SAMAMBAIA NORTE</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101'; return false;" value="" role="button" class="btn btn-success">
+                                              Saiba Mais
+                                            </button>
+                                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                                              Fechar
+                                            </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101'; return false;" value="" role="button" class="btn btn-success botao_candidatar-se">
+                                <span>Quero Doar</span>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption altura_caption">
+                      <a href="/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575" style="text-decoration: none">
+                        <img alt="Doe um livro" src="sisvol-doacoes/4221207814330319575.jpg"/>
+                        <p class="titulo_do_projeto">
+                            Doe um livro
+                        </p>
+                      </a>
+                      <h5 style="text-transform: uppercase">
+                          Viação Piracicabana
+                      </h5>
+                      <p>
+                          Ciente de que a cultura é um fator de grande importância para a formação do cidadão, para que o homem tenha consciência de si mesmo, para construção d...
+                      </p>
+                      <p class="meta-doacoes">
+                          Meta de doações:
+                          <span>1000000</span>
+                      </p>
+                      <p>
+                          <a class="abreModalDetalhaProjeto" data-target="#detalharDoacaoModal2" data-toggle="modal" href="#">
+                              Detalhes da Doação
+                          </a>
+                      </p>
+                      <!-- MODAL DETALHAR DOACAO -->
+                      <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal2" role="dialog" tabindex="-1">
+                          <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                      <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="form-horizontal">
+                                              <div class="form-group">
+                                                  <img alt="Doe um livro" class="img-responsive center-block" src="sisvol-doacoes/4221207814330319575.jpg"/>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                                  <div class="col-sm-10">
+                                                      <p class="form-control-static" id="titulo">Doe um livro</p>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                                  <div class="col-sm-10">
+                                                      <p align="justify" class="form-control-static">Ciente de que a cultura é um fator de grande importância para a formação do cidadão, para que o homem tenha consciência de si mesmo, para construção do conhecimento, para o entretenimento, para a estruturação de uma sociedade mais igualitária e competitiva e conhecedor de um fato, no mínimo alarmante, de que os brasileiros não possuem o hábito de ler e em muitos casos não compreendem o que lêem, resolvi criar uma proposta que tem como principal objetivo o incentivo à leitura, entendimento, escrita e divulgação da cultura. Outro aspecto da minha proposta é que os locais escolhidos para oferecer cultura através da leitura são os ônibus do Sistema Coletivo do Distrito Federal, com o intuito, inclusive, de tornar mais aprazível o deslocamento das pessoas que utilizam esse tipo de transporte. O Projeto atua desde 2003 em ônibus do Distrito Federal e desde 2015 a Viação Piracicabana apoia o Projeto. O Projeto conta com estantes dentro dos ônibus e ainda Espaço Cultural na Rodoviária do Plano Piloto – plataforma inferior e na Rodoviária de Sobradinho – DF. Atualmente o projeto está presente em 369 ônibus da Viação Piracicabana DF, nas cidades de Sobradinho, Planaltina, Plano Piloto, Varjão e Estrutural. Para dar continuidade ao Projeto e disseminar cada vez mais conhecimento entre a população de Brasília, a sua ajuda com a doação de livro é muito importante para nós!
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                              <div>
+                                                  <div class="form-group">
+                                                      <label class="control-label col-sm-2" for="entidade">
+                                                          Razão Social:
+                                                      </label>
+                                                      <div class="col-sm-10">
+                                                          <p class="form-control-static" id="entidade">
+                                                              Viação Piracicabana
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                              <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                                  <div class="col-sm-10">
+                                                      <p class="form-control-static">Rodoviária Plano Piloto Plataforma Inferior Box E</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575'; return false;" value="" role="button" class="btn btn-success">
+                                      Saiba Mais
+                                    </button>
+                                    <button class="btn btn-default" data-dismiss="modal" type="button">
+                                      Fechar
+                                    </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575'; return false;" value="" role="button" class="btn btn-success botao_candidatar-se">
+                        <span>
+                          Quero Doar
+                        </span>
+                      </button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <form id="j_idt204" name="j_idt204" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+            <input type="hidden" name="j_idt204" value="j_idt204" />
+            <div id="btnDoacao" class="col-md-4 col-md-offset-4">
+              <button type="button" onclick="window.location.href='/listagem_doacoes.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?natureza=ALL'; return false;" value="" class="btn btn-success botao_todos_projetos">
+                Exibir Todas as Campanhas e Doações <br />
+              </button>
+            </div>
+            <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:6" value="X4U2UTXLrSOzQXZHwmi4KBSAI1XjaIc8rc3TVmtrgSofNxGEHB8juXlVxkvhNJ3PR9dDx+04iGQEQH4tcz2R1BCSpok1OS6yIsXAbpd0Qgt1YJbv4UJNxmON1PokjAZMrWRBkrxmuzs9TYbAIjqF/sDO+FVehCbkdWPoyjltWetiwmDa4a50QEqSd7O1UWJPAaIZdHalVQAlVZNcKg2/OEgrbMqdLMT4D8H5fUkIsN4L562HAO9aaTDRRika5QfG/93G5DMVcTiSjvEXtyB+1G7FqJjnbQWYTJT1JSvsoKdSLO+MxESVkjTb07TaGYI1ZfHx/TrrZx1IRBodv1LOb9YE5daPK/jHin8JMBEPB6awmcb6keI8ztQCDu/FnAuYwNAaApxCbB27x7Na+uXPpn44wBH9Z31US4SWgp1Hb5maNE3qfWxe8X/1QmW3PqVgtkqaP2p1FEgjy3PPfy6Xk++v8be/ojFEeh2MoFTJNbM+tZgBgspn0FnlzjqUnDIc/1bVpmou/KRS4+UB+ZBZrzAv9B9BfOHeJzfIBUmiXEhWt6bIsSGE7sJ3h03p+I0EKggo2kDZ9k6rgPUm7bS+/6Lj8YgUmORuK2WpNO7jZGrUZacnnkcRV8og4S6HQ1R4MDvTwUOQnaO/ZHHsz6Kkbxw9E1T9i6CKaGtjc3jGegGbJS0xF0Yv0n0PFqrdyLblsdcPKIlCrg8ceVa8X9q74faPD4wPwRWQ3KA0ufNkkSRubULnfz1sjCKofECdbscNXVMvaBJf4mFzNp9Qy4BWozp+0vDi6eBxTeP0RR3FkAZR9HPAv2e1pYwcQ2r4E00Qau6dHv8IwHeTjTcOA/XufEO6AzNFPrw8DyuAT71cQAxX9umpfRfZBWHY/PAfs8nUY9K5VbVog/s4ruWuduxgoGb6GDamFP00G3iFLHtHgw6Eq14ntkznyEEACnQus7RcEzHuC16zAyXFJwbVYgjJ9O0V7aMbjgbWCbuTtZQp7slcfjOL/9oOIpJ34mnmcbmgze8Fa0+1C0vUPjJNi0simO/ERWW/kJxYMNx4vty8CtnpZN1vrKutaM/3frpK5RjS0mg6+7nqZlufbLGei+mnGHEIWa+oqJchkyQF4a5HXUH8d+U2OJwruvKOgW76MHX9" autocomplete="off" />
+          </form>
+        </div>
+    </div>
+    <!-- FIM DO MÓDULO CAMPANHAS E DOAÇÕES -->
+
+    <!-- INÍCIO DO MÓDULO NOTÍCIAS -->
+    <div class="col-md-12 dual-color-module">
+            <div class="container">
+                <a name="noticias"></a>
+                <h3 class="titulo_depoimentos">Notícias</h3>
+                <div id="carousel-noticia" class="row">
+                  <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <form id="j_idt209:0:j_idt211" name="j_idt209:0:j_idt211" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded" class="form-horizontal">
+                          <input type="hidden" name="j_idt209:0:j_idt211" value="j_idt209:0:j_idt211" />
+                          <div class="caption altura_caption">
+                            <img alt="Saúde acolhe 206 profissionais voluntários" src="sisvol-noticias/910660081798231403.jpg"/>
+                            <p class="titulo_do_projeto">
+                              Saúde acolhe 206 profissionais voluntários
+                            </p>
+                            <button type="button" onclick="window.location.href='/visualizar_noticia.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?noticia=476862'; return false;" value="" role="button" class="btn btn-success                                                     botao_candidatar-se">
+                              Leia mais
+                            </button>
+                          </div>
+                          <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:7" value="zJW2xt+zz3E4NiMMwEpE+ArXdKDTwPW05R5odIkfeghuNQux5wtJy9lQ9bVxc2zZ+axSdMizWSHhfEtrJsSFc5aXnYEFbiKoEoUWmFunkFzQ7HvyXnLrGDj7ZOrboafUcfx+3g1H3eBehOaoBrmc7CWAZYInPvN1LB5b2FsbqUyri2Iv6+ktN/sSly9IfjELfRo5YIKE0TP9syoPOjjWGwqaiy6eW1+Je9K6b5oOAwZlkdkVLCaRZ97pqSo43xQF4y5TQb1pr/tzf18R/5LWSqM5WIcD4vv+EQGCKeWpFJjBYpWdRguQ8nl0pQ9gBXAcDwEQZyySlXbvVIcqoRU+zx5lbrnHUGz7qLar0nc7SM3XB5kS5yYrKK/5zAlE19oDuQjKdVC+8uwDDwi0LEzpRuY0i99Rkd/PFEtnAxRREQz3rciXsiBoHJy1EN5SESVWsf8KEy+hMUudkw8iaWB7J72T7Q90KVS2l5UbnDLKOZj3v4k6BMbcl07qOKHqvja+3FXpndfFJdfIODeM91eI86iu05F1AuP6tcPp8pI1raOMASj+38x7O815E/x+GrRg8UFOdlP/a0+haSbdHrMfV8hOpblgsnYOrBYwQYqjoYz2B5x20LuhkMQjG2uQCEv8zEtKMkj+g4JZIVM18vagEc/erHKbACJzgjpOsrXQl9vzZfoh5gz9I9rqlFHCQQOcNYHx/KvOF9e7AKeABCYOxiU9u1DXa+DdmllKpT64vbQqyNpXYuqvhtNO8mPUJFxbzMGI2+NWxJuzE7Kg5dYjjorCgZ3cLK1gqXD2I5RGVjz8388UhXbcaXfH+rS/zKfrUSVOC/O824RDzQ9EEbTTqSMCugtdcvUux1EulmCmtYb2W+L7hp5mASVkG/RoKAkieOdD87WrlK7XBnugLhpYpkKcOjorJ83Qwz17lQc23XAJPRXVIx3UciHqoMTTVONA5xeNgaKXp4xeownR+3maBgQJUZAQ4ZGUsi2CJa1GbSRyOeSN/mJlJx8hJMxXUQAuqk6O7G50lI/mmFdLeKHROLFJQptq1m7iodBwkLrJ77hv61ibsoajWFQ7pHKZFREtOkzGLvDMu3u1hYAQKgbXfYuhQCj4NmCxMcnmchI6+2xC0mTi0c0JQmsptAPYOLBq" autocomplete="off" />
+                        </form>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <form id="j_idt209:1:j_idt211" name="j_idt209:1:j_idt211" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded" class="form-horizontal">
+                          <input type="hidden" name="j_idt209:1:j_idt211" value="j_idt209:1:j_idt211" />
+                          <div class="caption altura_caption">
+                            <img alt="Segunda temporada da Campanha Quem tem Põe. Quem não tem Pega começa nesta quinta-feira (8/6)." src="sisvol-noticias/532849008452509151.jpg"/>
+                            <p class="titulo_do_projeto">
+                                Segunda temporada da Campanha Quem tem Põe. Quem não tem Pega começa nesta quinta-feira (8
+                            </p>
+                            <button type="button" onclick="window.location.href='/visualizar_noticia.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?noticia=465665'; return false;" value="" role="button" class="btn btn-success                                                     botao_candidatar-se">
+                                    Leia mais
+                            </button>
+                          </div>
+                          <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:8" value="XCqFGl8Hea1jTLqoiDxOFiXsBkqk1N40vyKsaGMKZcal1K080aqcpQ6RZU0siyPPPXj7g6WLWHhwiFqnFPdC8hTbEEQl6MvlqTaQ4m4RKJtXInovxoNTHFgA2PiYs93IoW69wREvFClHJdEAMJGJrR5rpSOsxJXarI5auT5PvsBiplZ9qKH9ncbEH/hGcRVf4NpMWzfgfPt9mnP4sqyvu4s2PFsGdyQgAHrnURBiyuWlgBxbFNCZ9Mn/48XGiYKaZ07O4KRdAAnUnjZ/sLGUEvMDd8wPtYwOU2MifV4qGI8t7g1L29Aa7GIVUDiDuxXSBvMCSmJb+JnCuM7bHRLeIir5bx2p6deWax0LThVkuy9q1mDrmuRgokGugveSWax3wAySR7JNM5cFMhwEnSEjfBpwaAyJP2UAVfRiuT0KXQzl1jyOhhwGG9TyPpPrOJjsooNcMF9d646WWOVeQLHwMHFmf4vNI5TxbHBBhtPsCmqTPN97+lua5ViS5a14iTLe6s0Ek3N7nqmlRB/zFcxn2H9BeVbIs5+HLPOZq45grtMoxlLNObM9msfqKwbJ/l3LK/q01jdsA+p7MtovW54dhTObodRhUxotQAZDvoHYRlVvzt1Ye8P0xzSkqb2WJz9oEhq1qTwgzlMiHPdTM77AoXHgIJbSuHbFF1EdEz31Dh6ekfgVO6P/v1PYwjNmY8MRMi2vwmQBk7IXmebZ5ueO4p94b2ngYfz2xHoXzySBun2yPYJr4Tpnd4Ll8FWPAt5wOyOn6iLpaZZ0YNpPwVH06Lv9AQIL23z7/KjoCusgnbv8iJ1koE7PnLDpRggI+kOSCLl9xh05MartobXPlyGjcP0N933YyM5k8+8ELp82mwNdXN2Wj7tvcve1pwG45v5SxWP2/rQmKGn0F6BnhHuGmI8qCKqBMxmLw5pUEC3oxdYrwxrf5E/C4+7G4G/NoQqMKfm1gblVSA4UAUifhtdtpVJ9Y9VpiijehVRZliPkyRv8eefW13P5nbIKFYAht9DBEqb+5gmHcOxgvQewdBn8co6HhTaiIZ9UbpaHpnJz4Wgi84UZunsMvQ+7ZKj+YbGVvMZMGLTq6He3pR7Z5Ea3oSkdKziJPo4CwdzA42aqXSdb3FRB9AzpR68OzwtgycCs" autocomplete="off" />
+                        </form>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <form id="j_idt209:2:j_idt211" name="j_idt209:2:j_idt211" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded" class="form-horizontal">
+                          <input type="hidden" name="j_idt209:2:j_idt211" value="j_idt209:2:j_idt211" />
+                          <div class="caption altura_caption">
+                            <img alt="Brasília Cidadã é parceiro da 33ª Feira do Livro de Brasília" src="sisvol-noticias/7152366256921781919.jpg"/>
+                            <p class="titulo_do_projeto">
+                                Brasília Cidadã é parceiro da 33ª Feira do Livro de Brasília
+                            </p>
+                            <button type="button" onclick="window.location.href='/visualizar_noticia.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?noticia=461125'; return false;" value="" role="button" class="btn btn-success                                                     botao_candidatar-se">
+                                    Leia mais
+                            </button>
+                          </div>
+                          <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:9" value="o39f6mspiCm7UjHC5fX2KRAlpoPSMnlbLVA1/2UcBUdn7O4Qx2BUTrcFb5z66A5pkDZebhwJzR+uH8CSjwM+xiGL3D7a2RrfNsLKT/SuSW5AyfKVG6MsEThGtyYt6mNOvqug3qMb32zQnVX1r166lG9Ajkq8SSLH1GzZL3N1k77txLdE4hsvYSkHWd27+6MhLKg6ug9hZ41hr0njTiXZ2aSHCMUK1s2/j2yz8AVi8IfdQrpbkaycidvlfLYXYXCJnuQkt0IM1gSAaigDrgXhgX/nLM5q9oCyw7ftQedaQRY1nnkdl+3FTe62cbFr43avfcUq+YnMGd6c05wyZlNnE4t4VeFJZck0zvhch0Ffm1bvdqK7D2Wmk65ea/F3pfZZeLVSTKRM7TTG0fAMX+TZfSnc1qr2xnaL29jOPWUMjtNJBKP2s5xvCL4Be1DKlhroAriPYjjoaEGShRFZ05ZYmVEDPLHDqMUp7ZRTJhxZEQ87Hr22pm99HwixgNUOM1SlYgRivNlQi+Vq84Hg4h+lb+Q0Sf1SeoaSfV97qgmtZPejDbVv/DPnl6rZkdrhF5mbWSXZO/CB+ARFmCDXgsU6e1wj3J9SHE0Et9ZGg91jm00JWUiQfVNTkLJ6sPsEq0oEr4A1JIW3yFPIyRSvPaYWtAs87ywg2a6szf7T8i8ztWpM435oWkvG1gdO+yYFoZfR94xvT0NVZdAtHOlsCZPcEsm0rK9TvQwd03Ml6byvXgwdd02MheURyAU4FIonsGDEDP6pMsg4QVhYqXZwvo7gDlQ27oJlIjXxPfW9mNASH2oYsLZDkjyTFICo8tZtYFeSSxF8CBiMB6cNRCoz3BAhobQrnzK/sw5iEP/UsFH+eEchczmvtATmLABtQs/FJMfXlPkYvwDmBXA3uKbi0+6QCSFqKOOin1l5TYdHA36tk1pq21QzI8A/ip4R/BilfN0VZztxYSZao7QWhNthCyvdUm6crQzV3Y8RCpTljh5tf+22MnMaSjyGGBRclO0l+iozrHLClbxcaNb33ltMwXSvxlqXVIgBe/Fbtmb1c2DAHnPwW8XWgZMgapCsQE8cZdPAERnA3iKMeKE2utuFbZEzUoa0RYwmx0XXfjM62MXyneS3awBbsxsMydWUrMwnGSBb" autocomplete="off" />
+                        </form>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    <!-- FIM DO MÓDULO NOTÍCIAS -->
+
+    <!-- INÍCIO DO MÓDULO DEPOIMENTOS -->
+    <a name="depoimentos"></a>
+    <div class="col-md-12 dual-color-module">
+        <div class="container">
+            <h3 class="titulo_depoimentos">Depoimentos</h3>
+            <div id="carousel-depo" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="col-md-4 dep-item">
+                      <img alt="Depoimento" class="img-circle imagem_depoimento" src="sisvol-depoimentos/6275993755698495436.jpg"/>
+                      <div class="box-depoimento">
+                          <p>"Ser voluntário é fazer o bem ao outro e a si próprio ao mesmo tempo! É poder fazer uma diferença na transformação social, é exercer sua cidadania e solidariedade"</p>
+                      </div>
+                      <p class="nome_usuario_depoimento">
+                          Alice Boianovsky
+                      </p>
+                  </div>
+                  <div class="col-md-4 dep-item">
+                      <img alt="Depoimento" class="img-circle imagem_depoimento" src="sisvol-depoimentos/5502045157232867040.jpg"/>
+                      <div class="box-depoimento">
+                          <p>"É por meio do trabalho voluntário que posso contribuir com a sociedade, doando meu tempo e minha energia para assim, melhorar o mundo, começando pela minha cidade."</p>
+                      </div>
+                      <p class="nome_usuario_depoimento">
+                          Natália Magaldi
+                      </p>
+                  </div>
+                  <div class="col-md-4 dep-item">
+                      <img alt="Depoimento" class="img-circle imagem_depoimento" src="sisvol-depoimentos/7760492722275812187.jpg"/>
+                      <div class="box-depoimento">
+                          <p>"Ser voluntária me deu oportunidades em eventos únicos. Através do Embaixadores do Turismo, não precisei viajar para praticar idiomas e viver outras culturas!"</p>
+                      </div>
+                      <p class="nome_usuario_depoimento">
+                          Jessica Rocha
+                      </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-md-4 dep-item">
+                      <img alt="Depoimento" class="img-circle imagem_depoimento" src="sisvol-depoimentos/6273768661432027838.jpg"/>
+                      <div class="box-depoimento">
+                          <p>"Você acaba se apegando ao trabalho pelas realidades diferentes que você tem contato e não teria de outra forma a não ser por meio do trabalho voluntário."</p>
+                      </div>
+                      <p class="nome_usuario_depoimento">
+                          Gabriel Lacerda
+                      </p>
+                  </div>
+                  <div class="col-md-4 dep-item">
+                      <img alt="Depoimento" class="img-circle imagem_depoimento" src="sisvol-depoimentos/2183761362454904020.jpg"/>
+                      <div class="box-depoimento">
+                          <p>"O trabalho voluntário para mim foi algo único e inesquecível. Recomendo a todos que participem!"</p>
+                      </div>
+                      <p class="nome_usuario_depoimento">
+                          Mateus Aguiar Moura
+                      </p>
+                  </div>
+                  <div class="col-md-4 dep-item">
+                      <img alt="Depoimento" class="img-circle imagem_depoimento" src="sisvol-depoimentos/8871569520380871472.jpg"/>
+                      <div class="box-depoimento">
+                          <p>"O Brasília Cidadã fomenta participação voluntária, controle social, cidadania, cultura de paz, doação e atuação em redes solidárias, colaborativas e inclusivas."</p>
+                      </div>
+                      <p class="nome_usuario_depoimento">
+                          Márcia Rollemberg
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <ol class="carousel-indicators">
+            <li data-target="#carrossel" data-slide-to="0" class="active"></li>
+            <li data-target="#carrossel" data-slide-to="1"></li>
+            <li data-target="#carrossel" data-slide-to="2"></li>
+            <li data-target="#carrossel" data-slide-to="3"></li>
+        </ol>
+    </div>
+    <!-- FIM DO MÓDULO DEPOIMENTOS -->
+
+    <!-- INÍCIO DO MÓDULO VÍDEOS -->
+    <a name="videos"></a>
+    <div class="col-md-12 outros_projetos">
+        <h3 class="titulo_outros_projetos">Vídeos</h3>
+        <div id="carousel-example-generic" class="row">
+          <iframe class="col-md-6 col-md-offset-3 col-sm-12" src="https://www.youtube.com/embed/FuBKRE6sm_w" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO VÍDEOS -->
+
+    <!-- INÍCIO DO MÓDULO CARDS -->
+    <a name="brasiliacidada"></a>
+    <div class="col-md-12 outros_projetos">
+        <div class="container">
+            <h3 class="titulo_outros_projetos">
+              <a href="/sobre.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">
+                Brasília Cidadã
+              </a>
+            </h3>
+            <div class="col-md-4 col-sm-6">
+                <a href="http://www.criancacandanga.df.gov.br" target="_blank">
+                    <img alt="Ciança Candanga" class="img-responsive" src="images/criança_candanga.png" />
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="http://mapaosc.ipea.gov.br/index.html" target="_blank">
+                    <img alt="Mapa Organizações" class="img-responsive" src="images/mapa_organizações.png" />
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="http://www.ouvidoria.df.gov.br" target="_blank">
+                    <img alt="Ouvidoria" class="img-responsive" src="images/projeto5.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="http://www.brasilia.df.gov.br/index.php/2016/02/17/programa-viva-brasilia" target="_blank">
+                    <img alt="Programa Viva Brasília" class="img-responsive" src="images/projeto6.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="http://www.codhab.df.gov.br/acoesurbanas" target="_blank">
+                    <img alt="Ações Urbanas Comunitárias" class="img-responsive" src="images/projeto1.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="http://www.amamentabrasilia.saude.df.gov.br" target="_blank">
+                    <img alt="Amamenta Brasília" class="img-responsive" src="images/projeto2.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO MÓDULO CARDS -->
+
+    <!-- INÍCIO DO RODAPÉ -->
+    <footer class="col-md-12">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-9">
+                    <p>
+                        Portal do Voluntariado - Governo de Brasília 2017
+                        <br />
+                        <a href="/termo_uso.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Termo de Uso do Sistema</a> |
+                        <a href="/termo_responsabilidade.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Termo de Responsabilidade</a> |
+                        <a href="/fale_conosco.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Fale Conosco/Contato</a> |
+                        <a href="/marca.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Sobre a Marca</a>
+                        <a href="https://www.facebook.com/govdf" target="_blank">
+                            <img alt="Facebook" src="/images/icon-facebook.png"/>
+                        </a>
+                        <a href="https://instagram.com/gov_df" target="_blank">
+                            <img alt="Instagram" src="/images/icon-instagram.png"/>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        <img alt="Governo de Brasília" src="/images/logo_gov_bsb.png"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- INÍCIO DO MÓDULO Vídeos -->
+
+    <script type="text/javascript" src="main/javax.faces.resource/jsf.js"></script>
+    <script type="text/javascript" src="main/javax.faces.resource/jquery/jquery.js"></script>
+    <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    <script type="text/javascript" src="lib/jquery.mask.js"></script>
+    <script type="text/javascript" src="lib/odometer.js"></script>
+    <script defer="true" src="https://maps.googleapis.com/maps/api/js?callback=mapaIndexModal&amp;key=AIzaSyCPkeOmnYZwEeGAIIWxKhvIDjiDJzM8RdE&amp;language=pt&amp;region=BR"></script></body>
+</html>
