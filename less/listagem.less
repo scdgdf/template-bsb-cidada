@@ -1,0 +1,243 @@
+// main: estilo.less
+
+#lista-financimento{
+
+}
+.listagem{
+  list-style: none;
+  li{
+    display: inline-block;
+    // background-color: magenta;
+    .image{
+      display: inline;
+      float: left;
+      img{
+        margin-bottom: 30px;
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .conteudo{
+      width: calc(~"100% - 180px");
+      display: inline;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 30px;
+      .nome-edital{
+        font-family: "Montserrat Light", sans-serif;
+        font-size: 25px;
+        margin-top: 0;
+      }
+      p{
+        font-family: "OpenSans";
+        margin-bottom: 0;
+        span{
+          font-family: "OpenSans Bold";
+          color: @primary;
+        }
+      }
+    }
+  }
+}
+.paginacao{
+  width: 100%;
+  text-align: center;
+}
+
+.pagination{
+  li{
+    a{
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    span{
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  > li{
+    > a{
+      background-color: @white-four;
+      border: 2px solid @white-three;
+      color: @faded-black
+    }
+    &:first-child{
+      > a{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: @deep-black;
+      }
+    }
+    &:last-child{
+      > a{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: @deep-black;
+        &:focus,
+        &::hover{
+          z-index: 3;
+          color: @white;
+          background-color: @deep-black;
+          border: 2px solid @white-three;
+        }
+      }
+    }
+    > span{
+      &.current{
+        z-index: 3;
+        color: @white;
+        background-color: @deep-black;
+        border: 2px solid @white-three;
+      }
+      &.prev {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      &.next {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+}
+
+.pagination-pr{
+  > li{
+    &:first-child{
+      > a{
+        color: @primary;
+      }
+    }
+    &:last-child{
+      > a{
+        color: @primary;
+        &:focus,
+        &::hover{
+          background-color: @primary;
+        }
+      }
+    }
+    > span{
+      &.current{
+        background-color: @primary;
+      }
+    }
+  }
+}
+.pagination-in{
+  > li{
+    &:first-child{
+      > a{
+        color: @info;
+      }
+    }
+    &:last-child{
+      > a{
+        color: @info;
+        &:focus,
+        &::hover{
+          background-color: @info;
+        }
+      }
+    }
+    > span{
+      &.current{
+        background-color: @info;
+      }
+    }
+  }
+}
+.pagination-av{
+  > li{
+    &:first-child{
+      > a{
+        color: @warning;
+      }
+    }
+    &:last-child{
+      > a{
+        color: @warning;
+        &:focus,
+        &::hover{
+          background-color: @warning;
+        }
+      }
+    }
+    > span{
+      &.current{
+        background-color: @warning;
+      }
+    }
+  }
+}
+.pagination-at{
+  > li{
+    &:first-child{
+      > a{
+        color: @attention;
+      }
+    }
+    &:last-child{
+      > a{
+        color: @attention;
+        &:focus,
+        &::hover{
+          background-color: @attention;
+        }
+      }
+    }
+    > span{
+      &.current{
+        background-color: @attention;
+      }
+    }
+  }
+}
+.pagination-su{
+  > li{
+    &:first-child{
+      > a{
+        color: @success;
+      }
+    }
+    &:last-child{
+      > a{
+        color: @success;
+        &:focus,
+        &::hover{
+          background-color: @success;
+        }
+      }
+    }
+    > span{
+      &.current{
+        background-color: @success;
+      }
+    }
+  }
+}
+.pagination-pe{
+  > li{
+    &:first-child{
+      > a{
+        color: @danger;
+      }
+    }
+    &:last-child{
+      > a{
+        color: @danger;
+        &:focus,
+        &::hover{
+          background-color: @danger;
+        }
+      }
+    }
+    > span{
+      &.current{
+        background-color: @danger;
+      }
+    }
+  }
+}
