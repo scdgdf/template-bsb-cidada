@@ -20,28 +20,22 @@
 }
 // Módulos de duas cores de fundo
 .modulo-dc-pr{
-    background: @white-three;
-    background: linear-gradient(@primary 50%, @white-three 50%);
+    background: @primary;
 }
 .modulo-dc-su{
-    background: @white-three;
-    background: linear-gradient(@success 50%, @white-three 50%);
+    background: @success;
 }
 .modulo-dc-in{
-    background: @white-three;
-    background: linear-gradient(@info 50%, @white-three 50%);
+    background: @info;
 }
 .modulo-dc-av{
-    background: @white-three;
-    background: linear-gradient(@warning 50%, @white-three 50%);
+    background: @warning;
 }
 .modulo-dc-at{
-    background: @white-three;
-    background: linear-gradient(@attention 50%, @white-three 50%);
+    background: @attention;
 }
 .modulo-dc-pe{
-    background: @white-three;
-    background: linear-gradient(@danger 50%, @white-three 50%);
+    background: @danger;
 }
 
 .modulo-dc-pr,
@@ -58,8 +52,12 @@
 
 .nav{
   &.nav-tabs{
+    background-color: rgba(0, 0, 0, 0.2);
     border: 0;
+    padding-bottom: 15px;
     >li{
+      width: 100%;
+      text-align: center;
       a{
         border: 0;
         font-family: "Montserrat", sans-serif;
@@ -95,23 +93,55 @@
 
 .tab-content{
     background: rgba(0, 0, 0, 0.2);
-    margin-top: 1px;
+
     margin-bottom: 15px;
 
     .tab-pane{
-      height: 92px;
+      padding-bottom: 15px;
       .modulo-pesquisa{
-        margin-top: 10px;
         label{
           color: @white;
         }
+        .form-group{
+          margin-bottom: 0px;
+        }
+        .btn{
+          font-size: 14px;
+        }
       }
       .modulo-selecao{
-        margin-top: 35px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
       }
     }
 }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  .nav{
+    &.nav-tabs{
+      padding-bottom: 0;
+      background: none;
+      >li{
+        width: auto;
+        text-align: left;
+      }
+    }
+  }
+  .tab-content{
+    margin-top: 1px;
+      .tab-pane{
+        height: 92px;
+        .modulo-pesquisa{
+          margin-top: 10px;
+        }
+        .modulo-selecao{
+          margin-top: 35px;
+          margin-bottom: 20px;
+        }
+      }
+  }
+}
+
 .btn-plus{
   font-family: "OpenSans Bold", sans-serif;
   color: @deep-black;
@@ -229,7 +259,7 @@
 #qualifica-brasilia{
   .texto{
     font-family: "Titillium Web";
-    font-size: 30px;
+    font-size: 23px;
     display: block;
     color: @black;
     margin-bottom: 20px;
@@ -249,11 +279,46 @@
     right: 0;
   }
 }
-
+#qualifica-brasilia{
+  .texto{
+    font-size: 20px;
+  }
+}
 #mapa-organizacoes{
   .btn{
     background-color: rgb(232, 21, 124);
     border-color: darken(rgb(232, 21, 124), 5%);
     color: @white;
+  }
+}
+hr{
+  width: 80%;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  #mapa-organizacoes,
+  #qualifica-brasilia{
+    .texto{
+      font-size: 30px;
+    }
+  }
+  // Módulos de duas cores de fundo
+  .modulo-dc-pr{
+      background: linear-gradient(@primary 50%, @white-three 50%);
+  }
+  .modulo-dc-su{
+      background: linear-gradient(@success 50%, @white-three 50%);
+  }
+  .modulo-dc-in{
+      background: linear-gradient(@info 50%, @white-three 50%);
+  }
+  .modulo-dc-av{
+      background: linear-gradient(@warning 50%, @white-three 50%);
+  }
+  .modulo-dc-at{
+      background: linear-gradient(@attention 50%, @white-three 50%);
+  }
+  .modulo-dc-pe{
+      background: linear-gradient(@danger 50%, @white-three 50%);
   }
 }

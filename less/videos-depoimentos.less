@@ -12,9 +12,9 @@
     bottom: -40px;
     >li {
 
-      border: 1px solid @attention;
+      border: 1px solid @white;
       &.active{
-        background-color: @attention;
+        background-color: @white;
       }
     }
   }
@@ -45,10 +45,27 @@
 }
 .dep-nome
 {
-    color: @attention;
+    color: @white;
     font-family: Montserrat Light;
     font-size: 17px;
     font-weight: bold;
     padding-top: 20px;
     text-transform: uppercase;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  .modulo-depoimento{
+    .carousel-indicators{
+      >li {
+        border-color: @attention;
+        &.active{
+          background-color: @attention;
+        }
+      }
+    }
+  }
+  .dep-nome{
+    color: @attention;
+  }
 }

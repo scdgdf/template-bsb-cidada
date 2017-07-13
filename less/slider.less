@@ -1,1 +1,19 @@
 // main: estilo.less
+
+.banner{
+  height: 156px;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-indicators {
+  bottom: -10px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  .banner{
+    height: 325px;
+  }
+  .carousel-indicators {
+    bottom: 10px;
+  }
+}

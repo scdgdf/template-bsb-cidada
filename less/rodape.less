@@ -9,13 +9,8 @@ footer{
 .site-titulo{
   font-family: "Titillium Web";
   font-size: 35px;
-  float: left;
-  // background-color: magenta;
 }
 .redes-sociais{
-  // background-color: cyan;
-  text-align: right;
-  float: right;
   a{
     img{
       width: 40px;
@@ -27,9 +22,8 @@ footer{
 }
 .site-titulo,
 .redes-sociais{
-  width: 50%;
-  display: inline;
-  height: 54px;
+  width: 100%;
+  display: block;
 }
 
 .links-sistema{
@@ -40,6 +34,7 @@ footer{
     font-family: "OpenSans";
     padding-left: 14px;
     padding-right: 14px;
+    display: block;
     &:hover{
       text-decoration: underline;
     }
@@ -53,4 +48,25 @@ footer{
 .marca-gdf{
   padding-top: 8px;
   padding-bottom: 8px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  .site-titulo,
+  .redes-sociais{
+    width: 50%;
+    display: inline;
+    height: 54px;
+  }
+  .site-titulo{
+    float: left;
+  }
+  .redes-sociais{
+    text-align: right;
+    float: right;
+  }
+  .links-sistema{
+    a{
+      display: inline;
+    }
+  }
 }
