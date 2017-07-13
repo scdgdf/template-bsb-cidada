@@ -4,6 +4,7 @@
   padding-bottom: 40px;
   background-color: @white;
 }
+
 .modulo-titulo{
   font-family: "Titillium Web";
   font-size: 35px;
@@ -14,30 +15,33 @@
   margin-bottom: 15px;
 }
 
+.modulo-fade{
+  background-color: @white-three;
+}
 // Módulos de duas cores de fundo
 .modulo-dc-pr{
-    background: @white-four;
-    background: linear-gradient(@primary 50%, @white-four 50%);
+    background: @white-three;
+    background: linear-gradient(@primary 50%, @white-three 50%);
 }
 .modulo-dc-su{
-    background: @white-four;
-    background: linear-gradient(@success 50%, @white-four 50%);
+    background: @white-three;
+    background: linear-gradient(@success 50%, @white-three 50%);
 }
 .modulo-dc-in{
-    background: @white-four;
-    background: linear-gradient(@info 50%, @white-four 50%);
+    background: @white-three;
+    background: linear-gradient(@info 50%, @white-three 50%);
 }
 .modulo-dc-av{
-    background: @white-four;
-    background: linear-gradient(@warning 50%, @white-four 50%);
+    background: @white-three;
+    background: linear-gradient(@warning 50%, @white-three 50%);
 }
 .modulo-dc-at{
-    background: @white-four;
-    background: linear-gradient(@attention 50%, @white-four 50%);
+    background: @white-three;
+    background: linear-gradient(@attention 50%, @white-three 50%);
 }
 .modulo-dc-pe{
-    background: @white-four;
-    background: linear-gradient(@danger 50%, @white-four 50%);
+    background: @white-three;
+    background: linear-gradient(@danger 50%, @white-three 50%);
 }
 
 .modulo-dc-pr,
@@ -220,59 +224,36 @@
     border-bottom-right-radius: 4px;
   }
 }
-.thumbnail{
-  height: 540px;
+
+#mapa-organizacoes,
+#qualifica-brasilia{
+  .texto{
+    font-family: "Titillium Web";
+    font-size: 30px;
+    display: block;
+    color: @black;
+    margin-bottom: 20px;
+  }
+  .btn-large{
+    padding: 10px 30px;
+
+  }
+}
+.marca-qualifica-brasilia{
+  position: relative;
+  text-align: right;
 
   img{
-    height: 200px;
-    width: 340px;
-  }
-}
-.caption{
-  h5{
-    text-transform: uppercase;
-  }
-}
-.altura_caption
-{
-    height: 340px;
-}
-
-.titulo_do_projeto
-{
-    color: @faded-black;
-    font-family: Montserrat Light;
-    font-size: 17px;
-    text-transform: uppercase;
-}
-
-.botao_candidatar-se
-{
-    background-color: @success;
-    border-radius: 0px 0px 4px 4px;
-    padding: 13px;
-    width: 85%;
+    margin-top: 65px;
     position: absolute;
-    bottom: 30px;
+    right: 0;
+  }
+}
 
-}
-.botao_candidatar-se:hover
-{
-    background-color: @deep-success;
-}
-.botao_todos_projetos
-{
-    background-color: @info;
-    border: 1px solid @info;
-    border-radius: 10px;
-    font-family: Montserrat Light;
-    font-weight: bold;
-    padding: 13px;
-    text-transform: uppercase;
-    width: 100%;
-}
-.botao_todos_projetos:hover
-{
-    background-color: @deep-info;
-    border: 1px solid @info;
+#mapa-organizacoes{
+  .btn{
+    background-color: rgb(232, 21, 124);
+    border-color: darken(rgb(232, 21, 124), 5%);
+    color: @white;
+  }
 }
