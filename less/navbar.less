@@ -3,7 +3,7 @@
 .nav-voluntariado
 {
     background-color: @white;
-    border-color: @white;
+    border: 0;
     border-radius: 0;
     margin-bottom: 0;
     min-height: 80px;
@@ -48,7 +48,7 @@ h1{
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     color: @success;
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 0px;
     margin-left: 18px;
     display: inline-block;
@@ -81,9 +81,9 @@ h1{
 .navbar-toggle {
   position: relative;
   float: right;
-  padding: 17px;
-  height: 60px;
-  width: 60px;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  padding: 10px;
   background-color: @attention;
   background-image: none;
   border: 2px solid @attention !important;
@@ -156,10 +156,19 @@ h1{
   background-color: @info;
   font-family: "Montserrat Bold", sans-serif;
   border-bottom: 4px solid @deep-info;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
   li{
-    display: inline-block;
+    display: inline;
+    &:first-child{
+      margin-left: -15px;
+    }
+    &:last-child{
+      margin-right: -15px;
+    }
     a{
-      margin: 0px 6px;
+      margin: 0px 15px;
       color: @white;
     }
     span{
@@ -184,6 +193,7 @@ h1{
   .sp-menu{
     padding: 8px 15px;
     li{
+      display: inline-block;
       &:first-child{
         margin-left: 15px;
       }
