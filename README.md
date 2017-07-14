@@ -6,7 +6,7 @@ Todo o CSS da página foi gerado com o [LESS](http://lesscss.org/). Foram gerado
 
 ## Observações
 * As capas dos projetos, ações, campanhas, doações e notícias devem ter 380x200px, e aconselha-se que o conteúdo dessas imagens tenham margens de topo e rodapé em 15px e lados em 20px para melhor apresentação do conteúdo. Como a figura a seguir:
-![Exemplo de capa sem fundo](images/exemplo-sem-fundo.png?raw=true "Exemplo de capa sem fundo")  ![Exemplo de capa com fundo](images/exemplo-com-fundo.png?raw=true "Exemplo de capa com fundo")
+![Exemplo de capa com fundo](images/exemplo-com-fundo.png?raw=true "Exemplo de capa com fundo")
 
 * As capas são incluidas na página como plano de fundo da `<div>` que conterá a imagem, portanto, essa `<div>` deverá ter o formato:
 ```<div class="image" style="background-image: url('caminho/da/imagem.jpg')"></div>```
