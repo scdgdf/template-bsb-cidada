@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg9064"
+   height="50"
+   width="50"
+   version="1.1"
+   viewBox="0 0 50.000003 50.000001"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ouvidoria.svg">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="4.72"
+     inkscape:cx="25"
+     inkscape:cy="25"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9064" />
+  <metadata
+     id="metadata9069">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(-125.94 -748.51)"
+     style="fill:#00a757;fill-opacity:1">
+    <g
+       id="g8374"
+       transform="matrix(.11161 0 0 .11161 125.94 748.51)"
+       fill="#00a858"
+       style="fill:#00a757;fill-opacity:1">
+      <g
+         id="g8376"
+         fill="#00a858"
+         style="fill:#00a757;fill-opacity:1">
+        <g
+           id="g8378"
+           fill="#00a858"
+           style="fill:#00a757;fill-opacity:1">
+          <g
+             id="g8380"
+             fill="#00a858"
+             style="fill:#00a757;fill-opacity:1">
+            <path
+               id="path8382"
+               d="m384 172.4c0-88.8-71.6-160.4-160-160.4s-160 71.6-160 160v0.4c-35.6 2-64 31.6-64 67.6v8c0 37.6 30.4 68 68 68h3.6l28.4 45.2c20 32 54 50.8 91.6 50.8h5.6c3.6 13.6 16 24 30.8 24 17.6 0 32-14.4 32-32s-14.4-32-32-32c-14.8 0-27.2 10.4-30.8 24h-5.6c-32 0-61.2-16.4-78-43.6l-23.2-36.4h5.6c8.8 0 16-7.2 16-16v-112c0-8.8-7.2-16-16-16h-16c0-79.6 64.4-144 144-144s144 64.4 144 144h-16c-8.8 0-16 7.2-16 16v112c0 8.8 7.2 16 16 16h28c37.6 0 68-30.4 68-68v-8c0-36-28.4-65.6-64-67.6zm-156 215.6c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm-132-200v112h-28c-28.8 0-52-23.2-52-52v-8c0-28.8 23.2-52 52-52h28zm336 60c0 28.8-23.2 52-52 52h-28v-112h28c28.8 0 52 23.2 52 52v8z"
+               style="fill:#00a757;fill-opacity:1" />
+            <path
+               id="path8384"
+               d="m290.4 72.4c-0.8-0.4-2-1.2-3.2-2s-2.4-1.6-3.2-2c-3.6-2.4-8.8-1.2-10.8 2.8s-1.2 8.4 2.8 10.8c0.8 0.4 2 1.2 3.2 2s2.4 1.6 3.6 2c1.2 0.8 2.8 1.2 4 1.2 2.8 0 5.2-1.2 6.8-4 2-3.6 0.8-8.4-3.2-10.8z"
+               style="fill:#00a757;fill-opacity:1" />
+            <path
+               id="path8386"
+               d="m224 52c-34 0-66 14.8-88 40.4-2.8 3.2-2.4 8.4 0.8 11.2 1.6 1.2 3.2 2 5.2 2 2.4 0 4.4-0.8 6-2.8 19.2-22 46.8-34.8 76-34.8 7.2 0 14.4 0.8 21.6 2.4 4.4 0.8 8.4-2 9.6-6s-2-8.4-6-9.6c-8.4-2-16.8-2.8-25.2-2.8z"
+               style="fill:#00a757;fill-opacity:1" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

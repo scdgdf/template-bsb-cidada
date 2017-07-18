@@ -328,32 +328,17 @@ h1.page-title {
   font-size: 25px;
   margin-top: 15px;
 }
-.box.box-su .icon {
-  background-color: #00A757;
-}
 .box.box-su h4 {
   color: #00A757;
-}
-.box.box-in .icon {
-  background-color: #28BBB6;
 }
 .box.box-in h4 {
   color: #28BBB6;
 }
-.box.box-av .icon {
-  background-color: #FFCC29;
-}
 .box.box-av h4 {
   color: #FFCC29;
 }
-.box.box-at .icon {
-  background-color: #f78b25;
-}
 .box.box-at h4 {
   color: #f78b25;
-}
-.box.box-pr .icon {
-  background-color: #4079BC;
 }
 .box.box-pr h4 {
   color: #4079BC;
