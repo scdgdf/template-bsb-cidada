@@ -1,7 +1,13 @@
 // main: estilo.less
 
-#lista-financimento{
-
+#lista-financiamento{
+  .modulo-titulo{
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  ul{
+    margin-bottom: 40px;
+  }
 }
 .listagem{
   list-style: none;
@@ -11,9 +17,13 @@
     border-bottom: 1px solid @gray;
     margin-top: 15px;
     padding-bottom: 15px;
+    width: 100%;
     .image{
       display: inline;
       float: left;
+      .img-thumbnail{
+        background-color: @white-three;
+      }
       img{
         margin-bottom: 30px;
         width: 75px;
@@ -25,6 +35,9 @@
       display: inline;
       float: left;
       margin-left: 15px;
+      a{
+        color: @black !important;
+      }
       .nome-edital{
         font-family: "Montserrat Light", sans-serif;
         font-size: 20px;
@@ -250,14 +263,15 @@
       border: 0;
       margin-top: 0;
       padding-bottom: 0;
+      width: 100%;
       .image{
         img{
-          width: 150px;
-          height: 150px;
+          width: 100px;
+          height: 100px;
         }
       }
       .conteudo{
-        width: calc(~"100% - 180px");
+        width: calc(~"100% - 130px");
         margin-left: 30px;
         margin-bottom: 30px;
         .nome-edital{
