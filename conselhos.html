@@ -1,0 +1,927 @@
+
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head">
+  <link type="text/css" rel="stylesheet" href="main/javax.faces.resource/theme.css.html?ln=primefaces-aristo" />
+  <script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';}</script>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilo.min.css" rel="stylesheet" />
+    <title>Portal do Voluntariado</title>
+    <link href="css/odometer.css" rel="stylesheet" />
+  </head>
+  <body id="body" elementName="body">
+    <!-- INÍCIO DO MÓDULO HEADER -->
+    <nav class="navbar navbar-default nav-voluntariado">
+        <div id="menu-institucional" class="navbar hidden-xs hidden-ms">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="http://www.transparencia.df.gov.br/Pages/inicio.aspx" target="_blank">
+                                Transparência
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ouvidoria.df.gov.br/" target="_blank">
+                                Ouvidoria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.brasilia.df.gov.br/index.php/2015/10/26/explicacao">
+                                Acesso à Informação
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.dodf.df.gov.br/" target="_blank">
+                                Diário Oficial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.df.gov.br/agencia-brasilia.html" target="_blank">
+                                Agência Brasília
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.df.gov.br" target="_blank">
+                                Portal do Governo de Brasília
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+        <div id="menu-principal">
+            <div class="container">
+                <div class="navbar-header">
+                    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navegacao" data-toggle="collapse" type="button">
+                        <span class="sr-only">Navegação</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">
+                        <img alt="Brasília Cidadã" src="images/logo-voluntariado.png"/>
+                    </a>
+                    <h1 class="page-title">Portal do Voluntariado</h1>
+                </div>
+                <div class="collapse navbar-collapse row" id="navegacao">
+                    <ul class="nav navbar-nav menu">
+                        <li>
+                          <a href="listagem_entidades.html">
+                                Parceiras
+                          </a>
+                        </li>
+                        <li>
+                            <a href="https://www.flickr.com/photos/brasiliacidada" target="_blank">
+                                Fotos
+                            </a>
+                        </li>
+                        <li><a href="sobre.html">
+                                Sobre
+                            </a>
+                        </li>
+                        <li><a href="duvidas.html">
+                                Perguntas e Respostas
+                            </a>
+                        </li>
+                        <li><a href="template-bsb-cidada/legislacao.html">
+                                Legislação
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu-botoes">
+                      <li class="header-button">
+                        <a href="validar_certificado.html" class="btn btn-certificado">
+                              Validar Certificado
+                        </a>
+                      </li>
+                      <li class="header-button">
+                        <a href="login.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" class="btn btn-login">
+                              Faça Login
+                          </a>
+                      </li>
+                      <li class="header-button">
+                          <a class="btn btn-cadastro" data-target="#cadastro" data-toggle="modal" href="#">
+                              Cadastre-se
+                          </a>
+                          <div aria-labelledby="cadastrar" class="modal fade" id="cadastro" role="dialog" tabindex="-1">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                              <span aria-hidden="true">
+                                                  ×
+                                              </span>
+                                          </button>
+                                          <h4 class="modal-title" id="cadastrar">
+                                              Selecione o tipo do cadastro:
+                                          </h4>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="col-md-12">
+                                              <div class="col-md-6">
+                                                <button type="button" onclick="window.location.href='/adicionar_voluntario.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;" value="" class="btn btn-success bg_seja_voluntario">
+                                                      Voluntário(a)
+                                                  </button>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <button type="button" onclick="window.location.href='/adicionar_organizacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;" value="" class="btn btn-primary bg_cadastro_orgao">
+                                                      Órgão/Entidade
+                                                  </button>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12"></div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                              Fechar
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DO MÓDULO HEADER -->
+
+    <!-- INÍCIO DO MÓDULO BREADCRUMB -->
+    <div class="breadcrumb-container">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Brasília Cidadã</a></li>
+          <li class="active">Conselhos</li>
+        </ol>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO BREADCRUMB -->
+
+    <!-- INÍCIO DO MÓDULO SANFONA -->
+    <div id="conselhos" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h2 class="modulo-titulo">
+              Contatos de Conselhos
+            </h2>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="c-head-1">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#conselhos" data-target="#c-1" aria-expanded="true" aria-controls="collapseOne">
+                    Administração Indireta/Direta
+                  </a>
+                </h4>
+              </div>
+              <div id="c-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="c-head-1">
+                <div class="panel-body">
+                  <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                      <tr>
+                        <th title="Field #1">CONSELHOS</th>
+                        <th title="Field #2">ENDEREÇO</th>
+                        <th title="Field #3">RESPONSÁVEL</th>
+                        <th title="Field #4">CONTATO</th>
+                        <th title="Field #5">E-MAIL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Conselho de Administração/Fiscal<br/>CAESB</td>
+                        <td>Avenida Sibipiruna Lotes 13/21 - Águas Claras</td>
+                        <td>Geraldo</td>
+                        <td>3213-7199<br/>3213-7128</td>
+                        <td>geraldofaria@caesb.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração/Fiscal- NOVACAP</td>
+                        <td>SAP – Lote B - Ed. Sede da NOVACAP</td>
+                        <td>Rosa</td>
+                        <td>3403-2326</td>
+                        <td>Avdavid2011@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração/Fiscal – CEB</td>
+                        <td>SIA Área Especial de Serviços Púbicos – S/A Lote C - Setor de Indústrias</td>
+                        <td>Thais</td>
+                        <td>3465-9627</td>
+                        <td>thaisbarca@ceb.com.br<br/>Jorge.rego@ceb.com.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho Administração/Fiscal TERRACAP</td>
+                        <td>SAM – Lote F 2º Andar Sala 206 – Ed. Sede TERRACAP</td>
+                        <td>Geisel</td>
+                        <td>3342-2387</td>
+                        <td>Gesiel.sousa@terracap.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho Administração/Fiscal - METRÔ</td>
+                        <td>Avenida Jequitibá 155 – Águas claras </td>
+                        <td>Djalma</td>
+                        <td>3353-7073<br/>99558-6657</td>
+                        <td>Djalma2sergio@yahoo.com.br<br/>pre@metro.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração – TCB</td>
+                        <td>SGON Quadra 06 Bloco A</td>
+                        <td>Vieira</td>
+                        <td>3344-2769</td>
+                        <td>presidencia@tcb.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração/Fiscal – EMATER</td>
+                        <td>Parque Estação Biológica Asa Norte</td>
+                        <td>Leide/Ciça</td>
+                        <td>3311-9305</td>
+                        <td>gabin@emater.df.gov.br<br/>presid@emater.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração/Fiscal – CEASA</td>
+                        <td>SIA Trecho 10 – Lote 05 </td>
+                        <td>Andréa</td>
+                        <td>3363-4030</td>
+                        <td>Andreia.guimaraes@ceasa.df.gov.br<br/>presidencia@ceasa.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração/Fiscal – SAB</td>
+                        <td>SIA Sul - Trecho 06 Lote 270.</td>
+                        <td>Fernanda</td>
+                        <td>3363-1630</td>
+                        <td>Fernanda.martins@sab.df.gov.br<br/>Paulo.garcia@sab.df.gov.br<br/>Liquidante.sab.df@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração/Fiscal – CODEPLAN</td>
+                        <td>SAIN – Projeção H – Ed. Sede da CODEPLAN </td>
+                        <td>Rejane</td>
+                        <td>3342-2211</td>
+                        <td>Analice.alves@codeplan.df.gov.br<br/>Irene.lacerda@codeplan</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração/Fiscal/ DTVM/CFI – BRB</td>
+                        <td>SBS – Quadra 01 Bloco E 3º andar – Ed. Brasília </td>
+                        <td>Osnir/Pérsia</td>
+                        <td>3412-8552</td>
+                        <td>ggecol@brb.com.br<br/>secre.presi@brb.com.br</td>
+                      </tr>
+                      <tr>
+                        <td>CODHAB<br/>Conselho de Administração/Fiscal</td>
+                        <td>SCS</td>
+                        <td>Júnior</td>
+                        <td>3214-1833</td>
+                        <td>Ana.pereira@codbah.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>SLU<br/>Junta Controle/ Conselho de Limpeza Urbana – CONLURB</td>
+                        <td> </td>
+                        <td>Havelange</td>
+                        <td>3213-0165</td>
+                        <td>dg@slu.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Fundação Jardim Zoológico</td>
+                        <td> </td>
+                        <td>Ana Maria</td>
+                        <td>3445-7005</td>
+                        <td>fjzbcolegiados@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>CONPLAN </td>
+                        <td> </td>
+                        <td>Eliete</td>
+                        <td>3214-4092</td>
+                        <td>conplan@segeth.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>JARI/DETRAN</td>
+                        <td> </td>
+                        <td>Ana</td>
+                        <td>3343-5109</td>
+                        <td>dg@detran.df.gov.br<br/>amorimdt@yahoo.com.br</td>
+                      </tr>
+                      <tr>
+                        <td>Junta de Controle - DETRAN</td>
+                        <td> </td>
+                        <td>Ana</td>
+                        <td>3343-5205</td>
+                        <td>jucon@detran.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>JUNTA DE CONTROLE /CONSELHO RODOVIÁRIO –DER</td>
+                        <td> </td>
+                        <td>Tereza</td>
+                        <td>3111-5700/3111-5699</td>
+                        <td>Secretarias.dg@der.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>PROCON</td>
+                        <td> </td>
+                        <td>Raoni</td>
+                        <td>2104-4331</td>
+                        <td>procon@procon.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>IPREV</td>
+                        <td> </td>
+                        <td>Ana Cláudia</td>
+                        <td>3223-7970/3226-6418/ 3224-7651/3226-2217 </td>
+                        <td>marianne.oliveira@iprev.df.gov.br<br/>ana.santos@iprev.df.gov.br<br/>iprev@iprev.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>FEPECS</td>
+                        <td> </td>
+                        <td>Vilma</td>
+                        <td>3325-4956</td>
+                        <td>diretoriaexecutivafepecs@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>AGEFIS</td>
+                        <td> </td>
+                        <td>Rose</td>
+                        <td>3961-5123</td>
+                        <td>tja@agefis.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>HEMOCENTRO</td>
+                        <td> </td>
+                        <td>Laura</td>
+                        <td>3327-4774</td>
+                        <td>Hemocentro.df@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>FAP</td>
+                        <td> </td>
+                        <td>Vanessa/Vera</td>
+                        <td>3462-8802</td>
+                        <td>presidencia@fap.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>FUNAP</td>
+                        <td> </td>
+                        <td>Maria</td>
+                        <td>3233-8523</td>
+                        <td>funapdf@yahoo.com.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Pessoas com Deficiência CODDEDE</td>
+                        <td> </td>
+                        <td>Marcia</td>
+                        <td>3245-7210</td>
+                        <td>coddede@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho da Mulher</td>
+                        <td> </td>
+                        <td>Taline/Elisangela</td>
+                        <td>3403-4923</td>
+                        <td>cdm@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselhos Tutelares</td>
+                        <td> </td>
+                        <td>Anselmo</td>
+                        <td>3213-0655</td>
+                        <td>Conata.crianca@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho dos Direitos da Criança e Adolescente e Fundo do CDCA</td>
+                        <td> </td>
+                        <td>Aila - Eliza - Reinaldo</td>
+                        <td>3213-0741<br/>3213-0739<br/>3213-0740</td>
+                        <td>Conata.crianca@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>CONDETUR</td>
+                        <td> </td>
+                        <td>Ana </td>
+                        <td>3214-2779</td>
+                        <td> condetur@setur.df.gov.br </td>
+                      </tr>
+                      <tr>
+                        <td>Conselho do Negro</td>
+                        <td> </td>
+                        <td>Victor/Juliana</td>
+                        <td>3403-4973/4979/4943</td>
+                        <td>cdn@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho do Idoso</td>
+                        <td> </td>
+                        <td>Luciana</td>
+                        <td>3345-4686</td>
+                        <td>cdi@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho do Direitos Humanos</td>
+                        <td> </td>
+                        <td>Rebeca</td>
+                        <td>3245-3969- Ramal 227/228</td>
+                        <td>cddhdh@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho Distrital da Juventude</td>
+                        <td> </td>
+                        <td>Alex</td>
+                        <td>3213-0667</td>
+                        <td>conjuvedf@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Fundo de Administração do Meio Ambiente<br/>FUNAM</td>
+                        <td> </td>
+                        <td>Antônia</td>
+                        <td>3214-5602</td>
+                        <td>Funam.sema@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>TARF</td>
+                        <td> </td>
+                        <td>Cely </td>
+                        <td>3342-2633</td>
+                        <td>fundaf@fazenda.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>FUNDAF</td>
+                        <td> </td>
+                        <td>Ricardo</td>
+                        <td>3312-5270</td>
+                        <td>fundaf@fazenda.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>CONSELHO GERTOR PPP</td>
+                        <td> </td>
+                        <td>Rossini</td>
+                        <td>3312-8493</td>
+                        <td>ppp@fazenda.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>PRÓ-GESTÃO</td>
+                        <td> </td>
+                        <td>Suiane/ Cleiton</td>
+                        <td>3313-5525 / 3313-8111</td>
+                        <td>Suiane.fernandes@segad.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>COMITÊ DE GOVERNANÇA PESSOAL – CGP<br/>Antigo CPRH</td>
+                        <td> </td>
+                        <td> </td>
+                        <td>3313-8107<br/>81123322</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>CAS/DF</td>
+                        <td> </td>
+                        <td>Ana</td>
+                        <td>3348-3550</td>
+                        <td>ana.nardi@sedhs.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>CONSEA/DF</td>
+                        <td> </td>
+                        <td>Elizama</td>
+                        <td>3234-0230</td>
+                        <td>Consea.df@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Regularização de Áreas Públicas - COREG</td>
+                        <td> </td>
+                        <td>Roberto - Helena</td>
+                        <td>3051-6314</td>
+                        <td>Gff.seagri@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Desenvolvimento do Fundo Rural</td>
+                        <td> </td>
+                        <td>Edson - Jorge</td>
+                        <td>3051-6369<br/>3051-6374</td>
+                        <td>Sdr.seagri.df.@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Administração e Gestor do Fundo do Aval</td>
+                        <td> </td>
+                        <td>Edson - Jorge</td>
+                        <td>3051-6369<br/>3051-6374</td>
+                        <td>Sdr.seagri.df.@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Desenvolvimento Rural Sustentável</td>
+                        <td> </td>
+                        <td>Jane</td>
+                        <td>3051-6338<br/>3051-6302</td>
+                        <td>Sdr.seagri.df.@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho CDES/DF</td>
+                        <td> </td>
+                        <td>Agnaldo/Carol</td>
+                        <td>3365-5175// 98252-7170</td>
+                        <td>ana.castro@buriti.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho CODCOOPA/DF </td>
+                        <td> </td>
+                        <td>Lucas</td>
+                        <td>3255-3879</td>
+                        <td>codcoopa@setrab.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Comitê do Trabalho Decente</td>
+                        <td> </td>
+                        <td>Lucas</td>
+                        <td>3325-3878</td>
+                        <td>etb@setrab.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Comitê Inter setorial para a Inclusão de Catadores de Materiais Recicláveis do DF</td>
+                        <td> </td>
+                        <td>Douglas</td>
+                        <td>3312-9943</td>
+                        <td>subrats@buriti.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho CGOS</td>
+                        <td> </td>
+                        <td>Jaqueline</td>
+                        <td>3961-6102</td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="c-head-2">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#conselhos" data-target="#c-2" aria-expanded="true" aria-controls="collapseOne">
+                    Administração Direta – Secretaria de Mobilidade
+                  </a>
+                </h4>
+              </div>
+              <div id="c-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="c-head-2">
+                <div class="panel-body">
+                  <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                      <tr>
+                        <th title="Field #1">CONSELHO</th>
+                        <th title="Field #2">RESPONSÁVEL</th>
+                        <th title="Field #3">CONTATO</th>
+                        <th title="Field #4">E-MAIL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Conselho Rodoviário – DER/DF</td>
+                        <td>Tereza</td>
+                        <td>3111-5699</td>
+                        <td>Secretarias.dg@der.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>JARI/DER</td>
+                        <td>Daniele</td>
+                        <td>3111-5703</td>
+                        <td>Secretarias.dg@der.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Comitê FUNGER/DF</td>
+                        <td>Paulo</td>
+                        <td>3255-3778</td>
+                        <td>Marcelo.costa@setrat.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho FUNGER/DF</td>
+                        <td>Bruno</td>
+                        <td>3255-3879</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Junta de Controle - DER</td>
+                        <td>Tereza</td>
+                        <td>3111-5699</td>
+                        <td>Secretarias.dg@der.df.gov.br</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="c-head-3">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#conselhos" data-target="#c-3" aria-expanded="true" aria-controls="collapseOne">
+                    Administração Direta – Secretaria de Segurança Pública
+                  </a>
+                </h4>
+              </div>
+              <div id="c-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="c-head-3">
+                <div class="panel-body">
+                  <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                      <tr>
+                        <th title="Field #1">CONSELHO</th>
+                        <th title="Field #2">RESPONSÁVEL</th>
+                        <th title="Field #3">CONTATO</th>
+                        <th title="Field #4">E-MAIL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Conselho Penitenciário<br/>COPEN</td>
+                        <td>Fernandes/Marigia/ Anderson </td>
+                        <td>3233-7469<br/>3233-1174</td>
+                        <td>copen@ssp.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Fundo Penitenciário<br/>FUNP</td>
+                        <td>Ariane</td>
+                        <td>3234-5997</td>
+                        <td>funp.sesipe@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho COPEP/DF</td>
+                        <td>Francisco</td>
+                        <td>3325-2391</td>
+                        <td>Copep.copep@sde.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho COFAP/DF</td>
+                        <td>Francisco</td>
+                        <td>3325-2391</td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="c-head-4">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#conselhos" data-target="#c-4" aria-expanded="true" aria-controls="collapseOne">
+                    Administração Indireta/Direta
+                  </a>
+                </h4>
+              </div>
+              <div id="c-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="c-head-4">
+                <div class="panel-body">
+                  <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                      <tr>
+                        <th title="Field #1">CONSELHO</th>
+                        <th title="Field #2">RESPONSÁVEL</th>
+                        <th title="Field #3">CONTATO</th>
+                        <th title="Field #4">E-MAIL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>FUNDURB</td>
+                        <td>Eliete</td>
+                        <td>3214-4092</td>
+                        <td>fundurb@segeth.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>FUNDIS</td>
+                        <td>Eliete</td>
+                        <td>3214-4092</td>
+                        <td>fundis@segeth.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho CCPPTM</td>
+                        <td>Eliete</td>
+                        <td>3214-4092</td>
+                        <td>ascol@seght.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho Superior - CONSIOP</td>
+                        <td> </td>
+                        <td>3441-8700</td>
+                        <td>Gabssp@ssp.df.gov.br</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="c-head-5">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#conselhos" data-target="#c-5" aria-expanded="true" aria-controls="collapseOne">
+                    Administração Direta – Secretaria de Cultura
+                  </a>
+                </h4>
+              </div>
+              <div id="c-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="c-head-5">
+                <div class="panel-body">
+                  <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                      <tr>
+                        <th title="Field #1">CONSELHO</th>
+                        <th title="Field #2">RESPONSÁVEL</th>
+                        <th title="Field #3">CONTATO</th>
+                        <th title="Field #4">E-MAIL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>CULTURA</td>
+                        <td>Nana Farias<br/>Irene</td>
+                        <td>3325-6259<br/>3325-5217</td>
+                        <td>conselhodecultura@cultura.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>FAC</td>
+                        <td>Nana<br/>Margareth</td>
+                        <td>3325-9312<br/>3325-6221</td>
+                        <td>fac@cultura.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho do Trabalho</td>
+                        <td>Bruno</td>
+                        <td>3255-3879</td>
+                        <td>Barbosabruno.df@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="c-head-6">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#conselhos" data-target="#c-6" aria-expanded="true" aria-controls="collapseOne">
+                    Administração Direta – Secretaria de Planejamento
+                  </a>
+                </h4>
+              </div>
+              <div id="c-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="c-head-6">
+                <div class="panel-body">
+                  <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                      <tr>
+                        <th title="Field #1">CONSELHO</th>
+                        <th title="Field #2">ENDEREÇO</th>
+                        <th title="Field #3">RESPONSÁVEL</th>
+                        <th title="Field #4">CONTATO</th>
+                        <th title="Field #5">E-MAIL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>CGOS</td>
+                        <td> </td>
+                        <td>Jaqueline</td>
+                        <td>R/6228</td>
+                        <td>cgos@seplac.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>CONAM/DF</td>
+                        <td> </td>
+                        <td>Antônia</td>
+                        <td>3214 -5602</td>
+                        <td>conamdf@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Recursos Hídricos – CRH/DF</td>
+                        <td> </td>
+                        <td>Antônia</td>
+                        <td>3214 -5602</td>
+                        <td>conselho.crh@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho CAFAC</td>
+                        <td> </td>
+                        <td>Suiane</td>
+                        <td>3214-2845</td>
+                        <td>Fundo.esporte@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Esporte e Lazer - CONEF</td>
+                        <td> </td>
+                        <td>Suiane</td>
+                        <td>3214-2824</td>
+                        <td>Conselho.sest@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Educação</td>
+                        <td> </td>
+                        <td>Cintia</td>
+                        <td>3901-3151</td>
+                        <td>Cedf.df@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Alimentação escolar</td>
+                        <td> </td>
+                        <td>Bruno </td>
+                        <td>3901-3256</td>
+                        <td>Cae.df@se.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho do Fundo de Educação</td>
+                        <td> </td>
+                        <td>Bruno</td>
+                        <td>3901-3256</td>
+                        <td>Conselho.fundeb@se.df.gov.br</td>
+                      </tr>
+                      <tr>
+                        <td>Conselho de Saúde</td>
+                        <td> </td>
+                        <td>Juliana </td>
+                        <td>99276-3905<br/>99171-4226<br/>99213-2976</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Contrandife </td>
+                        <td> </td>
+                        <td>Wagner</td>
+                        <td>3233-3519</td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO SANFONA -->
+
+    <!-- INÍCIO DO MODULO RODAPÉ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 marca-bsb-cidada">
+            <img class="img-responsive" alt="Brasília Cidadã" src="images/marca-bsb-cidada-negativa.png"/>
+          </div>
+          <div class="col-md-7">
+            <div>
+              <div class="site-titulo">
+                Brasília Cidadã
+              </div>
+              <div class="redes-sociais">
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-whatsapp.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-facebook.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-twitter.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-instagram.png"/>
+                </a>
+                <a href="https://instagram.com/gov_df" target="_blank">
+                    <img alt="Instagram" src="images/icon-youtube.png"/>
+                </a>
+              </div>
+            </div>
+            <div class="links-sistema">
+              <a href="termo_uso.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Termo de Uso do Sistema</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="termo_responsabilidade.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Termo de Responsabilidade</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="fale_conosco.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Fale Conosco</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="marca.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Sobre a Marca</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="marca-gdf">
+              <img class="img-responsive" alt="Governo de Brasília" src="images/logo_gov_bsb.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- INÍCIO DO MÓDULO RODAPÉ -->
+
+    <script type="text/javascript" src="main/javax.faces.resource/jsf.js"></script>
+    <script type="text/javascript" src="main/javax.faces.resource/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    <script type="text/javascript" src="lib/jquery.mask.js"></script>
+    <script type="text/javascript" src="lib/odometer.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script defer="true" src="https://maps.googleapis.com/maps/api/js?callback=mapaIndexModal&amp;key=AIzaSyCPkeOmnYZwEeGAIIWxKhvIDjiDJzM8RdE&amp;language=pt&amp;region=BR"></script>
+  </body>
+</html>

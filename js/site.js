@@ -170,3 +170,12 @@ $(document).ready(function() {
   }, 2000);
 
 });
+
+$('#conselhos a').click(function(){
+  if($('#conselhos a').hasClass('collapsed')){
+      $('#conselhos a.collapsed').prev().prev().removeClass('panel-heading-active');
+    }
+    else{
+      $('#conselhos a').prev().prev().addClass('panel-heading-active');
+    }
+});

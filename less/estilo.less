@@ -1,4 +1,4 @@
-// out: ../css/estilo.min.css, sourcemap: true, compress: true
+// out: ../css/estilo.css
 
 @font-face{
     font-family: "Montserrat Light";
@@ -61,7 +61,7 @@
 @import "projetos.less";
 @import "videos-depoimentos.less";
 @import "cards.less";
-@import "listagem.less";
+@import "inside-pages.less";
 @import "rodape.less";
 
 body{
@@ -167,4 +167,74 @@ body{
     }
 
   }
+}
+
+.accordion.panel-group{
+	margin-bottom: 60px;
+	.panel{
+		margin-bottom: 10px;
+		.border-radius(0);
+		border: 0;
+
+		.panel-heading{
+			height: 60px;
+			padding: 0;
+			.border-radius(10px);
+		}
+		.panel-heading-active{
+			.border-radius(0);
+			.border-top-left-radius(10px);
+			.border-top-right-radius(10px);
+		}
+		.panel-title{
+			font-family: "Montserrat";
+			font-size: 16px;
+			position: relative;
+			height: 100%;
+
+			a{
+				padding: 20px;
+				padding-right: 52px;
+				position: absolute;
+				top: 0;
+
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+				background-image: url(../images/icone-abrir-azul.svg);
+				background-position: calc(~"100% - 20px");
+				background-repeat: no-repeat;
+				.transition(background-image 0.4s);
+
+				&:hover,
+				&:focus{
+					color: @white;
+				}
+
+				&.collapsed{
+					background-image: url(../images/icone-fechar-azul.svg);
+				}
+			}
+		}
+		.panel-body{
+      padding: 0;
+			.gray-border;
+			border-top: 0;
+			line-height: 1.4;
+		}
+
+		&.panel-primary{
+			> .panel-heading{
+				color: @white;
+				background-color: @deep-primary;
+				border-color: @deep-primary;
+
+				&.panel-heading-active{
+					background-color: @primary;
+					border-color: @primary;
+				}
+			}
+		}
+	}
 }
