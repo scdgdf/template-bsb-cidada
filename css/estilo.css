@@ -69,6 +69,9 @@
 /*
 * Os módulos de cor azul devem ter -pe no nome da classe ~Perigo~
 */
+/*
+* Mixins
+*/
 .nav-voluntariado {
   background-color: #FFFFFF;
   border: 0;
@@ -344,7 +347,7 @@ h1.page-title {
   color: #4079BC;
 }
 #banner-bsb-cidada {
-  background-image: url("../images/exerca-banner.jpg");
+  background-image: url("../images/exerca-banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -687,10 +690,17 @@ h1.page-title {
   position: relative;
   text-align: right;
 }
-.marca-qualifica-brasilia img {
-  margin-top: 65px;
+.marca-qualifica-brasilia img,
+.marca-qualifica-brasilia button {
   position: absolute;
+}
+.marca-qualifica-brasilia img {
+  margin-top: 40px;
   right: 0;
+}
+.marca-qualifica-brasilia button {
+  margin-top: 155px;
+  right: 15px;
 }
 #qualifica-brasilia .texto {
   font-size: 20px;
@@ -792,6 +802,26 @@ hr {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+#lista-financiamento .modulo-titulo,
+#legislacao .modulo-titulo,
+#conselhos .modulo-titulo {
+  text-align: left;
+  margin-bottom: 40px;
+}
+#lista-financiamento ul,
+#legislacao ul,
+#conselhos ul {
+  margin-bottom: 40px;
+}
+#legislacao,
+#conselhos {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#conselhos table,
+#conselhos .table {
+  margin-bottom: 0;
+}
 .listagem {
   list-style: none;
   padding-left: 0;
@@ -801,10 +831,14 @@ hr {
   border-bottom: 1px solid #CCCCCC;
   margin-top: 15px;
   padding-bottom: 15px;
+  width: 100%;
 }
 .listagem li .image {
   display: inline;
   float: left;
+}
+.listagem li .image .img-thumbnail {
+  background-color: #F5F5F5;
 }
 .listagem li .image img {
   margin-bottom: 30px;
@@ -816,6 +850,9 @@ hr {
   display: inline;
   float: left;
   margin-left: 15px;
+}
+.listagem li .conteudo a {
+  color: #515151 !important;
 }
 .listagem li .conteudo .nome-edital {
   font-family: "Montserrat Light", sans-serif;
@@ -964,19 +1001,36 @@ hr {
     border: 0;
     margin-top: 0;
     padding-bottom: 0;
+    width: 100%;
   }
   .listagem li .image img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
   .listagem li .conteudo {
-    width: calc(100% - 180px);
+    width: calc(100% - 130px);
     margin-left: 30px;
     margin-bottom: 30px;
   }
   .listagem li .conteudo .nome-edital {
     font-size: 25px;
   }
+}
+.post {
+  margin-bottom: 30px;
+}
+.post a {
+  font-family: "Titillium Web";
+  color: #4079BC;
+}
+.post a .post-titulo {
+  font-size: 28px;
+}
+.post .post-subtitulo {
+  font-family: "Montserrat", sans-serif;
+}
+.post .post-texto {
+  font-family: "Open Sans";
 }
 footer {
   background: #62B789;
@@ -1014,7 +1068,8 @@ footer {
   text-decoration: underline;
 }
 .marca-bsb-cidada img {
-  height: 80px;
+  padding-top: 13px;
+  float: right;
 }
 .marca-gdf {
   padding-top: 8px;
@@ -1104,4 +1159,100 @@ body {
 .btn-full {
   width: 100%;
   height: 60px;
+}
+.breadcrumb-container {
+  background-color: #28BBB6;
+}
+.breadcrumb-container .breadcrumb {
+  margin-bottom: 0;
+  background: none;
+  margin-left: 15px;
+}
+.breadcrumb-container .breadcrumb a {
+  color: #FFFFFF !important;
+  font-family: "Montserrat", sans-serif;
+}
+.breadcrumb-container .breadcrumb a:focus,
+.breadcrumb-container .breadcrumb a:hover {
+  text-decoration: underline;
+}
+.breadcrumb-container .breadcrumb .active {
+  color: #FFFFFF;
+  font-family: "Montserrat Bold", sans-serif;
+}
+.breadcrumb-container .breadcrumb > li + li::before {
+  color: #515151;
+  content: ">";
+  padding: 0 15px;
+}
+.accordion.panel-group {
+  margin-bottom: 60px;
+}
+.accordion.panel-group .panel {
+  margin-bottom: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+}
+.accordion.panel-group .panel .panel-heading {
+  height: 60px;
+  padding: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.accordion.panel-group .panel .panel-heading-active {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.accordion.panel-group .panel .panel-title {
+  font-family: "Montserrat";
+  font-size: 16px;
+  position: relative;
+  height: 100%;
+}
+.accordion.panel-group .panel .panel-title a {
+  padding: 20px;
+  padding-right: 52px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/icone-abrir-azul.svg);
+  background-position: calc(100% - 20px);
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 0.4s;
+  -moz-transition: background-image 0.4s;
+  transition: background-image 0.4s;
+}
+.accordion.panel-group .panel .panel-title a:hover,
+.accordion.panel-group .panel .panel-title a:focus {
+  color: #FFFFFF;
+}
+.accordion.panel-group .panel .panel-title a.collapsed {
+  background-image: url(../images/icone-fechar-azul.svg);
+}
+.accordion.panel-group .panel .panel-body {
+  padding: 0;
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  line-height: 1.4;
+}
+.accordion.panel-group .panel.panel-primary > .panel-heading {
+  color: #FFFFFF;
+  background-color: #346399;
+  border-color: #346399;
+}
+.accordion.panel-group .panel.panel-primary > .panel-heading.panel-heading-active {
+  background-color: #4079BC;
+  border-color: #4079BC;
 }
