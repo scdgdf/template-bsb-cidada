@@ -278,6 +278,12 @@ h1.page-title {
 .carousel-indicators {
   bottom: -10px;
 }
+.carousel-indicators li {
+  border-color: #e0e0e0;
+}
+.carousel-indicators .active {
+  background-color: #e0e0e0;
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .banner {

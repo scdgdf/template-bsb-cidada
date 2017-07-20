@@ -5,13 +5,37 @@
   background-position: center;
   background-size: cover;
 }
-.carousel-indicators {
+.carousel-indicators{
   bottom: -10px;
+  li{
+    border-color: @gray;
+  }
+  .active{
+    background-color: @gray;
+  }
+}
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: @screen-sm-min) {
+  .banner{
+    height: 225px;
+  }
+  .carousel-indicators {
+    bottom: 10px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
   .banner{
     height: 325px;
+  }
+  .carousel-indicators {
+    bottom: 10px;
+  }
+}
+/* Medium devices (desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+  .banner{
+    height: 440px;
   }
   .carousel-indicators {
     bottom: 10px;

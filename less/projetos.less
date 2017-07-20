@@ -273,6 +273,8 @@
 .marca-qualifica-brasilia{
   position: relative;
   text-align: right;
+  width: 33.333333%;
+  float: left;
 
   img,
   button{
@@ -286,6 +288,19 @@
     margin-top: 155px;
     right: 15px;
   }
+}
+.btn-qualifica-brasilia{
+  width: 100%;
+  float: left;
+  button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.conteudo-qualifica-brasilia{
+  width: 66.666666%;
+  float: right;
 }
 #qualifica-brasilia{
   .texto{
@@ -304,6 +319,33 @@ hr{
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
+  .marca-qualifica-brasilia{
+    position: relative;
+    text-align: right;
+    width: 33.333333%;
+    float: left;
+    img{
+      position: absolute;
+      margin-top: 0px;
+      right: 0;
+    }
+  }
+  .btn-qualifica-brasilia{
+    position: relative;
+    text-align: right;
+    width: 33.333333%;
+    float: left;
+    margin-top: 115px;
+    right: 15px;
+    button{
+      display: inline;
+    }
+  }
+  .conteudo-qualifica-brasilia{
+    width: 66.666666%;
+    float: right;
+  }
+
   #mapa-organizacoes,
   #qualifica-brasilia{
     .texto{
