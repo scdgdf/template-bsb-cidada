@@ -279,15 +279,33 @@ h1.page-title {
   bottom: -10px;
 }
 .carousel-indicators li {
-  border-color: #e0e0e0;
+  border-color: #CCCCCC;
 }
 .carousel-indicators .active {
-  background-color: #e0e0e0;
+  background-color: #CCCCCC;
+}
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  .banner {
+    height: 225px;
+  }
+  .carousel-indicators {
+    bottom: 10px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .banner {
     height: 325px;
+  }
+  .carousel-indicators {
+    bottom: 10px;
+  }
+}
+/* Medium devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner {
+    height: 440px;
   }
   .carousel-indicators {
     bottom: 10px;
@@ -695,6 +713,8 @@ h1.page-title {
 .marca-qualifica-brasilia {
   position: relative;
   text-align: right;
+  width: 33.333333%;
+  float: left;
 }
 .marca-qualifica-brasilia img,
 .marca-qualifica-brasilia button {
@@ -707,6 +727,19 @@ h1.page-title {
 .marca-qualifica-brasilia button {
   margin-top: 155px;
   right: 15px;
+}
+.btn-qualifica-brasilia {
+  width: 100%;
+  float: left;
+}
+.btn-qualifica-brasilia button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.conteudo-qualifica-brasilia {
+  width: 66.666666%;
+  float: right;
 }
 #qualifica-brasilia .texto {
   font-size: 20px;
@@ -721,6 +754,32 @@ hr {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .marca-qualifica-brasilia {
+    position: relative;
+    text-align: right;
+    width: 33.333333%;
+    float: left;
+  }
+  .marca-qualifica-brasilia img {
+    position: absolute;
+    margin-top: 0px;
+    right: 0;
+  }
+  .btn-qualifica-brasilia {
+    position: relative;
+    text-align: right;
+    width: 33.333333%;
+    float: left;
+    margin-top: 115px;
+    right: 15px;
+  }
+  .btn-qualifica-brasilia button {
+    display: inline;
+  }
+  .conteudo-qualifica-brasilia {
+    width: 66.666666%;
+    float: right;
+  }
   #mapa-organizacoes .texto,
   #qualifica-brasilia .texto {
     font-size: 30px;
@@ -808,6 +867,11 @@ hr {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+#lista-financiamento,
+#legislacao,
+#conselhos {
+  min-height: calc(100vh - 395px);
+}
 #lista-financiamento .modulo-titulo,
 #legislacao .modulo-titulo,
 #conselhos .modulo-titulo {
@@ -823,6 +887,13 @@ hr {
 #conselhos {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+#legislacao h2.modulo-titulo {
+  font-size: 40px;
+}
+#legislacao h3.modulo-titulo {
+  font-size: 35px;
+  color: #00A757;
 }
 #conselhos table,
 #conselhos .table {
@@ -1046,7 +1117,7 @@ footer {
 }
 .site-titulo {
   font-family: "Titillium Web";
-  font-size: 35px;
+  font-size: 30px;
 }
 .redes-sociais a img {
   width: 40px;
@@ -1233,7 +1304,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(../images/icone-abrir-azul.svg);
+  background-image: url(../images/icone-fechar-azul.svg);
   background-position: calc(100% - 20px);
   background-repeat: no-repeat;
   -webkit-transition: background-image 0.4s;
@@ -1245,7 +1316,7 @@ body {
   color: #FFFFFF;
 }
 .accordion.panel-group .panel .panel-title a.collapsed {
-  background-image: url(../images/icone-fechar-azul.svg);
+  background-image: url(../images/icone-abrir-azul.svg);
 }
 .accordion.panel-group .panel .panel-body {
   padding: 0;
