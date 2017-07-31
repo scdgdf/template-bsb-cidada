@@ -1109,6 +1109,80 @@ hr {
 .post .post-texto {
   font-family: "Open Sans";
 }
+.panel-menu-servico.panel-primary {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  border-color: #e0e0e0;
+}
+.panel-menu-servico.panel-resources .nav-item > a:hover:after {
+  content: none;
+}
+.panel-menu-servico.panel-resources .nav-item.active > a:after {
+  content: none;
+}
+.panel-menu-servico.panel-primary .panel-heading {
+  text-align: left;
+  text-transform: none;
+  font-family: "Open sans";
+  font-size: 18px;
+  color: #00A757;
+  margin-left: 14px;
+  margin-top: 20px;
+  background: none;
+  border: none;
+}
+.panel-menu-servico.panel-primary .panel-body-menu {
+  padding-bottom: 0;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item {
+  padding: 0;
+  border-left: 4px solid transparent;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item.active,
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item:hover {
+  background-color: #F5F5F5;
+  border-left: 4px solid #00A757;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item.active > a {
+  background: none;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item.active > a:hover {
+  background: none;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item.active > a span {
+  white-space: normal;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item a {
+  margin: 0;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item a:before {
+  content: none;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item a.titulo {
+  color: #515151;
+  padding: 8px 0px;
+  padding-left: 24px;
+  border: 0;
+  font-size: 16px;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item a.titulo:first-child {
+  margin-top: 0px;
+}
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item a.titulo.active,
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item a.subtitulo.active,
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item a.titulo:hover,
+.panel-menu-servico.panel-primary .panel-body-menu .nav-item a.subtitulo:hover {
+  background: none;
+}
+.panel-menu-servico .module-content {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 13px;
+}
 footer {
   background: #62B789;
   color: #FFFFFF;
