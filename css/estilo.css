@@ -240,6 +240,7 @@ h1.page-title {
   }
   .navbar-brand img {
     height: auto;
+    width: 125px;
   }
   .sp-menu {
     padding: 8px 15px;
@@ -254,7 +255,7 @@ h1.page-title {
     margin: 0px 15px;
   }
   h1.page-title {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 0px;
     display: block;
@@ -262,12 +263,37 @@ h1.page-title {
   .header-button {
     margin-left: 5px;
   }
+  .navbar-default .navbar-nav.menu > li {
+    font-size: 13px;
+  }
   .navbar-default .navbar-nav.menu-botoes {
-    margin-top: -44px;
+    margin-top: -32px;
+    margin-right: 0;
     margin-bottom: 0;
+  }
+  .navbar-default .navbar-nav.menu-botoes a {
+    font-size: 13px;
   }
   #menu-principal {
     border-bottom: 0;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1.page-title {
+    font-size: 24px;
+  }
+  .navbar-brand img {
+    width: auto;
+  }
+  .navbar-default .navbar-nav.menu > li {
+    font-size: 15px;
+  }
+  .navbar-default .navbar-nav.menu-botoes {
+    margin-top: -44px;
+  }
+  .navbar-default .navbar-nav.menu-botoes > li a {
+    font-size: 14px;
   }
 }
 .banner {
@@ -383,9 +409,19 @@ h1.page-title {
 @media (min-width: 992px) {
   .box {
     margin-bottom: 0;
+    height: 245px;
   }
   #banner-bsb-cidada {
+    height: 110px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #banner-bsb-cidada {
     height: 135px;
+  }
+  .box {
+    height: auto;
   }
 }
 .modulo-cadastro {
@@ -569,30 +605,6 @@ h1.page-title {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .nav.nav-tabs {
-    padding-bottom: 0;
-    background: none;
-  }
-  .nav.nav-tabs > li {
-    width: auto;
-    text-align: left;
-  }
-  .tab-content {
-    margin-top: 1px;
-  }
-  .tab-content .tab-pane {
-    height: 92px;
-  }
-  .tab-content .tab-pane .modulo-pesquisa {
-    margin-top: 10px;
-  }
-  .tab-content .tab-pane .modulo-selecao {
-    margin-top: 35px;
-    margin-bottom: 20px;
-  }
-}
 .btn-plus {
   font-family: "OpenSans Bold", sans-serif;
   color: #333333;
@@ -752,6 +764,27 @@ hr {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .nav.nav-tabs {
+    padding-bottom: 0;
+    background: none;
+  }
+  .nav.nav-tabs > li {
+    width: auto;
+    text-align: left;
+  }
+  .tab-content {
+    margin-top: 1px;
+  }
+  .tab-content .tab-pane {
+    height: 92px;
+  }
+  .tab-content .tab-pane .modulo-pesquisa {
+    margin-top: 10px;
+  }
+  .tab-content .tab-pane .modulo-selecao {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
   .marca-qualifica-brasilia {
     position: relative;
     text-align: right;
@@ -799,6 +832,43 @@ hr {
   }
   .modulo-dc-pe {
     background: linear-gradient(#eb5757 50%, #F5F5F5 50%);
+  }
+  .modulo-item > .conteudo > .titulo {
+    min-height: 76px;
+  }
+  .modulo-item > .conteudo > .titulo.maior {
+    min-height: 95px;
+  }
+  .modulo-item > .conteudo > .responsavel {
+    min-height: 80px;
+  }
+  .modulo-item > .conteudo > .descricao {
+    min-height: 100px;
+  }
+  .modulo-item > .conteudo .oportunidades,
+  .modulo-item > .conteudo .meta-doacoes,
+  .modulo-item > .conteudo .detalhes {
+    min-height: 60px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .modulo-item > .conteudo > .titulo {
+    min-height: 57px;
+  }
+  .modulo-item > .conteudo > .titulo.maior {
+    min-height: 76px;
+  }
+  .modulo-item > .conteudo > .responsavel {
+    min-height: 60px;
+  }
+  .modulo-item > .conteudo > .descricao {
+    min-height: 80px;
+  }
+  .modulo-item > .conteudo .oportunidades,
+  .modulo-item > .conteudo .meta-doacoes,
+  .modulo-item > .conteudo .detalhes {
+    min-height: 38px;
   }
 }
 #video-depoimentos {
@@ -1234,6 +1304,7 @@ footer {
   }
   .site-titulo {
     float: left;
+    font-size: 25px;
   }
   .redes-sociais {
     text-align: right;
@@ -1241,6 +1312,13 @@ footer {
   }
   .links-sistema a {
     display: inline;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .site-titulo {
+    float: left;
+    font-size: 30px;
   }
 }
 body {

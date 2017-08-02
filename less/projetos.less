@@ -50,7 +50,6 @@
   }
 }
 
-
 .nav{
   &.nav-tabs{
     background-color: rgba(0, 0, 0, 0.2);
@@ -115,32 +114,6 @@
         margin-bottom: 5px;
       }
     }
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-  .nav{
-    &.nav-tabs{
-      padding-bottom: 0;
-      background: none;
-      >li{
-        width: auto;
-        text-align: left;
-      }
-    }
-  }
-  .tab-content{
-    margin-top: 1px;
-      .tab-pane{
-        height: 92px;
-        .modulo-pesquisa{
-          margin-top: 10px;
-        }
-        .modulo-selecao{
-          margin-top: 35px;
-          margin-bottom: 20px;
-        }
-      }
-  }
 }
 
 .btn-plus{
@@ -315,6 +288,29 @@ hr{
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
+  .nav{
+    &.nav-tabs{
+      padding-bottom: 0;
+      background: none;
+      >li{
+        width: auto;
+        text-align: left;
+      }
+    }
+  }
+  .tab-content{
+    margin-top: 1px;
+      .tab-pane{
+        height: 92px;
+        .modulo-pesquisa{
+          margin-top: 10px;
+        }
+        .modulo-selecao{
+          margin-top: 35px;
+          margin-bottom: 20px;
+        }
+      }
+  }
   .marca-qualifica-brasilia{
     position: relative;
     text-align: right;
@@ -366,5 +362,52 @@ hr{
   }
   .modulo-dc-pe{
       background: linear-gradient(@danger 50%, @white-three 50%);
+  }
+
+  .modulo-item{
+    >.conteudo{
+      >.titulo{
+        min-height: 76px;
+        &.maior{
+          min-height: 95px;
+        }
+      }
+      >.responsavel{
+        min-height: 80px;
+      }
+      >.descricao{
+        min-height: 100px;
+      }
+      .oportunidades,
+      .meta-doacoes,
+      .detalhes{
+        min-height: 60px;
+      }
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+  .modulo-item{
+    >.conteudo{
+      >.titulo{
+        min-height: 57px;
+        &.maior{
+          min-height: 76px;
+        }
+      }
+      >.responsavel{
+        min-height: 60px;
+      }
+      >.descricao{
+        min-height: 80px;
+      }
+      .oportunidades,
+      .meta-doacoes,
+      .detalhes{
+        min-height: 38px;
+      }
+    }
   }
 }
