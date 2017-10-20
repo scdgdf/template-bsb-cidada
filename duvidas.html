@@ -1,0 +1,371 @@
+
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head">
+  <link type="text/css" rel="stylesheet" href="main/javax.faces.resource/theme.css.html?ln=primefaces-aristo" />
+  <script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';}</script>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilo.min.css" rel="stylesheet" />
+    <title>Portal do Voluntariado</title>
+    <link href="css/odometer.css" rel="stylesheet" />
+  </head>
+  <body id="body" elementName="body">
+    <!-- INÍCIO DO MÓDULO HEADER -->
+    <nav class="navbar navbar-default nav-voluntariado">
+        <div id="menu-institucional" class="navbar hidden-xs hidden-ms">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="http://www.transparencia.df.gov.br/Pages/inicio.aspx" target="_blank">
+                                Transparência
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ouvidoria.df.gov.br/" target="_blank">
+                                Ouvidoria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.brasilia.df.gov.br/index.php/2015/10/26/explicacao">
+                                Acesso à Informação
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.dodf.df.gov.br/" target="_blank">
+                                Diário Oficial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.df.gov.br/agencia-brasilia.html" target="_blank">
+                                Agência Brasília
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.df.gov.br" target="_blank">
+                                Portal do Governo de Brasília
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+        <div id="menu-principal">
+            <div class="container">
+                <div class="navbar-header">
+                    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navegacao" data-toggle="collapse" type="button">
+                        <span class="sr-only">Navegação</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">
+                        <img alt="Brasília Cidadã" src="images/logo-voluntariado.png"/>
+                    </a>
+                    <h1 class="page-title">Portal do Voluntariado</h1>
+                </div>
+                <div class="collapse navbar-collapse row" id="navegacao">
+                    <ul class="nav navbar-nav menu">
+                        <li>
+                          <a href="listagem_entidades.html">
+                                Parceiras
+                          </a>
+                        </li>
+                        <li>
+                            <a href="https://www.flickr.com/photos/brasiliacidada" target="_blank">
+                                Fotos
+                            </a>
+                        </li>
+                        <li><a href="sobre.html">
+                                Sobre
+                            </a>
+                        </li>
+                        <li><a href="duvidas.html">
+                                Perguntas e Respostas
+                            </a>
+                        </li>
+                        <li><a href="legislacao.html">
+                                Legislação
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu-botoes">
+                      <li class="header-button">
+                        <a href="validar_certificado.html" class="btn btn-certificado">
+                              Validar Certificado
+                        </a>
+                      </li>
+                      <li class="header-button">
+                        <a href="login.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" class="btn btn-login">
+                              Faça Login
+                          </a>
+                      </li>
+                      <li class="header-button">
+                          <a class="btn btn-cadastro" data-target="#cadastro" data-toggle="modal" href="#">
+                              Cadastre-se
+                          </a>
+                          <div aria-labelledby="cadastrar" class="modal fade" id="cadastro" role="dialog" tabindex="-1">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                              <span aria-hidden="true">
+                                                  ×
+                                              </span>
+                                          </button>
+                                          <h4 class="modal-title" id="cadastrar">
+                                              Selecione o tipo do cadastro:
+                                          </h4>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="col-md-12">
+                                              <div class="col-md-6">
+                                                <button type="button" onclick="window.location.href='/adicionar_voluntario.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;" value="" class="btn btn-success bg_seja_voluntario">
+                                                      Voluntário(a)
+                                                  </button>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <button type="button" onclick="window.location.href='/adicionar_organizacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;" value="" class="btn btn-primary bg_cadastro_orgao">
+                                                      Órgão/Entidade
+                                                  </button>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12"></div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                              Fechar
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DO MÓDULO HEADER -->
+
+    <!-- INÍCIO DO MÓDULO BREADCRUMB -->
+    <div class="breadcrumb-container">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="/">Brasília Cidadã</a></li>
+          <li class="active">Perguntas e Respostas</li>
+        </ol>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO BREADCRUMB -->
+
+    <!-- INÍCIO DO MÓDULO LISTA -->
+    <div id="duvidas" class="modulo ">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-1">
+                <h3 class="modulo-titulo">Perguntas e Respostas</h3>
+
+                <h4 class="pergunta-texto">Qual o principal objetivo do Portal do Voluntariado?</h4>
+                <p class="resposta-texto">
+                    O Portal do Voluntariado tem como objetivo criar as
+                    condições, estabelecer recursos e procedimentos para
+                    fomentar e promover a ação de voluntários no Distrito
+                    Federal. O Site converge os esforços empreendidos por
+                    voluntários para programas e projetos de interesse do
+                    Governo e das Organizações da Sociedade Civil. A ferramenta
+                    permite que os voluntários se conheçam, troquem
+                    experiências, divulguem suas ações e encontrem os projetos
+                    de governo e das entidades que melhor se encaixam com o seu
+                    perfil e disponibilidades de horário para o trabalho
+                    voluntário.
+                </p>
+                <h4 class="pergunta-texto">Como posso participar do Portal do Voluntariado?</h4>
+                <p class="resposta-texto">
+                    É só clicar em "Seja Voluntário (a)" e depois preencher
+                    seus dados e receberá em seu  e-mail a confirmação de
+                    cadastro.
+                </p>
+                <h4 class="pergunta-texto">
+                    Depois de fazer o cadastro como posso visualizar os projetos
+                    do Governo e das Organizações da Sociedade Civil para me
+                    voluntariar?
+                </h4>
+                <p class="resposta-texto">
+                    Na página principal há três abas: “Projetos do Governo”,
+                    “Projetos Entidades”, e “Entidades Cadastradas”, nessas
+                    encontramos todos os projetos que estão sendo promovidos.
+                    Você pode fazer busca nas abas “Projetos do Governo” e
+                    Projetos das Entidades” por Eixo de Atuação, Público Alvo e
+                    Local para prestação de serviço voluntário, ou então
+                    procurar na aba “Entidades Cadastradas” projetos vinculados
+                    a uma Entidade de seu interesse.
+                </p>
+                <h4 class="pergunta-texto">
+                    Como devo fazer para participar de um projeto no Portal do
+                    Voluntariado?
+                </h4>
+                <p class="resposta-texto">
+                    Quando o voluntário se cadastra ele receberá automaticamente
+                    via e-mail projetos que se encaixam com o seu perfil, esse
+                    terá 48 horas para aceitar ou recusar. Caso aceite, estará
+                    automaticamente cadastrado no projeto e deverá aguardar o
+                    contato do Coordenador para mais informações.
+                    <br />
+                    Há também a possibilidade do voluntário pesquisar projetos
+                    que lhe interessam, mas que foram automaticamente
+                    selecionados. Nesse caso, clique na função "Candidatar-se"
+                    que está abaixo de cada projeto, caso preencha os requisitos
+                    do projeto, como disponibilidade de horários, interesses em
+                    comum no Eixo Temático e Público Alvo e disponibilidade de
+                    vaga, o coordenador do Projeto entrará em contato com você
+                    para combinar como será sua participação.
+                </p>
+                <h4 class="pergunta-texto">Quem escolhe os horários?</h4>
+                <p class="resposta-texto">
+                    A própria pessoa é quem dirá em que dias e horários poderá
+                    estar na organização para prestar o serviço voluntário.
+                </p>
+                <h4 class="pergunta-texto">
+                    O voluntário poderá se desligar do projeto que está
+                    voluntariado a qualquer momento ou existe um tempo mínimo de
+                    atuação para fazer esse pedido?
+                </h4>
+                <p class="resposta-texto">
+                    A pessoa é inteiramente livre para iniciar ou se desligar do
+                    serviço voluntário, contudo, os projetos definem o tempo de
+                    duração da ação voluntária, e a interrupção durante esse
+                    período poderá acarretar o não recebimento do Certificado de
+                    Participação.
+                </p>
+                <h4 class="pergunta-texto">Como faço para emitir o Certificado de Participação?</h4>
+                <p class="resposta-texto">
+                    O Certificado de Participação estará disponível no site do
+                    Portal do Voluntariado a partir do término da sua
+                    participação no projeto e da avaliação do Coordenador. Para
+                    realizar o download do certificado, basta fazer o login com
+                    os dados de usuário e senha, clicar em “Meu Perfil”,
+                    localizar o projeto encerrado e clicar em “Gerar
+                    Certificado”.
+                </p>
+                <h4 class="pergunta-texto">Existe regulamentação para o Trabalho Voluntário?</h4>
+                <p class="resposta-texto">
+                    Sim, a Lei nº 3.506, de 20 de dezembro de 2004, a Lei
+                    Federal nº 9.608, de 18 de fevereiro de 1998, recepcionada
+                    pela Lei Distrital nº 2.304, de 21 de janeiro de 1998.
+                    Recentemente o Governo do Distrito Federal promulgou em
+                    23/12/2015 o Decreto nº 37.010/2015, que trata sobre o
+                    trabalho voluntario de pessoas físicas dentro da
+                    Administração Pública Direta e Indireta. Todas essas têm o
+                    intuito de fomentar e estimular as ações voluntárias de
+                    cidadania e envolvimento comunitário no âmbito do Distrito
+                    Federal.
+                </p>
+                <h4 class="pergunta-texto">Quem pode realizar trabalho voluntário?</h4>
+                <p class="resposta-texto">
+                    A Lei 9.608, que dispõe sobre o serviço voluntário, não faz
+                    menção a uma idade mínima para ser voluntário. Muitas
+                    instituições não aceitam menores de 18 anos. Já outras
+                    aceitam jovens a partir dos 16 para alguns tipos de
+                    serviços, desde que com aprovação dos pais ou responsáveis.
+                    O ideal é verificar esta condição junto à instituição ou
+                    órgão no qual você deseja se voluntariar.
+                </p>
+                <h4 class="pergunta-texto">Esqueci minha senha! Como faço para recuperar?</h4>
+                <p class="resposta-texto">
+                    Para ter seu acesso de volta, clique no botão “Recuperar
+                    Senha”. Insira seu login, e-mail e aguarde a mensagem que
+                    vai chegar para você! Se não receber a mensagem na caixa de
+                    entrada de seu e-mail, verifique a caixa de spam.
+                </p>
+                <h4 class="pergunta-texto">Não recebi o e-mail de confirmação de cadastro.</h4>
+                <p class="resposta-texto">
+                    Observe-se mensagem não foi enviada para a caixa de Spam do
+                    seu e-mail. Se ainda assim não tiver recebido, entre em
+                    contato pelo Fale Conosco.
+                </p>
+                <h4 class="pergunta-texto">
+                    Não quero mais participar da Rede. Como faço para desativar
+                    meu perfil?
+                </h4>
+                <p class="resposta-texto">
+                    Para desativar seu perfil, faça o login no site e clique em
+                    “Meu Perfil” que aparece no canto superior direito. Depois
+                    clique em "Desativar Conta" no canto superior direito da
+                    tela. É ali que você vai clicar. Detalhe importante: seus
+                    dados pessoais serão desabilitados, mas todos os conteúdos
+                    publicados por você continuarão existindo. Qualquer problema
+                    entre em contato pelo Fale Conosco.
+                </p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO LISTA -->
+
+
+    <!-- INÍCIO DO MODULO RODAPÉ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 marca-bsb-cidada">
+            <img class="img-responsive" alt="Brasília Cidadã" src="images/marca-bsb-cidada-negativa.png"/>
+          </div>
+          <div class="col-md-7">
+            <div>
+              <div class="site-titulo">
+                Portal do Voluntariado
+              </div>
+              <div class="redes-sociais">
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-whatsapp.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-facebook.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-twitter.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-instagram.png"/>
+                </a>
+                <a href="https://instagram.com/gov_df" target="_blank">
+                    <img alt="Instagram" src="images/icon-youtube.png"/>
+                </a>
+              </div>
+            </div>
+            <div class="links-sistema">
+              <a href="termo_uso.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Termo de Uso do Sistema</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="termo_responsabilidade.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Termo de Responsabilidade</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="fale_conosco.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Fale Conosco</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="marca.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Sobre a Marca</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="marca-gdf">
+              <img class="img-responsive" alt="Governo de Brasília" src="images/logo_gov_bsb.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- INÍCIO DO MÓDULO RODAPÉ -->
+
+    <script type="text/javascript" src="main/javax.faces.resource/jsf.js"></script>
+    <script type="text/javascript" src="main/javax.faces.resource/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    <script type="text/javascript" src="lib/jquery.mask.js"></script>
+    <script type="text/javascript" src="lib/odometer.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script defer="true" src="https://maps.googleapis.com/maps/api/js?callback=mapaIndexModal&amp;key=AIzaSyCPkeOmnYZwEeGAIIWxKhvIDjiDJzM8RdE&amp;language=pt&amp;region=BR"></script>
+  </body>
+</html>

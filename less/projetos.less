@@ -16,6 +16,143 @@
   margin-bottom: 15px;
 }
 
+.nav{
+  &.nav-tabs{
+    // background-color: @black;
+    border: 0;
+    padding-bottom: 15px;
+    >li{
+      width: 100%;
+      text-align: center;
+      a{
+        border: 0;
+        font-family: "Montserrat", sans-serif;
+        color: @black;
+        &:focus,
+        &:hover{
+          border: 0;
+          color: @black;
+          background: none;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      &.active{
+        a{
+          background-color: @black;
+          font-size: 16px;
+          border: 0;
+          color: @white;
+          &:focus,
+          &:hover{
+            border: 0;
+            color: @white;
+          }
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &.nav-in{
+      >li{
+        &.active{
+          a{
+            background-color: darken(@info, 10%) !important;
+          }
+        }
+      }
+    }
+    &.nav-pr{
+      >li{
+        &.active{
+          a{
+            background-color: darken(@primary, 10%) !important;
+          }
+        }
+      }
+    }
+    &.nav-pe{
+      >li{
+        &.active{
+          a{
+            background-color: darken(@danger, 10%) !important;
+          }
+        }
+      }
+    }
+    &.nav-at{
+      >li{
+        &.active{
+          a{
+            background-color: darken(@attention, 10%) !important;
+          }
+        }
+      }
+    }
+    &.nav-av{
+      >li{
+        &.active{
+          a{
+            background-color: darken(@warning, 10%) !important;
+          }
+        }
+      }
+    }
+    &.nav-su{
+      >li{
+        &.active{
+          a{
+            background-color: darken(@success, 10%) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-content{
+  background: @black;
+  margin-bottom: 15px;
+  .tab-pane{
+    padding-bottom: 15px;
+    .modulo-pesquisa{
+      label{
+        color: @white;
+      }
+      .form-group{
+        margin-bottom: 0px;
+      }
+      .btn{
+        font-size: 14px;
+      }
+    }
+    .modulo-selecao{
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  }
+  &.tab-in{
+    background-color: darken(@info, 10%) !important;
+  }
+  &.tab-pr{
+    background-color: darken(@primary, 10%) !important;
+  }
+  &.tab-su{
+    background-color: darken(@success, 10%) !important;
+  }
+  &.tab-pe{
+    background-color: darken(@danger, 10%) !important;
+  }
+  &.tab-at{
+    background-color: darken(@attention, 10%) !important;
+  }
+  &.tab-av{
+    background-color: darken(@warning, 10%) !important;
+  }
+}
+
 .modulo-fade{
   background-color: @white-three;
 }
@@ -48,73 +185,43 @@
   .modulo-titulo{
     color: @white;
   }
-}
-
-.nav{
-  &.nav-tabs{
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 0;
-    padding-bottom: 15px;
-    >li{
-      width: 100%;
-      text-align: center;
-      a{
-        border: 0;
-        font-family: "Montserrat", sans-serif;
-        color: @white;
-        &:focus,
-        &:hover{
-          border: 0;
-          color: @white;
-          background: none;
-        }
-        &:hover{
-          text-decoration: underline;
-        }
-      }
-      &.active{
+  .nav{
+    &.nav-tabs{
+      // background-color: rgba(0,0,0,0.2);
+      >li{
         a{
-          background-color: rgba(0, 0, 0, 0.2);
-          font-size: 16px;
-          border: 0;
+          color: @white;
           &:focus,
           &:hover{
-            border: 0;
             color: @white;
           }
-          &:hover{
-            text-decoration: underline;
+        }
+        &.active{
+          a{
+            background-color: rgba(0,0,0,0.2);
+            color: @white;
+            &:focus,
+            &:hover{
+              color: @white;
+            }
           }
+        }
+      }
+    }
+  }
+  .tab-content{
+    background: rgba(0,0,0,0.2);
+    .tab-pane{
+      .modulo-pesquisa{
+        label{
+          color: @white;
         }
       }
     }
   }
 }
 
-.tab-content{
-    background: rgba(0, 0, 0, 0.2);
 
-    margin-bottom: 15px;
-
-    .tab-pane{
-      padding-bottom: 15px;
-      .modulo-pesquisa{
-        label{
-          color: @white;
-        }
-        .form-group{
-          margin-bottom: 0px;
-        }
-        .btn{
-          font-size: 14px;
-        }
-      }
-      .modulo-selecao{
-        margin-top: 10px;
-        margin-bottom: 5px;
-      }
-    }
-}
 
 .btn-plus{
   font-family: "OpenSans Bold", sans-serif;

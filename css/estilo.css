@@ -394,16 +394,19 @@ h1.page-title {
   margin-right: 10%;
   margin-bottom: 40px;
 }
+.box-parceira,
 .box {
   padding-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
   background-color: #F5F5F5;
   border: 1px solid #CCCCCC;
   border-radius: 4px;
+}
+.box {
   text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .box a {
   color: #515151 !important;
@@ -434,6 +437,27 @@ h1.page-title {
 }
 .box.box-pr h4 {
   color: #4079BC;
+}
+.box-parceira {
+  height: 100%;
+  padding-bottom: 15px;
+}
+.box-parceira .titulo {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 20px;
+  color: #515151;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: block;
+}
+.box-parceira .info .text {
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.box-parceira .info .glyphicon {
+  font-size: 20px;
+  color: #767676;
 }
 #banner-bsb-cidada {
   background-image: url("../images/exerca-banner.png");
@@ -559,6 +583,98 @@ h1.page-title {
   margin-top: 0;
   margin-bottom: 15px;
 }
+.nav.nav-tabs {
+  border: 0;
+  padding-bottom: 15px;
+}
+.nav.nav-tabs > li {
+  width: 100%;
+  text-align: center;
+}
+.nav.nav-tabs > li a {
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #515151;
+}
+.nav.nav-tabs > li a:focus,
+.nav.nav-tabs > li a:hover {
+  border: 0;
+  color: #515151;
+  background: none;
+}
+.nav.nav-tabs > li a:hover {
+  text-decoration: underline;
+}
+.nav.nav-tabs > li.active a {
+  background-color: #515151;
+  font-size: 16px;
+  border: 0;
+  color: #FFFFFF;
+}
+.nav.nav-tabs > li.active a:focus,
+.nav.nav-tabs > li.active a:hover {
+  border: 0;
+  color: #FFFFFF;
+}
+.nav.nav-tabs > li.active a:hover {
+  text-decoration: underline;
+}
+.nav.nav-tabs.nav-in > li.active a {
+  background-color: #1f918d !important;
+}
+.nav.nav-tabs.nav-pr > li.active a {
+  background-color: #336196 !important;
+}
+.nav.nav-tabs.nav-pe > li.active a {
+  background-color: #e62929 !important;
+}
+.nav.nav-tabs.nav-at > li.active a {
+  background-color: #e17108 !important;
+}
+.nav.nav-tabs.nav-av > li.active a {
+  background-color: #f5bb00 !important;
+}
+.nav.nav-tabs.nav-su > li.active a {
+  background-color: #00743c !important;
+}
+.tab-content {
+  background: #515151;
+  margin-bottom: 15px;
+}
+.tab-content .tab-pane {
+  padding-bottom: 15px;
+}
+.tab-content .tab-pane .modulo-pesquisa label {
+  color: #FFFFFF;
+}
+.tab-content .tab-pane .modulo-pesquisa .form-group {
+  margin-bottom: 0px;
+}
+.tab-content .tab-pane .modulo-pesquisa .btn {
+  font-size: 14px;
+}
+.tab-content .tab-pane .modulo-selecao {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.tab-content.tab-in {
+  background-color: #1f918d !important;
+}
+.tab-content.tab-pr {
+  background-color: #336196 !important;
+}
+.tab-content.tab-su {
+  background-color: #00743c !important;
+}
+.tab-content.tab-pe {
+  background-color: #e62929 !important;
+}
+.tab-content.tab-at {
+  background-color: #e17108 !important;
+}
+.tab-content.tab-av {
+  background-color: #f5bb00 !important;
+}
 .modulo-fade {
   background-color: #F5F5F5;
 }
@@ -588,61 +704,66 @@ h1.page-title {
 .modulo-dc-pe .modulo-titulo {
   color: #FFFFFF;
 }
-.nav.nav-tabs {
+.modulo-dc-pr .nav.nav-tabs > li a,
+.modulo-dc-su .nav.nav-tabs > li a,
+.modulo-dc-in .nav.nav-tabs > li a,
+.modulo-dc-av .nav.nav-tabs > li a,
+.modulo-dc-at .nav.nav-tabs > li a,
+.modulo-dc-pe .nav.nav-tabs > li a {
+  color: #FFFFFF;
+}
+.modulo-dc-pr .nav.nav-tabs > li a:focus,
+.modulo-dc-su .nav.nav-tabs > li a:focus,
+.modulo-dc-in .nav.nav-tabs > li a:focus,
+.modulo-dc-av .nav.nav-tabs > li a:focus,
+.modulo-dc-at .nav.nav-tabs > li a:focus,
+.modulo-dc-pe .nav.nav-tabs > li a:focus,
+.modulo-dc-pr .nav.nav-tabs > li a:hover,
+.modulo-dc-su .nav.nav-tabs > li a:hover,
+.modulo-dc-in .nav.nav-tabs > li a:hover,
+.modulo-dc-av .nav.nav-tabs > li a:hover,
+.modulo-dc-at .nav.nav-tabs > li a:hover,
+.modulo-dc-pe .nav.nav-tabs > li a:hover {
+  color: #FFFFFF;
+}
+.modulo-dc-pr .nav.nav-tabs > li.active a,
+.modulo-dc-su .nav.nav-tabs > li.active a,
+.modulo-dc-in .nav.nav-tabs > li.active a,
+.modulo-dc-av .nav.nav-tabs > li.active a,
+.modulo-dc-at .nav.nav-tabs > li.active a,
+.modulo-dc-pe .nav.nav-tabs > li.active a {
   background-color: rgba(0, 0, 0, 0.2);
-  border: 0;
-  padding-bottom: 15px;
-}
-.nav.nav-tabs > li {
-  width: 100%;
-  text-align: center;
-}
-.nav.nav-tabs > li a {
-  border: 0;
-  font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
 }
-.nav.nav-tabs > li a:focus,
-.nav.nav-tabs > li a:hover {
-  border: 0;
-  color: #FFFFFF;
-  background: none;
-}
-.nav.nav-tabs > li a:hover {
-  text-decoration: underline;
-}
-.nav.nav-tabs > li.active a {
-  background-color: rgba(0, 0, 0, 0.2);
-  font-size: 16px;
-  border: 0;
-}
-.nav.nav-tabs > li.active a:focus,
-.nav.nav-tabs > li.active a:hover {
-  border: 0;
+.modulo-dc-pr .nav.nav-tabs > li.active a:focus,
+.modulo-dc-su .nav.nav-tabs > li.active a:focus,
+.modulo-dc-in .nav.nav-tabs > li.active a:focus,
+.modulo-dc-av .nav.nav-tabs > li.active a:focus,
+.modulo-dc-at .nav.nav-tabs > li.active a:focus,
+.modulo-dc-pe .nav.nav-tabs > li.active a:focus,
+.modulo-dc-pr .nav.nav-tabs > li.active a:hover,
+.modulo-dc-su .nav.nav-tabs > li.active a:hover,
+.modulo-dc-in .nav.nav-tabs > li.active a:hover,
+.modulo-dc-av .nav.nav-tabs > li.active a:hover,
+.modulo-dc-at .nav.nav-tabs > li.active a:hover,
+.modulo-dc-pe .nav.nav-tabs > li.active a:hover {
   color: #FFFFFF;
 }
-.nav.nav-tabs > li.active a:hover {
-  text-decoration: underline;
-}
-.tab-content {
+.modulo-dc-pr .tab-content,
+.modulo-dc-su .tab-content,
+.modulo-dc-in .tab-content,
+.modulo-dc-av .tab-content,
+.modulo-dc-at .tab-content,
+.modulo-dc-pe .tab-content {
   background: rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
 }
-.tab-content .tab-pane {
-  padding-bottom: 15px;
-}
-.tab-content .tab-pane .modulo-pesquisa label {
+.modulo-dc-pr .tab-content .tab-pane .modulo-pesquisa label,
+.modulo-dc-su .tab-content .tab-pane .modulo-pesquisa label,
+.modulo-dc-in .tab-content .tab-pane .modulo-pesquisa label,
+.modulo-dc-av .tab-content .tab-pane .modulo-pesquisa label,
+.modulo-dc-at .tab-content .tab-pane .modulo-pesquisa label,
+.modulo-dc-pe .tab-content .tab-pane .modulo-pesquisa label {
   color: #FFFFFF;
-}
-.tab-content .tab-pane .modulo-pesquisa .form-group {
-  margin-bottom: 0px;
-}
-.tab-content .tab-pane .modulo-pesquisa .btn {
-  font-size: 14px;
-}
-.tab-content .tab-pane .modulo-selecao {
-  margin-top: 10px;
-  margin-bottom: 5px;
 }
 .btn-plus {
   font-family: "OpenSans Bold", sans-serif;
@@ -1521,4 +1642,24 @@ body {
 .accordion.panel-group .panel.panel-primary > .panel-heading.panel-heading-active {
   background-color: #4079BC;
   border-color: #4079BC;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-container div[class^="col-"] {
+  float: none !important;
+  margin-bottom: 30px;
+}
+.sobre-texto,
+.resposta-texto {
+  font-family: "OpenSans";
+  font-size: 16px;
+}
+.pergunta-texto {
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: "Titillium Web";
+  text-transform: uppercase;
+  color: #4079BC;
 }

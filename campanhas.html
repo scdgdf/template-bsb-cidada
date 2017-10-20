@@ -1,0 +1,1237 @@
+
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head">
+  <link type="text/css" rel="stylesheet" href="main/javax.faces.resource/theme.css.html?ln=primefaces-aristo" />
+  <script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';}</script>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilo.min.css" rel="stylesheet" />
+    <title>Portal do Voluntariado</title>
+    <link href="css/odometer.css" rel="stylesheet" />
+  </head>
+  <body id="body" elementName="body">
+    <!-- INÍCIO DO MÓDULO HEADER -->
+    <nav class="navbar navbar-default nav-voluntariado">
+        <div id="menu-institucional" class="navbar hidden-xs hidden-ms">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="http://www.transparencia.df.gov.br/Pages/inicio.aspx" target="_blank">
+                                Transparência
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ouvidoria.df.gov.br/" target="_blank">
+                                Ouvidoria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.brasilia.df.gov.br/index.php/2015/10/26/explicacao">
+                                Acesso à Informação
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.dodf.df.gov.br/" target="_blank">
+                                Diário Oficial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.df.gov.br/agencia-brasilia.html" target="_blank">
+                                Agência Brasília
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.df.gov.br" target="_blank">
+                                Portal do Governo de Brasília
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+        <div id="menu-principal">
+            <div class="container">
+                <div class="navbar-header">
+                    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navegacao" data-toggle="collapse" type="button">
+                        <span class="sr-only">Navegação</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">
+                        <img alt="Brasília Cidadã" src="images/logo-voluntariado.png"/>
+                    </a>
+                    <h1 class="page-title">Portal do Voluntariado</h1>
+                </div>
+                <div class="collapse navbar-collapse row" id="navegacao">
+                    <ul class="nav navbar-nav menu">
+                        <li>
+                          <a href="listagem_entidades.html">
+                                Parceiras
+                          </a>
+                        </li>
+                        <li>
+                            <a href="https://www.flickr.com/photos/brasiliacidada" target="_blank">
+                                Fotos
+                            </a>
+                        </li>
+                        <li><a href="sobre.html">
+                                Sobre
+                            </a>
+                        </li>
+                        <li><a href="duvidas.html">
+                                Perguntas e Respostas
+                            </a>
+                        </li>
+                        <li><a href="legislacao.html">
+                                Legislação
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu-botoes">
+                      <li class="header-button">
+                        <a href="validar_certificado.html" class="btn btn-certificado">
+                              Validar Certificado
+                        </a>
+                      </li>
+                      <li class="header-button">
+                        <a href="login.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" class="btn btn-login">
+                              Faça Login
+                          </a>
+                      </li>
+                      <li class="header-button">
+                          <a class="btn btn-cadastro" data-target="#cadastro" data-toggle="modal" href="#">
+                              Cadastre-se
+                          </a>
+                          <div aria-labelledby="cadastrar" class="modal fade" id="cadastro" role="dialog" tabindex="-1">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                              <span aria-hidden="true">
+                                                  ×
+                                              </span>
+                                          </button>
+                                          <h4 class="modal-title" id="cadastrar">
+                                              Selecione o tipo do cadastro:
+                                          </h4>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="col-md-12">
+                                              <div class="col-md-6">
+                                                <button type="button" onclick="window.location.href='/adicionar_voluntario.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;" value="" class="btn btn-success bg_seja_voluntario">
+                                                      Voluntário(a)
+                                                  </button>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <button type="button" onclick="window.location.href='/adicionar_organizacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2'; return false;" value="" class="btn btn-primary bg_cadastro_orgao">
+                                                      Órgão/Entidade
+                                                  </button>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12"></div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                              Fechar
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DO MÓDULO HEADER -->
+
+    <!-- INÍCIO DO MÓDULO BREADCRUMB -->
+    <div class="breadcrumb-container">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="/">Brasília Cidadã</a></li>
+          <li class="active">Todos as Campanhas e Doações</li>
+        </ol>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO BREADCRUMB -->
+
+    <!-- INÍCIO DO MÓDULO LISTA -->
+    <div id="campanhas-doacoes" class="modulo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="modulo-titulo">Campanhas e Doações</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form id="j_idt149" name="j_idt149" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+              <input type="hidden" name="j_idt149" value="j_idt149" />
+              <ul class="nav nav-tabs nav-pr" role="tablist">
+                  <li class="active" role="presentation">
+                    <a id="j_idt151" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_doacoes noHasDoacoes btnDoacao');return false" data-toggle="tab" aria-controls="pesquisaTodosDoacao" href="#pesquisaTodosDoacao">
+                        Todas as Campanhas e Doações
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a id="j_idt154" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_doacoes noHasDoacoes btnDoacao');return false" data-toggle="tab" role="tab" aria-controls="pesquisaGovernoDoacao" href="#pesquisaGovernoDoacao">
+                        Campanhas e Doações do Governo
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a id="j_idt157" class="navbar-item" onclick="mojarra.ab(this,event,'action',0,'listagem_doacoes noHasDoacoes btnDoacao');return false" data-toggle="tab" aria-controls="pesquisaEntidadesDoacao" href="#pesquisaEntidadesDoacao">
+                        Campanhas e Doações das Entidades
+                    </a>
+                  </li>
+              </ul>
+              <div class="tab-content tab-pr tab_content_pesquisar_vagas">
+                  <div class="tab-pane active" id="pesquisaTodosDoacao" role="tabpanel">
+                    <div class="col-md-3 modulo-pesquisa">
+                        <form id="j_idt173" name="j_idt173" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded" class="form-inline">
+                          <input type="hidden" name="j_idt173" value="j_idt173" />
+                          <div class="form-group">
+                            <label>Pesquisar Campanha:</label>
+                            <div class="input-group">
+                              <input id="titulo_campanha" class="form-control" name="titulo_campanha" maxlength="100" type="text" title="Título da Campanha" required="true" placeholder="Pesquisar por Título"/>
+                              <div class="input-group-btn">
+                                <button id="j_idt176" class="btn btn-pr" type="submit" name="j_idt176" value="" onclick="mojarra.ab(this,event,'action','titulo_campanha','listagem_doacoes noHasDoacoes');return false">
+                                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:5" value="/ZGS3cUV7YG9b6FJG1zP2fpIyr8PWlj+AxRVQVIrDa8EUpuOyJQ8AVFxIyYlupc7l+18mEOa/susN6UYh8TzCQSLSGAVtU9Hwf1OIxFzLoH5E9WShROkeaZl3FsDlZ7Dcg6mUjcCQhhx83ENfv5Pf4kG+UksnAaru5XkA+IF4ovBi4cV1PZlVtGbfpiW7Z4CaWDVMUlwBn11dc1D2C8TAvwUiIUXa4UbmGFQXO/fWzok3L2Te9YGmmvmzwB6FwWLYDeKsZshWIVUTcQzLWGwI3KwWlDXWrvDkvsv2LLwltgY3gCXYusx5DNPcApw8XlaMQFxNzJOMKQnh/RC1T3NclMDGEYwPvdUpr/WVacDFDrbQe+EBYEkFNwG7vsweDVPGR5/ccfWzJ0yH+QLpYxYwgp4/IY6gmMI8KQAP9FeZVeje4XmHxCqJ/Mk07UuBrhTsmGrRMQ05BS8CQiRCzOFcvnt5ir3qVXWTpL/oxtGO5y9szK0XRRi1d5m46iIjUnYfEV9VrkAK/zby/BS/3pnVWD27U00VJHOguXTdk9+chgcjkOYb/7U9NURR5rWYRCCsvDsr7xvqB1kN/HhqsV6hKzonwUUxNYBkX73bTc6pXQ7Zfu+YSHSKfj5BkRPPQ1PTxxqQfsAkwWLIWygukY4v7EY7ceeFNzKim3vcRMzKJMpJoaERJPUPIMfMbf/tweBBrBEHQW/GgHEm8fizx3Z7uHyI+waCFjoe0zlNo8cXIXZZwSWjaKhF2vvkb2gciX/qOitvoo9fEqyVBmeWHIFFM0hdT6e0OG4ODmXtYk5VOHNYDQ414xxgTBljccF/WYhlxQBJcj881zWMEzGY8/LLf1cE9xGff8xJ0Rd5JruPriafJk0I+a8E5LPStMV3M04pDI0jL9tW6TYymFjpFOt++EesRfjNwcNkOUvsSYY6IZEd0lSardLB76Y4cxj4ruf9ufA/HXspgSC/ZQfqz6Xw4g34qk56yuzocnBhmCpD1nlSDaUYcdJpIru6KtaR+dcxFfJIv6n33BXG8Ux20EFKl03+FIZVhH2UYmogD6xhUrF5dWrbP5JANa3OzxA47uujrwHBPdVB5heLeGVorKuojP/n7SCvwDRUpoU5hZ1YB8cq5CM5cgn691OlEf6b4Kq" autocomplete="off" />
+                        </form>
+                      </div>
+                    <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt160" name="j_idt160" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_doacoes noHasDoacoes')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                        	<option value="AGUAS_CLARAS">Águas Claras</option>
+                        	<option value="ASA_NORTE">Asa Norte</option>
+                        	<option value="ASA_SUL">Asa Sul</option>
+                        	<option value="BRAZLANDIA">Brazlândia</option>
+                        	<option value="CANDANGOLANDIA">Candangolândia</option>
+                        	<option value="CEILANDIA">Ceilândia</option>
+                        	<option value="CRUZEIRO">Cruzeiro</option>
+                        	<option value="FERCAL">Fercal</option>
+                        	<option value="GAMA">Gama</option>
+                        	<option value="GUARA">Guará</option>
+                        	<option value="ITAPOA">Itapoã</option>
+                        	<option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                        	<option value="LAGOA_SUL">Lago Sul</option>
+                        	<option value="LAGO_NORTE">Lago Norte</option>
+                        	<option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                        	<option value="OCTOGONAL">Octogonal</option>
+                        	<option value="PARANOA">Paranoá</option>
+                        	<option value="PARK_WAY">Park Way</option>
+                        	<option value="PLANALTINA">Planaltina</option>
+                        	<option value="RECANTO_EMAS">Recanto das Emas</option>
+                        	<option value="RIACHO_FUNDO">Riacho Fundo</option>
+                        	<option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                        	<option value="SAMAMBAIA">Samambaia</option>
+                        	<option value="SANTA_MARIA">Santa Maria</option>
+                        	<option value="SAO_SEBASTIAO">São Sebastião</option>
+                        	<option value="SIA">Setor de Indústria e Abastecimento</option>
+                        	<option value="SOBRADINHO">Sobradinho</option>
+                        	<option value="SOBRADINHO_II">Sobradinho II</option>
+                        	<option value="SUDOESTE">Sudoeste</option>
+                        	<option value="TAGUATINGA">Taguatinga</option>
+                        	<option value="VARJAO">Varjão</option>
+                        	<option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="pesquisaGovernoDoacao" role="tabpanel">
+                    <div class="col-md-3 modulo-pesquisa">
+                      <form id="j_idt173" name="j_idt173" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded" class="form-inline">
+                        <input type="hidden" name="j_idt173" value="j_idt173" />
+                        <div class="form-group">
+                          <label>Pesquisar Campanha:</label>
+                          <div class="input-group">
+                            <input id="titulo_campanha" class="form-control" name="titulo_campanha" maxlength="100" type="text" title="Título da Campanha" required="true" placeholder="Pesquisar por Título"/>
+                            <div class="input-group-btn">
+                              <button id="j_idt176" class="btn btn-pr" type="submit" name="j_idt176" value="" onclick="mojarra.ab(this,event,'action','titulo_campanha','listagem_doacoes noHasDoacoes');return false">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                              </button>
+                            </div>
+                          </div>
+
+                        </div>
+                        <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:5" value="/ZGS3cUV7YG9b6FJG1zP2fpIyr8PWlj+AxRVQVIrDa8EUpuOyJQ8AVFxIyYlupc7l+18mEOa/susN6UYh8TzCQSLSGAVtU9Hwf1OIxFzLoH5E9WShROkeaZl3FsDlZ7Dcg6mUjcCQhhx83ENfv5Pf4kG+UksnAaru5XkA+IF4ovBi4cV1PZlVtGbfpiW7Z4CaWDVMUlwBn11dc1D2C8TAvwUiIUXa4UbmGFQXO/fWzok3L2Te9YGmmvmzwB6FwWLYDeKsZshWIVUTcQzLWGwI3KwWlDXWrvDkvsv2LLwltgY3gCXYusx5DNPcApw8XlaMQFxNzJOMKQnh/RC1T3NclMDGEYwPvdUpr/WVacDFDrbQe+EBYEkFNwG7vsweDVPGR5/ccfWzJ0yH+QLpYxYwgp4/IY6gmMI8KQAP9FeZVeje4XmHxCqJ/Mk07UuBrhTsmGrRMQ05BS8CQiRCzOFcvnt5ir3qVXWTpL/oxtGO5y9szK0XRRi1d5m46iIjUnYfEV9VrkAK/zby/BS/3pnVWD27U00VJHOguXTdk9+chgcjkOYb/7U9NURR5rWYRCCsvDsr7xvqB1kN/HhqsV6hKzonwUUxNYBkX73bTc6pXQ7Zfu+YSHSKfj5BkRPPQ1PTxxqQfsAkwWLIWygukY4v7EY7ceeFNzKim3vcRMzKJMpJoaERJPUPIMfMbf/tweBBrBEHQW/GgHEm8fizx3Z7uHyI+waCFjoe0zlNo8cXIXZZwSWjaKhF2vvkb2gciX/qOitvoo9fEqyVBmeWHIFFM0hdT6e0OG4ODmXtYk5VOHNYDQ414xxgTBljccF/WYhlxQBJcj881zWMEzGY8/LLf1cE9xGff8xJ0Rd5JruPriafJk0I+a8E5LPStMV3M04pDI0jL9tW6TYymFjpFOt++EesRfjNwcNkOUvsSYY6IZEd0lSardLB76Y4cxj4ruf9ufA/HXspgSC/ZQfqz6Xw4g34qk56yuzocnBhmCpD1nlSDaUYcdJpIru6KtaR+dcxFfJIv6n33BXG8Ux20EFKl03+FIZVhH2UYmogD6xhUrF5dWrbP5JANa3OzxA47uujrwHBPdVB5heLeGVorKuojP/n7SCvwDRUpoU5hZ1YB8cq5CM5cgn691OlEf6b4Kq" autocomplete="off" />
+                      </form>
+                    </div>
+                    <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt164" name="j_idt164" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_doacoes noHasDoacoes')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                        	<option value="AGUAS_CLARAS">Águas Claras</option>
+                        	<option value="ASA_NORTE">Asa Norte</option>
+                        	<option value="ASA_SUL">Asa Sul</option>
+                        	<option value="BRAZLANDIA">Brazlândia</option>
+                        	<option value="CANDANGOLANDIA">Candangolândia</option>
+                        	<option value="CEILANDIA">Ceilândia</option>
+                        	<option value="CRUZEIRO">Cruzeiro</option>
+                        	<option value="FERCAL">Fercal</option>
+                        	<option value="GAMA">Gama</option>
+                        	<option value="GUARA">Guará</option>
+                        	<option value="ITAPOA">Itapoã</option>
+                        	<option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                        	<option value="LAGOA_SUL">Lago Sul</option>
+                        	<option value="LAGO_NORTE">Lago Norte</option>
+                        	<option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                        	<option value="OCTOGONAL">Octogonal</option>
+                        	<option value="PARANOA">Paranoá</option>
+                        	<option value="PARK_WAY">Park Way</option>
+                        	<option value="PLANALTINA">Planaltina</option>
+                        	<option value="RECANTO_EMAS">Recanto das Emas</option>
+                        	<option value="RIACHO_FUNDO">Riacho Fundo</option>
+                        	<option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                        	<option value="SAMAMBAIA">Samambaia</option>
+                        	<option value="SANTA_MARIA">Santa Maria</option>
+                        	<option value="SAO_SEBASTIAO">São Sebastião</option>
+                        	<option value="SIA">Setor de Indústria e Abastecimento</option>
+                        	<option value="SOBRADINHO">Sobradinho</option>
+                        	<option value="SOBRADINHO_II">Sobradinho II</option>
+                        	<option value="SUDOESTE">Sudoeste</option>
+                        	<option value="TAGUATINGA">Taguatinga</option>
+                        	<option value="VARJAO">Varjão</option>
+                        	<option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="pesquisaEntidadesDoacao" role="tabpanel">
+                    <div class="col-md-3 modulo-pesquisa">
+                      <form id="j_idt173" name="j_idt173" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded" class="form-inline">
+                        <input type="hidden" name="j_idt173" value="j_idt173" />
+                        <div class="form-group">
+                          <label>Pesquisar Campanha:</label>
+                          <div class="input-group">
+                            <input id="titulo_campanha" class="form-control" name="titulo_campanha" maxlength="100" type="text" title="Título da Campanha" required="true" placeholder="Pesquisar por Título"/>
+                            <div class="input-group-btn">
+                              <button id="j_idt176" class="btn btn-pr" type="submit" name="j_idt176" value="" onclick="mojarra.ab(this,event,'action','titulo_campanha','listagem_doacoes noHasDoacoes');return false">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                              </button>
+                            </div>
+                          </div>
+
+                        </div>
+                        <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:5" value="/ZGS3cUV7YG9b6FJG1zP2fpIyr8PWlj+AxRVQVIrDa8EUpuOyJQ8AVFxIyYlupc7l+18mEOa/susN6UYh8TzCQSLSGAVtU9Hwf1OIxFzLoH5E9WShROkeaZl3FsDlZ7Dcg6mUjcCQhhx83ENfv5Pf4kG+UksnAaru5XkA+IF4ovBi4cV1PZlVtGbfpiW7Z4CaWDVMUlwBn11dc1D2C8TAvwUiIUXa4UbmGFQXO/fWzok3L2Te9YGmmvmzwB6FwWLYDeKsZshWIVUTcQzLWGwI3KwWlDXWrvDkvsv2LLwltgY3gCXYusx5DNPcApw8XlaMQFxNzJOMKQnh/RC1T3NclMDGEYwPvdUpr/WVacDFDrbQe+EBYEkFNwG7vsweDVPGR5/ccfWzJ0yH+QLpYxYwgp4/IY6gmMI8KQAP9FeZVeje4XmHxCqJ/Mk07UuBrhTsmGrRMQ05BS8CQiRCzOFcvnt5ir3qVXWTpL/oxtGO5y9szK0XRRi1d5m46iIjUnYfEV9VrkAK/zby/BS/3pnVWD27U00VJHOguXTdk9+chgcjkOYb/7U9NURR5rWYRCCsvDsr7xvqB1kN/HhqsV6hKzonwUUxNYBkX73bTc6pXQ7Zfu+YSHSKfj5BkRPPQ1PTxxqQfsAkwWLIWygukY4v7EY7ceeFNzKim3vcRMzKJMpJoaERJPUPIMfMbf/tweBBrBEHQW/GgHEm8fizx3Z7uHyI+waCFjoe0zlNo8cXIXZZwSWjaKhF2vvkb2gciX/qOitvoo9fEqyVBmeWHIFFM0hdT6e0OG4ODmXtYk5VOHNYDQ414xxgTBljccF/WYhlxQBJcj881zWMEzGY8/LLf1cE9xGff8xJ0Rd5JruPriafJk0I+a8E5LPStMV3M04pDI0jL9tW6TYymFjpFOt++EesRfjNwcNkOUvsSYY6IZEd0lSardLB76Y4cxj4ruf9ufA/HXspgSC/ZQfqz6Xw4g34qk56yuzocnBhmCpD1nlSDaUYcdJpIru6KtaR+dcxFfJIv6n33BXG8Ux20EFKl03+FIZVhH2UYmogD6xhUrF5dWrbP5JANa3OzxA47uujrwHBPdVB5heLeGVorKuojP/n7SCvwDRUpoU5hZ1YB8cq5CM5cgn691OlEf6b4Kq" autocomplete="off" />
+                      </form>
+                    </div>
+                    <div class="col-md-3 modulo-selecao">
+                        <select id="j_idt168" name="j_idt168" onchange="mojarra.ab(this,event,'valueChange',0,'listagem_doacoes noHasDoacoes')" size="1" class="form-control">
+                          <option value="" selected="selected">Todas as cidades</option>
+                        	<option value="AGUAS_CLARAS">Águas Claras</option>
+                        	<option value="ASA_NORTE">Asa Norte</option>
+                        	<option value="ASA_SUL">Asa Sul</option>
+                        	<option value="BRAZLANDIA">Brazlândia</option>
+                        	<option value="CANDANGOLANDIA">Candangolândia</option>
+                        	<option value="CEILANDIA">Ceilândia</option>
+                        	<option value="CRUZEIRO">Cruzeiro</option>
+                        	<option value="FERCAL">Fercal</option>
+                        	<option value="GAMA">Gama</option>
+                        	<option value="GUARA">Guará</option>
+                        	<option value="ITAPOA">Itapoã</option>
+                        	<option value="JARDIM_BOTANICO">Jardim Botânico</option>
+                        	<option value="LAGOA_SUL">Lago Sul</option>
+                        	<option value="LAGO_NORTE">Lago Norte</option>
+                        	<option value="NUCLEO_BANDEIRANTE">Núcleo Bandeirante</option>
+                        	<option value="OCTOGONAL">Octogonal</option>
+                        	<option value="PARANOA">Paranoá</option>
+                        	<option value="PARK_WAY">Park Way</option>
+                        	<option value="PLANALTINA">Planaltina</option>
+                        	<option value="RECANTO_EMAS">Recanto das Emas</option>
+                        	<option value="RIACHO_FUNDO">Riacho Fundo</option>
+                        	<option value="RIACHO_FUNDO_II">Riacho Fundo II</option>
+                        	<option value="SAMAMBAIA">Samambaia</option>
+                        	<option value="SANTA_MARIA">Santa Maria</option>
+                        	<option value="SAO_SEBASTIAO">São Sebastião</option>
+                        	<option value="SIA">Setor de Indústria e Abastecimento</option>
+                        	<option value="SOBRADINHO">Sobradinho</option>
+                        	<option value="SOBRADINHO_II">Sobradinho II</option>
+                        	<option value="SUDOESTE">Sudoeste</option>
+                        	<option value="TAGUATINGA">Taguatinga</option>
+                        	<option value="VARJAO">Varjão</option>
+                        	<option value="VICENTE_PIRES">Vicente Pires</option>
+                        </select>
+                      </div>
+                  </div>
+              </div>
+              <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:4" value="juShHScVj+RvjGil54Y2jVHD3nY3MQWMpAAcrITSo3/0N64b9HPwBOUMhdGaUawJ1Bi+mATYWKE6H7qV2/akxKfFnPbg43Na23/kIAMDcFMvxgkWQXodFRqw3jCPxPjuReqrxWQwRoAp0J14aDP+VbRSgtv3OydmYifr0jhQuqqOmBfw9e6akhahdk9EKKM97b4+Yw116JTQfkEw6oyM4O18A4iMQqMlOvrIUUMO4n1bvUIOOg/m3lDU6u20JnhJM9+e0jiH2ZmvURmsJxiFIlxdae85G0bgjY+kzd6/1L+5DasBvPRBxS6D7GqV6ih4wTdT5L2T1i6U7Vq9ylstIOXVYyAu/J7Y5urA/hCX12SylexZMywt9QSCZvC2d/F2h/fCt/5JFK87uIRIIMWpOIuBHYhMhjYws2g7fXx1TqiBXerk/pVuR+dM5gT0FwyMknf54EGY49RktGEaTjmKlApEn4KJnldQ/ZlFvapKBqcpS5umR7Heuhbs6VGjo/eeXbNuTueRFLBLOccdQ1kJWYmpXjs8MxYOTNJmA5YZfXotbYgl8AomEYVcR3m9Qv7Ie+My6Gw0yMuvgwhy4b1AgzHYD2Q778hxHKvI53zaoaM/W70FR0LGilQJclWBTlvjbr+k77yp6jG1qGRR2xJL4uuaPbQQDavam+PZt2ah2dPzaTvBZwUXttbhc8t0Hh4rCvTNlO2C5bK/rD1R8RZZV+XgKSElpt6GLY//RO+duR4Y32Xz3mmbw0nF1y8VXX8sf6yheEqox3AV2M4LMJU+roNQZHZNUh+SQArjAlO2mntlvxftdZw5bDqTMdvPa+UrA+B5V6ufd6+3Frj3B412vJrq48jKYJS+y/DD5ufDw0/gNvdyAf73pcvqxBiyWius52RdZ0QstMM3DexAeiZeD/sM7FQDUzicwhOI3yQ0/GvZvEDat9TQdM2bSavbHa80oXDW+YWao5D4iJfDAaRh6+9whN+eaaMtg0GNlG0JBOThgAIi7AsDR5Uswr4/X4447SwMByQJ/LxgIP5egB09vqgHCIVzOCtrBbSTg6khtSusWzdc2NwNCu2eRK16/YnuCc8dosGXLdoYd+LGiPTB2kgX/QBywb9vBMileJo9n7gPbLnreJcL7Jr3ZsOYkmY8" autocomplete="off" />
+            </form>
+          </div>
+        </div>
+        <!-- ATENÇÃO: As duas divs a seguir se enconttravam dentro de uma div pai de id="projetos" -->
+        <div id="noHasDoacoes"></div>
+        <div id="listagem_doacoes" class="row">
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413">
+                <div class="image" alt="Bazar Julino 2017" style="background-image: url('sisvol-doacoes/4824633059331085176.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">Bazar Julino 2017</h4>
+                <span class="responsavel">ASSOCIAÇÃO PROTETORA DOS ANIMAIS DO DISTRITO FEDERAL</span>
+                <span class="descricao">
+                  Sabe aquele objeto que você não usa mais, fica ocupando lugar na sua casa, e pode servir para alguém?   Que tal doá-lo para a ProAnima e, de quebra,  ...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 200</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal0" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal0" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <img alt="Bazar Julino 2017" class="img-responsive center-block" src="sisvol-doacoes/4824633059331085176.jpg"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                    <div class="col-sm-10">
+                                        <p class="form-control-static" id="titulo">Bazar Julino 2017</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                    <div class="col-sm-10">
+                                        <p align="justify" class="form-control-static">Sabe aquele objeto que você não usa mais, fica ocupando lugar na sua casa, e pode servir para alguém?   Que tal doá-lo para a ProAnima e, de quebra,  ajudar um animal?   Não tem nada para doar? Não tem problema!   Dê uma chegadinha no Bazar, compre alguma coisa ... lá teremos também comidinhas sem crueldade animal  para vender e comer no local:  venha!!! ONDE:  SCLN 116, Bloco I, Edifício Cedro, Subsolo, Loja 47 (a rua que fica em frente ao Setor Hospitalar Norte) Como nosso trabalho é todo voluntário, são poucas as horas em que tem plantão em nossa sede.  As doações podem ser deixadas na portaria, endereçada à ProAnima.  No prédio a portaria funciona 24 horas!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="entidade">
+                                            Razão Social:
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <p class="form-control-static" id="entidade">
+                                                ASSOCIAÇÃO PROTETORA DOS ANIMAIS DO DISTRITO FEDERAL - PROANIMA
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                    <div class="col-sm-10">
+                                        <p class="form-control-static">SCLN 116 - Bloco I (Edifício Cedro), loja 47, subsolo  CEP 70773-590</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413'; return false;" value="" role="button">
+                <span>
+                  Doações Encerradas
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101">
+                <div class="image" alt="Bazar Julino 2017" style="background-image: url('sisvol-doacoes/363120679329983910.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS IN...</h4>
+                <span class="responsavel">ASSOCIAÇÃO SANTOS INOCENTES</span>
+                <span class="descricao">
+                  A Associação Santos Inocentes é uma associação civil sem fins lucrativos e totalmente mantida por doações, promove assistência social e psicológica a ...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 100</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal1" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal1" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                      <div class="form-group">
+                                          <img alt="CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES" class="img-responsive center-block" src="sisvol-doacoes/363120679329983910.jpg"/>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static" id="titulo">CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES</p>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                          <div class="col-sm-10">
+                                              <p align="justify" class="form-control-static">A Associação Santos Inocentes é uma associação civil sem fins lucrativos e totalmente mantida por doações, promove assistência social e psicológica a gestantes que estejam pensando em cometer a terrível realidade do aborto. O trabalho tem fundamento na conscientização do valor da vida humana desde a sua concepção que denominamos “Resgate de Inocentes” e consiste em atender no espaço local ou ir ao encontro dessas gestantes ou famílias que estejam pensando em realizar o aborto por diversos motivos, bem como agressões físicas, psicológicas, questões financeiras, traumas afetivos, depressão, entre outros. Existente há 12 anos, os trabalhos se realizavam por uma equipe de missionários no Distrito Federal e Entorno porta em porta, ruas e feiras livres. Hoje com o espaço Casa de Acolhimento STª Gianna Beretta Molla, que tem capacidade em acolher 10 gestantes em situação de risco e vulnerabilidade social, até o período de cinco meses após o parto. As mães quando completam o período de desligamento continuam sendo amparadas com cesta básica, leite e fralda, além da vaga na creche que já é garantida a partir do seu acolhimento, caso passam a residir nas mediações da Associação. O espaço creche Casa São José, hoje amparando 50 crianças nas faixas etárias de 05 meses a 03 anos de idade, de segunda a sexta-feira nos horários de 07:00h às 17:00h, nasceu em razão dos ”RESGATES”, filhos (as) dessas gestantes, quando na desistência do aborto pensam em doar seus bebês para adoção por não encontrar solução, ou espaço para ampará-los e que a melhor pessoa a cuidar de seu filho é a própria mãe e dentro de seu próprio lar. A realização do projeto vai muito mais além, ou seja, toda gestante que não necessariamente passa pela a casa de acolhimento e dependendo da sua necessidade, recebe os mesmos benefícios e no que se fizer necessário. Ainda são beneficiadas com enxoval, gestantes carentes da comunidade e famílias que mediante realização de cadastro recebem visita técnica da (o) Assistente Social para averiguação da real situação. Posteriormente, se houver criança e se necessário ela é  inserida na creche, uma vez que este trabalho não se limita ao que conhecemos como “resgate”.
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div class="form-group">
+                                              <label class="control-label col-sm-2" for="entidade">
+                                                  Razão Social:
+                                              </label>
+                                              <div class="col-sm-10">
+                                                  <p class="form-control-static" id="entidade">
+                                                      ASSOCIAÇÃO SANTOS INOCENTES
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static">Qr 425 CONJUNTO 05 CASA 15 - SAMAMBAIA NORTE</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101'; return false;" value="" role="button">
+                Quero Doar
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575">
+                <div class="image" alt="Doe um livro" style="background-image: url('sisvol-doacoes/4221207814330319575.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">Doe um livro</h4>
+                <span class="responsavel">Viação Piracicabana</span>
+                <span class="descricao">
+                  Ciente de que a cultura é um fator de grande importância para a formação do cidadão, para que o homem tenha consciência de si mesmo, para construção d...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 1.000.000</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal2" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal2" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                      <div class="form-group">
+                                          <img alt="Doe um livro" class="img-responsive center-block" src="sisvol-doacoes/4221207814330319575.jpg"/>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static" id="titulo">Doe um livro</p>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                          <div class="col-sm-10">
+                                              <p align="justify" class="form-control-static">Ciente de que a cultura é um fator de grande importância para a formação do cidadão, para que o homem tenha consciência de si mesmo, para construção do conhecimento, para o entretenimento, para a estruturação de uma sociedade mais igualitária e competitiva e conhecedor de um fato, no mínimo alarmante, de que os brasileiros não possuem o hábito de ler e em muitos casos não compreendem o que lêem, resolvi criar uma proposta que tem como principal objetivo o incentivo à leitura, entendimento, escrita e divulgação da cultura. Outro aspecto da minha proposta é que os locais escolhidos para oferecer cultura através da leitura são os ônibus do Sistema Coletivo do Distrito Federal, com o intuito, inclusive, de tornar mais aprazível o deslocamento das pessoas que utilizam esse tipo de transporte. O Projeto atua desde 2003 em ônibus do Distrito Federal e desde 2015 a Viação Piracicabana apoia o Projeto. O Projeto conta com estantes dentro dos ônibus e ainda Espaço Cultural na Rodoviária do Plano Piloto – plataforma inferior e na Rodoviária de Sobradinho – DF. Atualmente o projeto está presente em 369 ônibus da Viação Piracicabana DF, nas cidades de Sobradinho, Planaltina, Plano Piloto, Varjão e Estrutural. Para dar continuidade ao Projeto e disseminar cada vez mais conhecimento entre a população de Brasília, a sua ajuda com a doação de livro é muito importante para nós!
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div class="form-group">
+                                              <label class="control-label col-sm-2" for="entidade">
+                                                  Razão Social:
+                                              </label>
+                                              <div class="col-sm-10">
+                                                  <p class="form-control-static" id="entidade">
+                                                      Viação Piracicabana
+                                                  </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static">Rodoviária Plano Piloto Plataforma Inferior Box E</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575'; return false;" value="" role="button">
+                Quero Doar
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413">
+                <div class="image" alt="Bazar Julino 2017" style="background-image: url('sisvol-doacoes/4824633059331085176.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">Bazar Julino 2017</h4>
+                <span class="responsavel">ASSOCIAÇÃO PROTETORA DOS ANIMAIS DO DISTRITO FEDERAL</span>
+                <span class="descricao">
+                  Sabe aquele objeto que você não usa mais, fica ocupando lugar na sua casa, e pode servir para alguém?   Que tal doá-lo para a ProAnima e, de quebra,  ...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 200</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal0" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal0" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <img alt="Bazar Julino 2017" class="img-responsive center-block" src="sisvol-doacoes/4824633059331085176.jpg"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                    <div class="col-sm-10">
+                                        <p class="form-control-static" id="titulo">Bazar Julino 2017</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                    <div class="col-sm-10">
+                                        <p align="justify" class="form-control-static">Sabe aquele objeto que você não usa mais, fica ocupando lugar na sua casa, e pode servir para alguém?   Que tal doá-lo para a ProAnima e, de quebra,  ajudar um animal?   Não tem nada para doar? Não tem problema!   Dê uma chegadinha no Bazar, compre alguma coisa ... lá teremos também comidinhas sem crueldade animal  para vender e comer no local:  venha!!! ONDE:  SCLN 116, Bloco I, Edifício Cedro, Subsolo, Loja 47 (a rua que fica em frente ao Setor Hospitalar Norte) Como nosso trabalho é todo voluntário, são poucas as horas em que tem plantão em nossa sede.  As doações podem ser deixadas na portaria, endereçada à ProAnima.  No prédio a portaria funciona 24 horas!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="entidade">
+                                            Razão Social:
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <p class="form-control-static" id="entidade">
+                                                ASSOCIAÇÃO PROTETORA DOS ANIMAIS DO DISTRITO FEDERAL - PROANIMA
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                    <div class="col-sm-10">
+                                        <p class="form-control-static">SCLN 116 - Bloco I (Edifício Cedro), loja 47, subsolo  CEP 70773-590</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413'; return false;" value="" role="button">
+                <span>
+                  Doações Encerradas
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101">
+                <div class="image" alt="Bazar Julino 2017" style="background-image: url('sisvol-doacoes/363120679329983910.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS IN...</h4>
+                <span class="responsavel">ASSOCIAÇÃO SANTOS INOCENTES</span>
+                <span class="descricao">
+                  A Associação Santos Inocentes é uma associação civil sem fins lucrativos e totalmente mantida por doações, promove assistência social e psicológica a ...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 100</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal1" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal1" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                      <div class="form-group">
+                                          <img alt="CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES" class="img-responsive center-block" src="sisvol-doacoes/363120679329983910.jpg"/>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static" id="titulo">CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES</p>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                          <div class="col-sm-10">
+                                              <p align="justify" class="form-control-static">A Associação Santos Inocentes é uma associação civil sem fins lucrativos e totalmente mantida por doações, promove assistência social e psicológica a gestantes que estejam pensando em cometer a terrível realidade do aborto. O trabalho tem fundamento na conscientização do valor da vida humana desde a sua concepção que denominamos “Resgate de Inocentes” e consiste em atender no espaço local ou ir ao encontro dessas gestantes ou famílias que estejam pensando em realizar o aborto por diversos motivos, bem como agressões físicas, psicológicas, questões financeiras, traumas afetivos, depressão, entre outros. Existente há 12 anos, os trabalhos se realizavam por uma equipe de missionários no Distrito Federal e Entorno porta em porta, ruas e feiras livres. Hoje com o espaço Casa de Acolhimento STª Gianna Beretta Molla, que tem capacidade em acolher 10 gestantes em situação de risco e vulnerabilidade social, até o período de cinco meses após o parto. As mães quando completam o período de desligamento continuam sendo amparadas com cesta básica, leite e fralda, além da vaga na creche que já é garantida a partir do seu acolhimento, caso passam a residir nas mediações da Associação. O espaço creche Casa São José, hoje amparando 50 crianças nas faixas etárias de 05 meses a 03 anos de idade, de segunda a sexta-feira nos horários de 07:00h às 17:00h, nasceu em razão dos ”RESGATES”, filhos (as) dessas gestantes, quando na desistência do aborto pensam em doar seus bebês para adoção por não encontrar solução, ou espaço para ampará-los e que a melhor pessoa a cuidar de seu filho é a própria mãe e dentro de seu próprio lar. A realização do projeto vai muito mais além, ou seja, toda gestante que não necessariamente passa pela a casa de acolhimento e dependendo da sua necessidade, recebe os mesmos benefícios e no que se fizer necessário. Ainda são beneficiadas com enxoval, gestantes carentes da comunidade e famílias que mediante realização de cadastro recebem visita técnica da (o) Assistente Social para averiguação da real situação. Posteriormente, se houver criança e se necessário ela é  inserida na creche, uma vez que este trabalho não se limita ao que conhecemos como “resgate”.
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div class="form-group">
+                                              <label class="control-label col-sm-2" for="entidade">
+                                                  Razão Social:
+                                              </label>
+                                              <div class="col-sm-10">
+                                                  <p class="form-control-static" id="entidade">
+                                                      ASSOCIAÇÃO SANTOS INOCENTES
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static">Qr 425 CONJUNTO 05 CASA 15 - SAMAMBAIA NORTE</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101'; return false;" value="" role="button">
+                Quero Doar
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575">
+                <div class="image" alt="Doe um livro" style="background-image: url('sisvol-doacoes/4221207814330319575.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">Doe um livro</h4>
+                <span class="responsavel">Viação Piracicabana</span>
+                <span class="descricao">
+                  Ciente de que a cultura é um fator de grande importância para a formação do cidadão, para que o homem tenha consciência de si mesmo, para construção d...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 1.000.000</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal2" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal2" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                      <div class="form-group">
+                                          <img alt="Doe um livro" class="img-responsive center-block" src="sisvol-doacoes/4221207814330319575.jpg"/>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static" id="titulo">Doe um livro</p>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                          <div class="col-sm-10">
+                                              <p align="justify" class="form-control-static">Ciente de que a cultura é um fator de grande importância para a formação do cidadão, para que o homem tenha consciência de si mesmo, para construção do conhecimento, para o entretenimento, para a estruturação de uma sociedade mais igualitária e competitiva e conhecedor de um fato, no mínimo alarmante, de que os brasileiros não possuem o hábito de ler e em muitos casos não compreendem o que lêem, resolvi criar uma proposta que tem como principal objetivo o incentivo à leitura, entendimento, escrita e divulgação da cultura. Outro aspecto da minha proposta é que os locais escolhidos para oferecer cultura através da leitura são os ônibus do Sistema Coletivo do Distrito Federal, com o intuito, inclusive, de tornar mais aprazível o deslocamento das pessoas que utilizam esse tipo de transporte. O Projeto atua desde 2003 em ônibus do Distrito Federal e desde 2015 a Viação Piracicabana apoia o Projeto. O Projeto conta com estantes dentro dos ônibus e ainda Espaço Cultural na Rodoviária do Plano Piloto – plataforma inferior e na Rodoviária de Sobradinho – DF. Atualmente o projeto está presente em 369 ônibus da Viação Piracicabana DF, nas cidades de Sobradinho, Planaltina, Plano Piloto, Varjão e Estrutural. Para dar continuidade ao Projeto e disseminar cada vez mais conhecimento entre a população de Brasília, a sua ajuda com a doação de livro é muito importante para nós!
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div class="form-group">
+                                              <label class="control-label col-sm-2" for="entidade">
+                                                  Razão Social:
+                                              </label>
+                                              <div class="col-sm-10">
+                                                  <p class="form-control-static" id="entidade">
+                                                      Viação Piracicabana
+                                                  </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static">Rodoviária Plano Piloto Plataforma Inferior Box E</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575'; return false;" value="" role="button">
+                Quero Doar
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413">
+                <div class="image" alt="Bazar Julino 2017" style="background-image: url('sisvol-doacoes/4824633059331085176.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">Bazar Julino 2017</h4>
+                <span class="responsavel">ASSOCIAÇÃO PROTETORA DOS ANIMAIS DO DISTRITO FEDERAL</span>
+                <span class="descricao">
+                  Sabe aquele objeto que você não usa mais, fica ocupando lugar na sua casa, e pode servir para alguém?   Que tal doá-lo para a ProAnima e, de quebra,  ...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 200</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal0" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal0" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <img alt="Bazar Julino 2017" class="img-responsive center-block" src="sisvol-doacoes/4824633059331085176.jpg"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                    <div class="col-sm-10">
+                                        <p class="form-control-static" id="titulo">Bazar Julino 2017</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                    <div class="col-sm-10">
+                                        <p align="justify" class="form-control-static">Sabe aquele objeto que você não usa mais, fica ocupando lugar na sua casa, e pode servir para alguém?   Que tal doá-lo para a ProAnima e, de quebra,  ajudar um animal?   Não tem nada para doar? Não tem problema!   Dê uma chegadinha no Bazar, compre alguma coisa ... lá teremos também comidinhas sem crueldade animal  para vender e comer no local:  venha!!! ONDE:  SCLN 116, Bloco I, Edifício Cedro, Subsolo, Loja 47 (a rua que fica em frente ao Setor Hospitalar Norte) Como nosso trabalho é todo voluntário, são poucas as horas em que tem plantão em nossa sede.  As doações podem ser deixadas na portaria, endereçada à ProAnima.  No prédio a portaria funciona 24 horas!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="entidade">
+                                            Razão Social:
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <p class="form-control-static" id="entidade">
+                                                ASSOCIAÇÃO PROTETORA DOS ANIMAIS DO DISTRITO FEDERAL - PROANIMA
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                    <div class="col-sm-10">
+                                        <p class="form-control-static">SCLN 116 - Bloco I (Edifício Cedro), loja 47, subsolo  CEP 70773-590</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=462413'; return false;" value="" role="button">
+                <span>
+                  Doações Encerradas
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101">
+                <div class="image" alt="Bazar Julino 2017" style="background-image: url('sisvol-doacoes/363120679329983910.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS IN...</h4>
+                <span class="responsavel">ASSOCIAÇÃO SANTOS INOCENTES</span>
+                <span class="descricao">
+                  A Associação Santos Inocentes é uma associação civil sem fins lucrativos e totalmente mantida por doações, promove assistência social e psicológica a ...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 100</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal1" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal1" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                      <div class="form-group">
+                                          <img alt="CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES" class="img-responsive center-block" src="sisvol-doacoes/363120679329983910.jpg"/>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static" id="titulo">CAMPANHA EM PROL DA ASSOCIAÇÃO SANTOS INOCENTES</p>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                          <div class="col-sm-10">
+                                              <p align="justify" class="form-control-static">A Associação Santos Inocentes é uma associação civil sem fins lucrativos e totalmente mantida por doações, promove assistência social e psicológica a gestantes que estejam pensando em cometer a terrível realidade do aborto. O trabalho tem fundamento na conscientização do valor da vida humana desde a sua concepção que denominamos “Resgate de Inocentes” e consiste em atender no espaço local ou ir ao encontro dessas gestantes ou famílias que estejam pensando em realizar o aborto por diversos motivos, bem como agressões físicas, psicológicas, questões financeiras, traumas afetivos, depressão, entre outros. Existente há 12 anos, os trabalhos se realizavam por uma equipe de missionários no Distrito Federal e Entorno porta em porta, ruas e feiras livres. Hoje com o espaço Casa de Acolhimento STª Gianna Beretta Molla, que tem capacidade em acolher 10 gestantes em situação de risco e vulnerabilidade social, até o período de cinco meses após o parto. As mães quando completam o período de desligamento continuam sendo amparadas com cesta básica, leite e fralda, além da vaga na creche que já é garantida a partir do seu acolhimento, caso passam a residir nas mediações da Associação. O espaço creche Casa São José, hoje amparando 50 crianças nas faixas etárias de 05 meses a 03 anos de idade, de segunda a sexta-feira nos horários de 07:00h às 17:00h, nasceu em razão dos ”RESGATES”, filhos (as) dessas gestantes, quando na desistência do aborto pensam em doar seus bebês para adoção por não encontrar solução, ou espaço para ampará-los e que a melhor pessoa a cuidar de seu filho é a própria mãe e dentro de seu próprio lar. A realização do projeto vai muito mais além, ou seja, toda gestante que não necessariamente passa pela a casa de acolhimento e dependendo da sua necessidade, recebe os mesmos benefícios e no que se fizer necessário. Ainda são beneficiadas com enxoval, gestantes carentes da comunidade e famílias que mediante realização de cadastro recebem visita técnica da (o) Assistente Social para averiguação da real situação. Posteriormente, se houver criança e se necessário ela é  inserida na creche, uma vez que este trabalho não se limita ao que conhecemos como “resgate”.
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div class="form-group">
+                                              <label class="control-label col-sm-2" for="entidade">
+                                                  Razão Social:
+                                              </label>
+                                              <div class="col-sm-10">
+                                                  <p class="form-control-static" id="entidade">
+                                                      ASSOCIAÇÃO SANTOS INOCENTES
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static">Qr 425 CONJUNTO 05 CASA 15 - SAMAMBAIA NORTE</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=419101'; return false;" value="" role="button">
+                Quero Doar
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modulo-item">
+              <!-- O endereço da imagem deverá ser indicado dentro do HTML, mas APENAS o endereço -->
+              <a href="visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575">
+                <div class="image" alt="Doe um livro" style="background-image: url('sisvol-doacoes/4221207814330319575.jpg')"></div>
+              </a>
+              <div class="conteudo">
+                <h4 class="titulo">Doe um livro</h4>
+                <span class="responsavel">Viação Piracicabana</span>
+                <span class="descricao">
+                  Ciente de que a cultura é um fator de grande importância para a formação do cidadão, para que o homem tenha consciência de si mesmo, para construção d...
+                </span>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="meta-doacoes">Meta de doações: 1.000.000</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="detalhes" data-target="#detalharDoacaoModal2" data-toggle="modal" href="#">
+                        Detalhes da Doação
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL DETALHAR DOACAO -->
+              <div aria-labelledby="detalhar" class="modal fade" id="detalharDoacaoModal2" role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Detalhes da Doação</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-horizontal">
+                                      <div class="form-group">
+                                          <img alt="Doe um livro" class="img-responsive center-block" src="sisvol-doacoes/4221207814330319575.jpg"/>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="titulo">Título da Doação:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static" id="titulo">Doe um livro</p>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="resumo">Resumo:</label>
+                                          <div class="col-sm-10">
+                                              <p align="justify" class="form-control-static">Ciente de que a cultura é um fator de grande importância para a formação do cidadão, para que o homem tenha consciência de si mesmo, para construção do conhecimento, para o entretenimento, para a estruturação de uma sociedade mais igualitária e competitiva e conhecedor de um fato, no mínimo alarmante, de que os brasileiros não possuem o hábito de ler e em muitos casos não compreendem o que lêem, resolvi criar uma proposta que tem como principal objetivo o incentivo à leitura, entendimento, escrita e divulgação da cultura. Outro aspecto da minha proposta é que os locais escolhidos para oferecer cultura através da leitura são os ônibus do Sistema Coletivo do Distrito Federal, com o intuito, inclusive, de tornar mais aprazível o deslocamento das pessoas que utilizam esse tipo de transporte. O Projeto atua desde 2003 em ônibus do Distrito Federal e desde 2015 a Viação Piracicabana apoia o Projeto. O Projeto conta com estantes dentro dos ônibus e ainda Espaço Cultural na Rodoviária do Plano Piloto – plataforma inferior e na Rodoviária de Sobradinho – DF. Atualmente o projeto está presente em 369 ônibus da Viação Piracicabana DF, nas cidades de Sobradinho, Planaltina, Plano Piloto, Varjão e Estrutural. Para dar continuidade ao Projeto e disseminar cada vez mais conhecimento entre a população de Brasília, a sua ajuda com a doação de livro é muito importante para nós!
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div class="form-group">
+                                              <label class="control-label col-sm-2" for="entidade">
+                                                  Razão Social:
+                                              </label>
+                                              <div class="col-sm-10">
+                                                  <p class="form-control-static" id="entidade">
+                                                      Viação Piracicabana
+                                                  </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      <div class="form-group">
+                                          <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+                                          <div class="col-sm-10">
+                                              <p class="form-control-static">Rodoviária Plano Piloto Plataforma Inferior Box E</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575'; return false;" value="" role="button" class="btn btn-success">
+                              Saiba Mais
+                            </button>
+                            <button class="btn btn-default" data-dismiss="modal" type="button">
+                              Fechar
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-su btn-full" type="button" onclick="window.location.href='/visualizar_doacao.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?doacao=279575'; return false;" value="" role="button">
+                Quero Doar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form id="j_idt204" name="j_idt204" method="post" action="/index.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2" enctype="application/x-www-form-urlencoded">
+              <input type="hidden" name="j_idt204" value="j_idt204" />
+              <div id="btnDoacao">
+                <a class="btn-plus" value="" type="button" onclick="window.location.href='/listagem_doacoes.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2?natureza=ALL'; return false;">
+                  <span class="btn-plus-icon"></span>
+                  Exibir Todas as Campanhas e Doações
+                </a>
+              </div>
+              <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:6" value="X4U2UTXLrSOzQXZHwmi4KBSAI1XjaIc8rc3TVmtrgSofNxGEHB8juXlVxkvhNJ3PR9dDx+04iGQEQH4tcz2R1BCSpok1OS6yIsXAbpd0Qgt1YJbv4UJNxmON1PokjAZMrWRBkrxmuzs9TYbAIjqF/sDO+FVehCbkdWPoyjltWetiwmDa4a50QEqSd7O1UWJPAaIZdHalVQAlVZNcKg2/OEgrbMqdLMT4D8H5fUkIsN4L562HAO9aaTDRRika5QfG/93G5DMVcTiSjvEXtyB+1G7FqJjnbQWYTJT1JSvsoKdSLO+MxESVkjTb07TaGYI1ZfHx/TrrZx1IRBodv1LOb9YE5daPK/jHin8JMBEPB6awmcb6keI8ztQCDu/FnAuYwNAaApxCbB27x7Na+uXPpn44wBH9Z31US4SWgp1Hb5maNE3qfWxe8X/1QmW3PqVgtkqaP2p1FEgjy3PPfy6Xk++v8be/ojFEeh2MoFTJNbM+tZgBgspn0FnlzjqUnDIc/1bVpmou/KRS4+UB+ZBZrzAv9B9BfOHeJzfIBUmiXEhWt6bIsSGE7sJ3h03p+I0EKggo2kDZ9k6rgPUm7bS+/6Lj8YgUmORuK2WpNO7jZGrUZacnnkcRV8og4S6HQ1R4MDvTwUOQnaO/ZHHsz6Kkbxw9E1T9i6CKaGtjc3jGegGbJS0xF0Yv0n0PFqrdyLblsdcPKIlCrg8ceVa8X9q74faPD4wPwRWQ3KA0ufNkkSRubULnfz1sjCKofECdbscNXVMvaBJf4mFzNp9Qy4BWozp+0vDi6eBxTeP0RR3FkAZR9HPAv2e1pYwcQ2r4E00Qau6dHv8IwHeTjTcOA/XufEO6AzNFPrw8DyuAT71cQAxX9umpfRfZBWHY/PAfs8nUY9K5VbVog/s4ruWuduxgoGb6GDamFP00G3iFLHtHgw6Eq14ntkznyEEACnQus7RcEzHuC16zAyXFJwbVYgjJ9O0V7aMbjgbWCbuTtZQp7slcfjOL/9oOIpJ34mnmcbmgze8Fa0+1C0vUPjJNi0simO/ERWW/kJxYMNx4vty8CtnpZN1vrKutaM/3frpK5RjS0mg6+7nqZlufbLGei+mnGHEIWa+oqJchkyQF4a5HXUH8d+U2OJwruvKOgW76MHX9" autocomplete="off" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM DO MÓDULO LISTA -->
+
+
+    <!-- INÍCIO DO MODULO RODAPÉ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 marca-bsb-cidada">
+            <img class="img-responsive" alt="Brasília Cidadã" src="images/marca-bsb-cidada-negativa.png"/>
+          </div>
+          <div class="col-md-7">
+            <div>
+              <div class="site-titulo">
+                Portal do Voluntariado
+              </div>
+              <div class="redes-sociais">
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-whatsapp.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-facebook.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-twitter.png"/>
+                </a>
+                <a href="https://www.facebook.com/govdf" target="_blank">
+                    <img alt="Facebook" src="images/icon-instagram.png"/>
+                </a>
+                <a href="https://instagram.com/gov_df" target="_blank">
+                    <img alt="Instagram" src="images/icon-youtube.png"/>
+                </a>
+              </div>
+            </div>
+            <div class="links-sistema">
+              <a href="termo_uso.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Termo de Uso do Sistema</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="termo_responsabilidade.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Termo de Responsabilidade</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="fale_conosco.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Fale Conosco</a>
+              <span class="hidden-xs hidden-ms">|</span>
+              <a href="marca.html;jsessionid=XNeIYgJV3RlkqDX7weUdp3rgYmoclMTXL48w2Iyu.siscapproucao2">Sobre a Marca</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="marca-gdf">
+              <img class="img-responsive" alt="Governo de Brasília" src="images/logo_gov_bsb.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- INÍCIO DO MÓDULO RODAPÉ -->
+
+    <script type="text/javascript" src="main/javax.faces.resource/jsf.js"></script>
+    <script type="text/javascript" src="main/javax.faces.resource/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    <script type="text/javascript" src="lib/jquery.mask.js"></script>
+    <script type="text/javascript" src="lib/odometer.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script defer="true" src="https://maps.googleapis.com/maps/api/js?callback=mapaIndexModal&amp;key=AIzaSyCPkeOmnYZwEeGAIIWxKhvIDjiDJzM8RdE&amp;language=pt&amp;region=BR"></script>
+  </body>
+</html>

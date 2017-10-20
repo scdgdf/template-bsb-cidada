@@ -238,3 +238,25 @@ body{
 		}
 	}
 }
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  // align-content: stretch;
+  div[class^="col-"]{
+    float: none !important;
+    margin-bottom: 30px;
+  }
+}
+.sobre-texto,
+.resposta-texto{
+  font-family: "OpenSans";
+  font-size: 16px;
+}
+
+.pergunta-texto{
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: "Titillium Web";
+  text-transform: uppercase;
+  color: @primary;
+}
