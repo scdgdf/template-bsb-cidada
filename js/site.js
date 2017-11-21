@@ -199,3 +199,15 @@ $('.multi-item-carousel .item').each(function(){
   	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
 });
+
+//Makes de sidebar menu fixed
+$(function(){
+			var nav = $('#sidebar_menu');
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 201) {
+					nav.addClass("panel-fixed");
+				} else {
+					nav.removeClass("panel-fixed");
+				}
+			});
+		});
